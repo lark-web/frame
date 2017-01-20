@@ -1005,7 +1005,7 @@ ul.dropdown li {
     font-weight: bold;
     float: left;
     zoom: 1;
-    background: #000 url(../images/overlay2.png) repeat-x top left;
+    /* background: #000 url(../images/overlay2.png) repeat-x top left; */
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;   
     margin:1px;
@@ -1032,7 +1032,7 @@ ul.dropdown li:last-child a {
 }
  /* Doesn't work in IE */
 ul.dropdown li.hover, ul.dropdown li:hover {
-    background: #0070C0;
+   /* background: #0070C0; */
     color: black;
     position: relative;
     color:#fff;

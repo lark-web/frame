@@ -100,6 +100,7 @@ body {
 ul.dropdown li {
   background: none;
   margin-right: 45px;
+  background-color: #f63;
 }
 ul.dropdown li a {
   display: block;
@@ -111,6 +112,23 @@ ul.dropdown li a {
 ul.dropdown li a:hover {
   text-decoration: underline;
   background-color: #f63;
+}
+ul.submenu {
+  z-index: 10;
+}
+ul.submenu li {
+  width: 230px;
+}
+ul.submenu li a {
+  display: block;
+  font-size: 12px;
+  background-color: #ddd;
+  text-shadow: none;
+}
+ul.submenu li a:hover {
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
 }
 .second_nav {
   display: inline-block;
@@ -156,7 +174,7 @@ ul.dropdown li a:hover {
   padding-right: 5px;
 }
 .wrap_soc a:first-child {
-  margin-left: 50px;
+  margin-left: 4git 5px;
 }
 .main_slider_wrap .bx-wrapper .bx-viewport {
   border: none;
@@ -164,4 +182,22 @@ ul.dropdown li a:hover {
           box-shadow: none;
   left: 0;
   background: none;
+}
+.footer_wrap {
+  background-color: #f63;
+  padding: 10px 20px;
+}
+.nest_line {
+  margin: 2px auto;
+  width: 400px;
+}
+.nest_line a {
+  display: inline-block;
+  font-weight: 600;
+}
+.nest_line a:hover {
+  text-decoration: underline;
+}
+.nest_line p {
+  display: inline-block;
 }

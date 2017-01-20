@@ -18,6 +18,7 @@ ul.dropdown
 	li
 		background none
 		margin-right 45px
+		background-color top_heading_bg_color
 		a
 			display block
 			background none
@@ -28,7 +29,21 @@ ul.dropdown
 				text-decoration underline
 				background-color top_heading_bg_color
 				
-
+ul.submenu
+	z-index 10
+	li
+		width 230px
+		a
+			display block
+			font-size 12px
+			background-color #ddd
+			text-shadow none
+			&:hover
+				background-color #fff
+				color #333
+				text-decoration none
+				
+	
 
 .second_nav
 	//float left
@@ -70,7 +85,7 @@ ul.dropdown
 .wrap_soc		
 	a 
 		&:first-child
-			margin-left 45px
+			margin-left 4git 5px
 			
 
 		
