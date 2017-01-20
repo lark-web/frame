@@ -2,26 +2,13 @@ header
 	.top_header
 		.header_logo
 			a(href="javascript:void(0);").logo_pict: img(src="../static/img/general/atelica_logo.png")  
-		nav.main_nav
-			ul
-				li
-					a(href="javascript:void(0);") Главная
-				li
-					a(href="javascript:void(0);") О компании
-				li
-					a(href="javascript:void(0);") Контакты
-		ul.top_social_links
-			li
+		include ../common/menu
+		.top_social_links 
+			span.tel +7(495) 222-22-22
+			.wrap_soc
 				a.social_1: img(src="../static/img/general/vkontakte-logo.png")
-			li
 				a.social_2: img(src="../static/img/general/facebook-logo.png")
-			li
 				a.social_3: img(src="../static/img/general/instagram-logo.png")
-section.main_slider_wrap
-	ul.main_slider
-		li
-			<img src="../static/img/content/slider/slider_1.jpg" alt="">
-		li
-			<img src="../static/img/content/slider/slider_2.jpg" alt="">
-		li
-			<img src="../static/img/content/slider/slider_3.jpg" alt="">
+
+
+

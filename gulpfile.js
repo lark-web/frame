@@ -39,7 +39,8 @@ gulp.task('scripts', function() {
             'app/static/libs/jquery/jquery.min.js',
             'app/static/libs/bxslider/jquery.bxslider.min.js',
             'app/static/libs/validate/jquery.validate.min.js',
-            'app/static/libs/magnific-popup/jquery.magnific-popup.min.js'
+            'app/static/libs/magnific-popup/jquery.magnific-popup.min.js',             
+            'app/static/libs/second-menu/jquery.dropdownPlain.js'            
         ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())

@@ -3,29 +3,74 @@
 	height 100px
 	padding 10px 10px 
 .header_logo
+	padding-left 80px
 	float left 
 	a
 		display block
 		&.logo_pict
 			font-size 16px
  
-.main_nav
-	float left
+#page-wrap
+	display inline-block
+	margin-left 200px
+
+ul.dropdown 
+	li
+		background none
+		margin-right 45px
+		a
+			display block
+			background none
+			color white
+			font-size 14px
+			text-transform uppercase
+			&:hover
+				text-decoration underline
+				background-color top_heading_bg_color
+				
+
+
+.second_nav
+	//float left
+	display inline-block
 	margin-left 150px 
 	padding-top 25px
+	//overflow hidden
 	li 
 		display inline-block
 		font-size 20px
-		margin-right 20px
-		padding 5px
+		margin-right 25px
+		&:last-child 
+			margin-right 0px
+	a
+		display block
+		color white
+		text-transform uppercase
+		padding 0px 15px 
+		line-height 30px
+		border-radius 5px 
+		font-family mainFont
+		font-size 14px
+		font-weight bold
+		&.active,
 		&:hover
-			background-color white
-		a
-			color white
-			&:hover
-				color black
+			color #fff
+			background-color #bbb
+
 .top_social_links
 	float right
-	margin-top 25px
-	li 
-		display inline-block
+	margin-top 5px
+	span
+		color white
+		font-size 25px
+		display block
+	a 
+		display inline-block 
+		padding-right 5px
+.wrap_soc		
+	a 
+		&:first-child
+			margin-left 45px
+			
+
+		

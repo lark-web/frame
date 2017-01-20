@@ -1,0 +1,22 @@
+block main_menu
+	.base_wrapp
+		div#page-wrap
+			ul.dropdown
+				li
+					a(href="javascript:void(0);") Отели-1
+					ul.submenu
+						li
+							a(href="javascript:void(0);") Отель dsf
+						li
+							a(href="javascript:void(0);") Отель ghj
+						li
+							a(href="javascript:void(0);") Отель tyut
+				li
+					a(href="javascript:void(0);") Спецпредложения
+					ul.submenu
+						li
+							a(href="javascript:void(0);") dsf
+						li
+							a(href="javascript:void(0);") ghj
+						li
+							a(href="javascript:void(0);") tyut

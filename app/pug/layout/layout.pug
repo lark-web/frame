@@ -22,9 +22,39 @@ html(lang="ru-RU")
 		<![endif]-->
 		
 		.wrap_strip
-			.wrapper
+			.base_wrapp
 				include ../common/header
-				block content
+		section.main_slider_wrap
+			ul.main_slider
+				li
+					<img src="../static/img/content/slider/slider_1.jpg" alt="">
+				li
+					<img src="../static/img/content/slider/slider_2.jpg" alt="">
+				li
+					<img src="../static/img/content/slider/slider_3.jpg" alt="">
+		
+		.base_wrapp
+			div#page-wrap
+				ul.dropdown
+					li
+						a(href="javascript:void(0);") Наши отели
+						ul.submenu
+							li
+								a(href="javascript:void(0);") Отель dsf
+							li
+								a(href="javascript:void(0);") Отель ghj
+							li
+								a(href="javascript:void(0);") Отель tyut
+					li
+						a(href="javascript:void(0);") Акции
+					li
+						a(href="javascript:void(0);") Контакты
+						
+		// coment
+		block slider
+		block second_menu
+		block content
+
 		include ../common/footer
 		script(src="static/js/libs.min.js")
 		script(src="static/js/main.js")
