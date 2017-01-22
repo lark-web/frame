@@ -61,23 +61,218 @@ textarea
   background-color top_heading_bg_color
   height 90px
   
-//.base_wrapp
-  //background-color #d00
-//  padding 0px
-//  width 100%
-//  max-width 1250px
-//  margin 0 auto
+.base_wrapp
+  //background-color top_heading_bg_color
+  padding 0px
+  width 100%
+  max-width 1250px
+  margin 0 auto
   
 
 body
   font-family mainFont
   background-color #ddd
   //background  rgba(255,5,255,0.1) url('../img/general/7.png') top center
-.main_slider
 
-.second_menu
+
+
+// ---------------------------- НОВОСТИ ------------------------
+.block-item-news
+  margin-bottom 25px
+  width 70%
+  margin 0 auto
+  margin-bottom 25px
+.item-news  
+  display inline-block
+  width 30% 
+  margin-bottom 20px
+  //margin-right 48px
+  
+  vertical-align top
+  .img
+    float left  
+    img 
+      border-radius 5px
+  .desc
+    margin-left 90px
+    .date
+      text-align left
+      span
+        font-size 16px
+        padding-left 10px
+      a
+        text-align left
+        display block
+        padding-left 10px
+        color #98131d
+.all-news
+  a
+    color #cf1223
+    font-size 15px
+    text-decoration underline
+    &:hover
+      text-decoration none
+        
+// ---------------------------- НАШИ ОТЕЛИ ------------------------
+
+.second_menu 
   display block
   height 100px     
+.our_hotels , .news
+  text-align center
+  h2 
+    color #000
+    font-size 35px
+    font-family our_hotels_head_font
+    font-weight 500
+    text-transform uppercase
+    position relative
+    display inline-block
+    margin-bottom 20px
+    
+    &:before 
+    &:after
+      background #777 none repeat scroll 0 0 
+      position absolute
+      content " "
+      width 180px
+      height 1px
+      top 0
+      margin-top 20px
+      max-width 100%
+    &:before
+      left -220px 
+    &:after
+      right -220px
+      
+.item_hotel
+  border-bottom 1px solid #aaa
+  display inline-block
+  width 600px
+  margin-bottom 20px
+  margin-left 20px
+  .img_hotel
+    display table-cell
+    img
+      width 250px
+      border-radius 4px
+    
+
+.desc_hotel
+  display table-cell
+  position relative
+  text-align left
+  vertical-align top
+  padding 4px 0px 20px 15px
+        
+.hotel-info
+  a
+    color #1375b4
+    font-size 20px
+    &:hover
+      text-decoration underline
+  .logo
+    position absolute
+    width 30px
+    height 30px
+    background-image url("../img/general/atelica_logo.png")
+    top 0
+    right 0
+  .geo
+    color #a5a5a5
+    font-size 10px
+    
+.hotel-text
+  margin-bottom 20px  
+.hotel-price-info
+  display table
+  width 100%
+  .hotel-price
+    float left
+    span 
+      font-size 26px
+      font-family sans-serif
+      font-weight 800
+
+
+
+.rub
+  border-bottom 2px solid
+  display inline-block
+  width 14px
+  line-height 5px
+     
+
+.bron 
+  background-color #c30303  
+  text-align center
+  width 130px
+  display block
+  border-radius 5px
+  box-shadow 0 2px 6px #666
+  float right
+  margin-left 30px
+  font-size 15px
+  height 37px
+  color #fff
+  font-weight 800
+  padding-top 7px
+  &:hover
+    text-decoration underline
+.dop-menu
+  margin-top 18px
+  margin-bottom 10px
+  text-align left
+  .inline-block
+    display inline-block
+    margin-left 10px
+    padding-left 23px
+    padding-right 20px
+    text-decoration none
+    &.desc
+      background url("../img/general/hotel-dop-menu.png")  no-repeat 
+      font-size 12px
+      background-position 0px 4px
+      a
+        padding-right 20px
+      &:after
+        content "|"
+        display inline-block
+      &:hover
+        text-decoration underline
+    &.price
+      font-size 12px
+      background url("../img/general/hotel-dop-menu.png")  no-repeat
+      background-position 0px -41px
+      a
+        padding-right 20px      
+      &:after
+        content "|"
+        display inline-block
+      &:hover
+        text-decoration underline
+    &.foto
+      font-size 12px
+      background url("../img/general/hotel-dop-menu.png")  no-repeat
+      background-position 0px -88px
+      a
+        padding-right 20px      
+      &:after
+        content "|"
+        display inline-block
+      &:hover
+        text-decoration underline
+    &.rewiews
+      background url("../img/general/hotel-dop-menu.png")  no-repeat
+      background-position 0px -133px      
+      font-size 12px
+      a
+        padding-right 20px
+        &:hover
+         text-decoration underline
+
+    
+      
   
 // Стили шапки
 @import 'common/_header.styl'
