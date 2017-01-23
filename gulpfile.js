@@ -40,7 +40,11 @@ gulp.task('scripts', function() {
             'app/static/libs/bxslider/jquery.bxslider.min.js',
             'app/static/libs/validate/jquery.validate.min.js',
             'app/static/libs/magnific-popup/jquery.magnific-popup.min.js',             
-            'app/static/libs/second-menu/jquery.dropdownPlain.js'            
+            'app/static/libs/second-menu/jquery.dropdownPlain.js',
+            'app/static/libs/carousel/jcarousel.responsive.js',
+            'app/static/libs/carousel/jquery.jcarousel.min.js'
+
+                        
         ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())

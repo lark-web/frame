@@ -5,6 +5,16 @@ block title
 
 
 block slider	
+	.main_slider_wrap
+		ul.main_slider
+			li
+				img(src="../static/img/content/slider/slider_1.jpg" alt="")
+			li
+				img(src="../static/img/content/slider/slider_2.jpg" alt="")
+			li
+				img(src="../static/img/content/slider/slider_3.jpg" alt="")
+
+block photo_desk
 block second_menu
 	include ../common/second_menu
 
@@ -12,6 +22,41 @@ block second_menu
 block content
 	.base_wrapp
 		p основной
+		section.promotion
+			h2 Акции	
+			div.j-wrapper
+				.jcarousel
+					ul
+						li
+							div.item
+								div.img
+									a(href="javascript:void(0);")
+										img(src="../static/img/general/prom-1.jpg") 
+									span до 31 января
+								div.name
+									a(href="javascript:void(0);")  В день рождения - подарок!
+								div.desc
+									div.hotel-name
+										a(href="javascript:void(0);") Отель Византия
+									div.location Иваново
+						li
+							img(src="../static/img/general/prom-2.jpg") 
+						li
+							img(src="../static/img/general/prom-3.jpg") 
+						li
+							img(src="../static/img/general/prom-3.jpg") 
+						li
+							img(src="../static/img/general/prom-3.jpg") 
+						li
+							img(src="../static/img/general/prom-3.jpg") 
+						li
+							img(src="../static/img/general/prom-3.jpg") 
+						li
+							img(src="../static/img/general/prom-3.jpg") 
+				a(href="javascript:void(0);").jcarousel-control-prev  
+				a(href="javascript:void(0);").jcarousel-control-next 	
+			
+			
 		section.news
 			h2 Новости
 			.block-item-news

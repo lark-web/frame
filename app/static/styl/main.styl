@@ -71,11 +71,81 @@ textarea
 
 body
   font-family mainFont
-  background-color #ddd
+  background-color #f0f0f0
   //background  rgba(255,5,255,0.1) url('../img/general/7.png') top center
 
 
 
+// ---------------------------- АКЦИИ (Jcarousel) ------------------------
+.j-wrapper
+  border none 
+  position relative 
+.jcarousel
+  ul 
+    li
+      border none
+      background-color #e9e9e9
+      padding 5px
+  .item
+    .img
+      width 275px
+      position relative
+      margin 0 auto
+      a
+        img
+          border-radius 6px
+      span
+        position absolute
+        background-color #a51622
+        border-radius 3px
+        padding 2px 5px
+        color #fff
+        right 15px
+        bottom 55px
+    .name
+      margin 0 auto
+      background-color #c30303
+      border-radius  0 33px
+      height 48px
+      padding 0 30px
+      text-align left
+      text-transform uppercase
+      width 275px
+      vertical-align middle
+      margin-top 5px
+      a
+        color #fff
+        font-size 16px
+        font-weight 800
+    .desc
+      margin 0 auto
+      width 275px
+      .hotel-name
+        text-align left
+        padding 7px 0px 10px 10px
+        border-bottom 1px solid #999
+        width 65%
+        a
+          font-size 16px
+          &:hover 
+            text-decoration underline
+      .location
+        text-align left
+        padding 1px 0 0 10px 
+.jcarousel-control-prev , .jcarousel-control-next
+  background rgba(0,0,0,0) url("../img/general/actions-arrow.png") no-repeat scroll center center
+  position absolute
+  width 30px
+  height 80px
+.jcarousel-control-prev
+  background-position 0 0 
+  top 40%
+  left -100px
+.jcarousel-control-next
+  top 40%
+  right -100px
+  background-position -28px 0
+          
 // ---------------------------- НОВОСТИ ------------------------
 .block-item-news
   margin-bottom 25px
@@ -87,7 +157,6 @@ body
   width 30% 
   margin-bottom 20px
   //margin-right 48px
-  
   vertical-align top
   .img
     float left  
@@ -118,7 +187,7 @@ body
 .second_menu 
   display block
   height 100px     
-.our_hotels , .news
+.our_hotels , .news , .promotion
   text-align center
   h2 
     color #000
@@ -289,3 +358,7 @@ body
 // Стили Футера
 @import 'common/_footer.styl'
 // Стили футера - конец
+
+// Стили 
+@import 'page/_visantia.styl'
+

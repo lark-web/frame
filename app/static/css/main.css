@@ -77,7 +77,90 @@ textarea {
 }
 body {
   font-family: 'roboto_slabregular', sans-serif;
-  background-color: #ddd;
+  background-color: #f0f0f0;
+}
+.j-wrapper {
+  border: none;
+  position: relative;
+}
+.jcarousel ul li {
+  border: none;
+  background-color: #e9e9e9;
+  padding: 5px;
+}
+.jcarousel .item .img {
+  width: 275px;
+  position: relative;
+  margin: 0 auto;
+}
+.jcarousel .item .img a img {
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+}
+.jcarousel .item .img span {
+  position: absolute;
+  background-color: #a51622;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  padding: 2px 5px;
+  color: #fff;
+  right: 15px;
+  bottom: 55px;
+}
+.jcarousel .item .name {
+  margin: 0 auto;
+  background-color: #c30303;
+  -webkit-border-radius: 0 33px;
+          border-radius: 0 33px;
+  height: 48px;
+  padding: 0 30px;
+  text-align: left;
+  text-transform: uppercase;
+  width: 275px;
+  vertical-align: middle;
+  margin-top: 5px;
+}
+.jcarousel .item .name a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 800;
+}
+.jcarousel .item .desc {
+  margin: 0 auto;
+  width: 275px;
+}
+.jcarousel .item .desc .hotel-name {
+  text-align: left;
+  padding: 7px 0px 10px 10px;
+  border-bottom: 1px solid #999;
+  width: 65%;
+}
+.jcarousel .item .desc .hotel-name a {
+  font-size: 16px;
+}
+.jcarousel .item .desc .hotel-name a:hover {
+  text-decoration: underline;
+}
+.jcarousel .item .desc .location {
+  text-align: left;
+  padding: 1px 0 0 10px;
+}
+.jcarousel-control-prev,
+.jcarousel-control-next {
+  background: rgba(0,0,0,0) url("../img/general/actions-arrow.png") no-repeat scroll center center;
+  position: absolute;
+  width: 30px;
+  height: 80px;
+}
+.jcarousel-control-prev {
+  background-position: 0 0;
+  top: 40%;
+  left: -100px;
+}
+.jcarousel-control-next {
+  top: 40%;
+  right: -100px;
+  background-position: -28px 0;
 }
 .block-item-news {
   margin-bottom: 25px;
@@ -127,11 +210,13 @@ body {
   height: 100px;
 }
 .our_hotels,
-.news {
+.news,
+.promotion {
   text-align: center;
 }
 .our_hotels h2,
-.news h2 {
+.news h2,
+.promotion h2 {
   color: #000;
   font-size: 35px;
   font-family: 'helveticaneuecyrthin', sans-serif;
@@ -143,8 +228,10 @@ body {
 }
 .our_hotels h2:before,
 .news h2:before,
+.promotion h2:before,
 .our_hotels h2:after,
-.news h2:after {
+.news h2:after,
+.promotion h2:after {
   background: #777 none repeat scroll 0 0;
   position: absolute;
   content: " ";
@@ -155,11 +242,13 @@ body {
   max-width: 100%;
 }
 .our_hotels h2:before,
-.news h2:before {
+.news h2:before,
+.promotion h2:before {
   left: -220px;
 }
 .our_hotels h2:after,
-.news h2:after {
+.news h2:after,
+.promotion h2:after {
   right: -220px;
 }
 .item_hotel {
@@ -478,4 +567,9 @@ ul.submenu li a:hover {
 }
 .nest_line#sought {
   margin-top: 20px;
+}
+.desk-wrap {
+  width: 1250px;
+  color: #fff;
+  margin: 2px auto;
 }
