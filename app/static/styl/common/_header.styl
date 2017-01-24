@@ -2,7 +2,7 @@
 	position relative
 	height 100px
 	padding 10px 10px 
-.header_logo
+.header-logo
 	padding-left 80px
 	float left 
 	a
@@ -44,35 +44,44 @@ ul.submenu
 				text-decoration none
 				
 	
+// вторе меню 
 
-.second_nav
-	//float left
-	display inline-block
+.stickytop
+	position fixed
+	top 0
+	//left 167px
+.second-nav	
 	margin-left 150px 
-	padding-top 25px
-	//overflow hidden
-	li 
+	//width mainWight
+	width 100%	
+	margin 0 auto
+	text-align center
+	background-color #dcdcdc
+	ul
 		display inline-block
-		font-size 20px
-		margin-right 25px
-		&:last-child 
-			margin-right 0px
-	a
-		display block
-		color white
-		text-transform uppercase
-		padding 0px 15px 
-		line-height 30px
-		border-radius 5px 
-		font-family mainFont
-		font-size 14px
-		font-weight bold
-		&.active,
-		&:hover
-			color #fff
-			background-color #bbb
+		vertical-align middle
+		li 
+			 
+			display inline-block
+			font-size 20px
+			margin-right 25px
+			&:last-child 
+				margin-right 0px
+		a
+			display block
+			color white
+			text-transform uppercase
+			padding 0px 15px 
+			line-height 30px
+			border-radius 5px 
+			font-family mainFont
+			font-size 14px
+			font-weight bold
+			&:hover
+				color #fff
+				background-color #bbb
 
-.top_social_links
+.top-social-links
 	float right
 	margin-top 5px
 	span
@@ -82,7 +91,7 @@ ul.submenu
 	a 
 		display inline-block 
 		padding-right 5px
-.wrap_soc		
+.wrap-soc		
 	a 
 		&:first-child
 			margin-left 4git 5px

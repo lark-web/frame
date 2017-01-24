@@ -85,7 +85,7 @@ body {
 }
 .jcarousel ul li {
   border: none;
-  background-color: #e9e9e9;
+  background-color: rgba(238,153,238,0.6) e;
   padding: 5px;
 }
 .jcarousel .item .img {
@@ -205,16 +205,12 @@ body {
 .all-news a:hover {
   text-decoration: none;
 }
-.second_menu {
-  display: block;
-  height: 100px;
-}
-.our_hotels,
+.our-hotels,
 .news,
 .promotion {
   text-align: center;
 }
-.our_hotels h2,
+.our-hotels h2,
 .news h2,
 .promotion h2 {
   color: #000;
@@ -226,10 +222,10 @@ body {
   display: inline-block;
   margin-bottom: 20px;
 }
-.our_hotels h2:before,
+.our-hotels h2:before,
 .news h2:before,
 .promotion h2:before,
-.our_hotels h2:after,
+.our-hotels h2:after,
 .news h2:after,
 .promotion h2:after {
   background: #777 none repeat scroll 0 0;
@@ -241,32 +237,32 @@ body {
   margin-top: 20px;
   max-width: 100%;
 }
-.our_hotels h2:before,
+.our-hotels h2:before,
 .news h2:before,
 .promotion h2:before {
   left: -220px;
 }
-.our_hotels h2:after,
+.our-hotels h2:after,
 .news h2:after,
 .promotion h2:after {
   right: -220px;
 }
-.item_hotel {
+.item-hotel {
   border-bottom: 1px solid #aaa;
   display: inline-block;
   width: 600px;
   margin-bottom: 20px;
   margin-left: 20px;
 }
-.item_hotel .img_hotel {
+.item-hotel .img_hotel {
   display: table-cell;
 }
-.item_hotel .img_hotel img {
+.item-hotel .img_hotel img {
   width: 250px;
   -webkit-border-radius: 4px;
           border-radius: 4px;
 }
-.desc_hotel {
+.desc-hotel {
   display: table-cell;
   position: relative;
   text-align: left;
@@ -406,14 +402,14 @@ body {
   height: 100px;
   padding: 10px 10px;
 }
-.header_logo {
+.header-logo {
   padding-left: 80px;
   float: left;
 }
-.header_logo a {
+.header-logo a {
   display: block;
 }
-.header_logo a.logo_pict {
+.header-logo a.logo_pict {
   font-size: 16px;
 }
 #page-wrap {
@@ -453,20 +449,30 @@ ul.submenu li a:hover {
   color: #333;
   text-decoration: none;
 }
-.second_nav {
-  display: inline-block;
-  margin-left: 150px;
-  padding-top: 25px;
+.stickytop {
+  position: fixed;
+  top: 0;
 }
-.second_nav li {
+.second-nav {
+  margin-left: 150px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #dcdcdc;
+}
+.second-nav ul {
+  display: inline-block;
+  vertical-align: middle;
+}
+.second-nav ul li {
   display: inline-block;
   font-size: 20px;
   margin-right: 25px;
 }
-.second_nav li:last-child {
+.second-nav ul li:last-child {
   margin-right: 0px;
 }
-.second_nav a {
+.second-nav ul a {
   display: block;
   color: #fff;
   text-transform: uppercase;
@@ -478,25 +484,24 @@ ul.submenu li a:hover {
   font-size: 14px;
   font-weight: bold;
 }
-.second_nav a.active,
-.second_nav a:hover {
+.second-nav ul a:hover {
   color: #fff;
   background-color: #bbb;
 }
-.top_social_links {
+.top-social-links {
   float: right;
   margin-top: 5px;
 }
-.top_social_links span {
+.top-social-links span {
   color: #fff;
   font-size: 25px;
   display: block;
 }
-.top_social_links a {
+.top-social-links a {
   display: inline-block;
   padding-right: 5px;
 }
-.wrap_soc a:first-child {
+.wrap-soc a:first-child {
   margin-left: 4git 5px;
 }
 .main_slider_wrap .bx-wrapper .bx-viewport {
@@ -568,8 +573,19 @@ ul.submenu li a:hover {
 .nest_line#sought {
   margin-top: 20px;
 }
+.main-hotel-img {
+  background: rgba(0,0,0,0) url("../img/general/fon_lipki.jpg") center center no-repeat;
+  z-index: 2;
+  display: block !important;
+  height: 200px;
+}
 .desk-wrap {
-  width: 1250px;
+  width: 100px;
   color: #fff;
   margin: 2px auto;
+  height: 100px;
+  z-index: 3;
+}
+.desk-wrap img {
+  width: 100%;
 }

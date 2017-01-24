@@ -42,8 +42,8 @@ gulp.task('scripts', function() {
             'app/static/libs/magnific-popup/jquery.magnific-popup.min.js',             
             'app/static/libs/second-menu/jquery.dropdownPlain.js',
             'app/static/libs/carousel/jcarousel.responsive.js',
-            'app/static/libs/carousel/jquery.jcarousel.min.js'
-
+            'app/static/libs/carousel/jquery.jcarousel.min.js',
+            'app/static/libs/fancybox/jquery.fancybox.pack.js'
                         
         ])
         .pipe(concat('libs.min.js'))
