@@ -1,0 +1,45 @@
+
+
+mixin mnews(urlpict,date,text)
+	.item-news
+		.img
+			a(href="javascript:void(0);")
+				img(src= urlpict alt="")
+		.desc
+			.date
+				span=  date
+				a(href="javascript:void(0);")= text
+
+
+mixin mhotel(urlpict,name,geo,text,price)
+	.item-hotel
+		.img_hotel
+			a(href="javascript:void(0);") 
+				img(src= urlpict)
+		.desc-hotel
+			.hotel-info
+				.name
+					a(href="http://www.atelica.ru/atelika-lipki/description/")=name
+				.geo
+					p= geo   
+				.logo
+			.hotel-text
+				p= text
+			.hotel-price-info
+				.hotel-price 
+					span=price  
+					span.rub P
+					a(href="javascript:void(0);").bron Забронировать
+		.dop-menu
+			.inline-block.desc
+				a(href="javascript:void(0);") Описание
+			.inline-block.price
+				a(href="javascript:void(0);") Цены
+			.inline-block.foto
+				a(href="javascript:void(0);") Фото
+			.inline-block.rewiews
+				a(href="javascript:void(0);") Отзывы
+
+
+mixin mtest(text,num)
+	p.proba #{text}#{num}

@@ -1,5 +1,7 @@
 $(document).ready(function(){
-  $('.main_slider').bxSlider();
+  $('.main-slider').bxSlider({
+    'auto' : 'true'
+  });
 });
 
 

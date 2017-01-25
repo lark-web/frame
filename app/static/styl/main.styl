@@ -74,9 +74,36 @@ body
   background-color #f0f0f0
   //background  rgba(255,5,255,0.1) url('../img/general/7.png') top center
 
-
+.h1_style
+  text-align center
+  h2 
+    color #000
+    font-size 35px
+    font-family our_hotels_head_font
+    font-weight 500
+    text-transform uppercase
+    position relative
+    display inline-block
+    margin-bottom 20px
+    
+    &:before 
+    &:after
+      background #777 none repeat scroll 0 0 
+      position absolute
+      content " "
+      width 180px
+      height 1px
+      top 0
+      margin-top 20px
+      max-width 100%
+    &:before
+      left -220px 
+    &:after
+      right -220px
+      
 
 // ---------------------------- АКЦИИ (Jcarousel) ------------------------
+
 .j-wrapper
   border none 
   position relative 
@@ -187,32 +214,8 @@ body
 //.second_menu 
 //  display block
 //  height 100px     
-.our-hotels , .news , .promotion
-  text-align center
-  h2 
-    color #000
-    font-size 35px
-    font-family our_hotels_head_font
-    font-weight 500
-    text-transform uppercase
-    position relative
-    display inline-block
-    margin-bottom 20px
-    
-    &:before 
-    &:after
-      background #777 none repeat scroll 0 0 
-      position absolute
-      content " "
-      width 180px
-      height 1px
-      top 0
-      margin-top 20px
-      max-width 100%
-    &:before
-      left -220px 
-    &:after
-      right -220px
+
+
       
 .item-hotel
   border-bottom 1px solid #aaa

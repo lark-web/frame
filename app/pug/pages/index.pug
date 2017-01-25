@@ -1,18 +1,22 @@
 extends ../layout/layout
 
+
+include ../common/mixins
+
+
 block title
 	| Главная страница
 
 
 block slider	
-	.main_slider_wrap
-		ul.main_slider
+	.main-slider-wrap
+		ul.main-slider
 			li
-				img(src="../static/img/content/slider/slider_1.jpg" alt="")
+				img(src="../static/img/content/slider/main_slider_1.jpg" alt="")
 			li
-				img(src="../static/img/content/slider/slider_2.jpg" alt="")
+				img(src="../static/img/content/slider/main_slider_2.jpg" alt="")
 			li
-				img(src="../static/img/content/slider/slider_3.jpg" alt="")
+				img(src="../static/img/content/slider/main_slider_3.jpg" alt="")
 
 block photo_desk
 block second_menu
@@ -21,8 +25,13 @@ block second_menu
 
 block content
 	.base_wrapp
-		section.promotion
-			h2 Акции	
+		-  var x = 'тест переменных';
+		p #{x}
+		+mtest('просто = ',6)
+		section.promotion.h1_style
+			h2 Акции
+			 
+			
 			div.j-wrapper
 				.jcarousel
 					ul
@@ -31,7 +40,7 @@ block content
 								div.img
 									a(href="javascript:void(0);")
 										img(src="../static/img/general/prom-1.jpg") 
-									span до 31 января
+									span до 32 января
 								div.name
 									a(href="javascript:void(0);")  В день рождения - подарок!
 								div.desc
@@ -56,47 +65,26 @@ block content
 				a(href="javascript:void(0);").jcarousel-control-next 	
 			
 			
-		section.news
+		section.news.h1_style
 			h2 Новости
 			.block-item-news
-				.item-news
-					.img
-						a(href="javascript:void(0);")
-							<img src="../static/img/general/89_106_lipki.jpg" alt="">
-					.desc
-						.date
-							span 09.09.2016
-							a(href="javascript:void(0);") Новые цены в отелеотеле отеле отеле отеле отеле отеле отеле...
-				.item-news
-					.img
-						a(href="javascript:void(0);")
-							<img src="../static/img/general/89_106_lipki.jpg" alt="">
-					.desc
-						.date
-							span 09.09.2016
-							a(href="javascript:void(0);") Новые цены в отелеотеле отеле отеле отеле отеле отеле отеле...
-				.item-news
-					.img
-						a(href="javascript:void(0);")
-							<img src="../static/img/general/89_106_lipki.jpg" alt="">
-					.desc
-						.date
-							span 09.09.2016
-							a(href="javascript:void(0);") Новые цены в отелеотеле отеле отеле отеле отеле отеле отеле...
-				.item-news
-					.img
-						a(href="javascript:void(0);")
-							<img src="../static/img/general/89_106_lipki.jpg" alt="">
-					.desc
-						.date
-							span 09.09.2016
-							a(href="javascript:void(0);") Новые цены в отелеотеле отеле отеле отеле отеле отеле отеле...
+				
+				+mnews('../static/img/general/89_106_lipki.jpg','10.02.2017','проверка миксина №1')
+				+mnews('../static/img/general/89_106_lipki.jpg','10.02.2017','проверка миксина №2')
+				+mnews('../static/img/general/89_106_lipki.jpg','10.02.2017','проверка миксина №2')
+				+mnews('../static/img/general/89_106_lipki.jpg','10.02.2017','проверка миксина №1')
+				+mnews('../static/img/general/89_106_lipki.jpg','10.02.2017','проверка миксина №2')
+				+mnews('../static/img/general/89_106_lipki.jpg','10.02.2017','проверка миксина №2')
+
 				.all-news
 					a(href="javascript:void(0);") все новости
 
-		section.our-hotels
+		section.our-hotels.h1_style
 			h2 Наши отели
 			.block-item-hotels
+				-  var text_hotel = 'LARK Загородный отель «АТЕЛИКА ЛИПКИ» расположен на западе Московской области, в Одинцовском районе, в живописных окрестностях Звенигорода с экологически чистой природой, называемой «Русской Швейцарией». Отель представляет собой единый архитектурный …';
+				
+				+mhotel('../static/img/general/lipki.png','Отдых','Загородный отель на озере','LARK Загородный отель «АТЕЛИКА ЛИПКИ» расположен на западе Московской области, в Одинцовском районе, в живописных окрестностях Звенигорода с экологически чистой природой, называемой «Русской Швейцарией». Отель представляет собой единый архитектурный …','от 1700')
 				.item-hotel
 					.img_hotel
 						a(href="javascript:void(0);") 
@@ -109,7 +97,7 @@ block content
 								p Загородный отель  </br> XXXX район
 							.logo
 						.hotel-text
-							p Загородный отель «АТЕЛИКА ЛИПКИ» расположен на западе Московской области, в Одинцовском районе, в живописных окрестностях Звенигорода с экологически чистой природой, называемой «Русской Швейцарией». Отель представляет собой единый архитектурный …
+							p 1 Загородный отель «АТЕЛИКА ЛИПКИ» расположен на западе Московской области, в Одинцовском районе, в живописных окрестностях Звенигорода с экологически чистой природой, называемой «Русской Швейцарией». Отель представляет собой единый архитектурный …
 						.hotel-price-info
 							.hotel-price 
 								span от 1700 
@@ -136,7 +124,7 @@ block content
 								p Загородный отель  </br> XXXX район
 							.logo
 						.hotel-text
-							p Загородный отель «АТЕЛИКА ЛИПКИ» расположен на западе Московской области, в Одинцовском районе, в живописных окрестностях Звенигорода с экологически чистой природой, называемой «Русской Швейцарией». Отель представляет собой единый архитектурный …
+							p 2 Загородный отель «АТЕЛИКА ЛИПКИ» расположен на западе Московской области, в Одинцовском районе, в живописных окрестностях Звенигорода с экологически чистой природой, называемой «Русской Швейцарией». Отель представляет собой единый архитектурный …
 						.hotel-price-info
 							.hotel-price 
 								span от 1700 
