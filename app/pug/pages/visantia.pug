@@ -1,26 +1,26 @@
 extends ../layout/layout
-
+include ../common/mixins
 block title
 	| Главная страница
 
 
 block slider	
 block photo_desk
-	.main-hotel-img
-		p test
-	.desk-wrap
-		img(src="../static/img/general/fon_lipki_test.jpg" alt="")
+	.base-wrap
+		.main-hotel-img
+		.banner
+			.inner
+				+hname('Отель','Византия','Анапа')
+
 
 
 block second_menu
-	include ../common/second_menu
-
+	.base-wrap
+		//include ../common/second_menu
+		+smenu('class_visantia','javascript:void(0);','javascript:void(0);','javascript:void(0);','javascript:void(0);','javascript:void(0);','javascript:void(0);','javascript:void(0);') 
 
 block content
-	a(href="../static/img/general/lipki.png" data-fancybox-group="gallery" alt=""  title="Lorem ipsum dolor sit amet").fancybox
-		img(src="../static/img/general/lipki.png")
-	a(href="../static/img/general/lipki.png" data-fancybox-group="gallery" alt=""  title="Lorem ipsum dolor sit amet").fancybox
-		img(src="../static/img/general/lipki.png")
-	a(href="../static/img/general/lipki.png" data-fancybox-group="gallery" alt=""  title="Lorem ipsum dolor sit amet").fancybox
-		img(src="../static/img/general/lipki.png")
+	div#loadcontent
+
+	
 	

@@ -1,5 +1,30 @@
+mixin smenu(nameclass,ref1,ref2,ref3,ref4,ref5,ref6,ref7)
+	nav.second-nav
+		ul(class=nameclass).smenu
+			li.about
+				a.active( href=ref1) Об отеле			
+			li.rooms
+				a(href=ref2) Номера
+			li.price
+				a(href=ref3) Цены
+			li.promoution
+				a(href=ref4) Акции
+			li.gallery
+				a(href=ref5) Фото
+			li.response
+				a(href=ref6) Отзывы
+			li.contacts
+				a(href=ref7) Контакты
+		
 
 
+
+
+
+mixin hname(text_desc,name_hotel,text_place)
+	p= text_desc
+	h2= name_hotel
+	p= text_place
 mixin mnews(urlpict,date,text)
 	.item-news
 		.img

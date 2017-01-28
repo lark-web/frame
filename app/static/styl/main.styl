@@ -61,12 +61,18 @@ textarea
   background-color top_heading_bg_color
   height 90px
   
-.base_wrapp
-  //background-color top_heading_bg_color
+.base-wrap
   padding 0px
   width 100%
-  max-width 1250px
+  max-width mainWidth
   margin 0 auto
+  position relative
+.main-slider
+  //background-color top_heading_bg_color
+  //padding 0px
+  //width 100%
+  //max-width mainWidth
+  //margin 0 auto
   
 
 body
@@ -74,12 +80,12 @@ body
   background-color #f0f0f0
   //background  rgba(255,5,255,0.1) url('../img/general/7.png') top center
 
-.h1_style
+.h2_style
   text-align center
   h2 
     color #000
     font-size 35px
-    font-family our_hotels_head_font
+    font-family headFont
     font-weight 500
     text-transform uppercase
     position relative
@@ -350,9 +356,7 @@ body
 @import 'common/_header.styl'
 // Стили шапки - конец
 
-// Стили главной страницы
-@import 'page/_index.styl'
-// Стили главной страницы - конец
+
 
 // Стили плагинов
 @import 'common/_plugins.styl'
@@ -362,6 +366,15 @@ body
 @import 'common/_footer.styl'
 // Стили футера - конец
 
+// Стили контакты
+@import 'common/_contacts.styl'
+// Стили контакты - конец
+
+
+
+// Стили главной страницы
+@import 'page/_index.styl'
+// Стили главной страницы - конец
 // Стили  страница отеля Византия
 @import 'page/_visantia.styl'
 

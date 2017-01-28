@@ -1,0 +1,29 @@
+extends ../layout/layout
+include ../common/mixins
+block title
+	| Главная страница
+
+
+block slider	
+block photo_desk
+	.base-wrap
+		.main-hotel-img
+		.banner
+			.inner
+				+hname('Отель','Византия','Анапа')
+
+
+
+block second_menu
+	.base-wrap
+		include ../common/second_menu
+
+
+block content
+	a(href="../static/img/general/lipki.png" data-fancybox-group="gallery" alt=""  title="Lorem ipsum dolor sit amet").fancybox
+		img(src="../static/img/general/lipki.png")
+	a(href="../static/img/general/lipki.png" data-fancybox-group="gallery" alt=""  title="Lorem ipsum dolor sit amet").fancybox
+		img(src="../static/img/general/lipki.png")
+	a(href="../static/img/general/lipki.png" data-fancybox-group="gallery" alt=""  title="Lorem ipsum dolor sit amet").fancybox
+		img(src="../static/img/general/lipki.png")
+	

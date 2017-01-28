@@ -4,6 +4,19 @@ $(document).ready(function(){
   });
 });
 
+$(document).ready(function(){
+    $('ul.class_visantia li').click(function(){
+        var linkname = $(this).attr('class');
+        //alert(linkname);
+        var link = 'block_visantia_' + linkname +'.html';
+        alert(link);
+        $('#loadcontent').load(link);
+        //console.log(this);
+        $test = $('ul.class_visantia li').children('a').removeClass('active');
+        //console.log($test);
+        $(this).children('a').addClass('active');
+    });
+});
 
 
 $(document).ready(function(){

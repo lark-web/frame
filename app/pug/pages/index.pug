@@ -24,14 +24,12 @@ block second_menu
 
 
 block content
-	.base_wrapp
+	.base-wrap
 		-  var x = 'тест переменных';
 		p #{x}
 		+mtest('просто = ',6)
-		section.promotion.h1_style
-			h2 Акции
-			 
-			
+		section.promotion.h2_style
+			h2 Акции	
 			div.j-wrapper
 				.jcarousel
 					ul
@@ -65,7 +63,7 @@ block content
 				a(href="javascript:void(0);").jcarousel-control-next 	
 			
 			
-		section.news.h1_style
+		section.news.h2_style
 			h2 Новости
 			.block-item-news
 				
@@ -79,7 +77,7 @@ block content
 				.all-news
 					a(href="javascript:void(0);") все новости
 
-		section.our-hotels.h1_style
+		section.our-hotels.h2_style
 			h2 Наши отели
 			.block-item-hotels
 				-  var text_hotel = 'LARK Загородный отель «АТЕЛИКА ЛИПКИ» расположен на западе Московской области, в Одинцовском районе, в живописных окрестностях Звенигорода с экологически чистой природой, называемой «Русской Швейцарией». Отель представляет собой единый архитектурный …';
