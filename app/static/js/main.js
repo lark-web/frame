@@ -3,25 +3,36 @@ $(document).ready(function(){
     'auto' : 'true'
   });
 });
-
+// загрузка странийц для Византии
 $(document).ready(function(){
+    $('#loadcontent').load('block_visantia_about.html');
     $('ul.class_visantia li').click(function(){
         var linkname = $(this).attr('class');
         //alert(linkname);
         var link = 'block_visantia_' + linkname +'.html';
-        alert(link);
+        //alert(link);
         $('#loadcontent').load(link);
         //console.log(this);
         $test = $('ul.class_visantia li').children('a').removeClass('active');
         //console.log($test);
         $(this).children('a').addClass('active');
     });
+    // все отзывы
+    $('.show-all a').click(function(){
+        alert('show all');
+    });
+
 });
+
+
+
+
 
 
 $(document).ready(function(){
     $('.jcarousel').jcarousel({
         // Конфигурация инициализации
+        //center : true
     });
 
     $('.jcarousel-prev').jcarouselControl({ target: '-=1' });
