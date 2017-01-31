@@ -1,15 +1,100 @@
+
+$(function(){
+    $('#form').validate({
+        rules:{
+            name:{
+                required:true,
+                minlength:2
+            }
+        },
+        messages:{
+            name:{
+                reqired:"поле 'имя' обязательно к заполнению",
+                minlength:"Введите не менее 2-ух символов"
+            },
+            email:{
+                required:"поле обязательно для заполнения",
+                email:"необходим формат адреса"
+            },
+            subject:"нужна тема"
+        }
+    });
+});
+
+
+$(window).load(function() {
+  // The slider being synced must be initialized first
+  $('#carousel').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 100,
+    itemMargin: 5,
+    asNavFor: '#slider'
+  });
+ 
+  $('#slider').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    sync: "#carousel"
+  });
+});
+
+
+
+
+
+function ajax() { //Ajax отправка формы
+    var msg = $("#form").serialize();
+    console.log(msg);
+    $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: msg,
+        success: function(data) {
+            $("#results").html(data);
+            console.log('отправлено успешно');
+        },
+        error:  function(xhr, str){
+            alert("Возникла ошибка!");
+        }
+    });
+}
+
+
+
+
+
 $(document).ready(function(){
   $('.main-slider').bxSlider({
     'auto' : 'true'
   });
 });
-// загрузка странийц для Византии
+// загрузка страниц для Византии
 $(document).ready(function(){
-    $('#loadcontent').load('block_visantia_about.html');
-    $('ul.class_visantia li').click(function(){
+    //$('#loadcontent').load('block_visantia_about.html');
+    $('.map-wrap').hide();
+    $('.form-back-window').hide();
+    $('ul.smenu li').click(function(){
         var linkname = $(this).attr('class');
         //alert(linkname);
-        var link = 'block_visantia_' + linkname +'.html';
+        var idname = $('ul.smenu').attr('id');
+        //alert(idname);
+        if (linkname == 'contacts'){
+            $('.map-wrap').show();
+        }else{
+            $('.map-wrap').hide();
+        }
+        if (linkname == 'response'){
+            $('.form-back-window').show();
+        }else{
+            $('.form-back-window').hide();
+        }
+
+        var link = 'block_'+ idname +'_'+ linkname +'.html';
         //alert(link);
         $('#loadcontent').load(link);
         //console.log(this);
@@ -18,8 +103,18 @@ $(document).ready(function(){
         $(this).children('a').addClass('active');
     });
     // все отзывы
-    $('.show-all a').click(function(){
+    $('div.test a').click(function(){
         alert('show all');
+        console.log('попал');
+    });
+    $("body").on("click", ".show-all", function () {
+      var what = $(this);
+      console.log(what);
+      //alert('show all');
+      var link = 'block_visantia_more_response' + '.html';
+      //alert(link);      
+      $('div.show-all').hide();
+      $('div.more-response').load(link);
     });
 
 });
@@ -51,7 +146,7 @@ $(document).ready(function(){
     $(window).scroll(function() {
         if ($(this).scrollTop() >= 90) {
             $('nav.second-nav').addClass("stickytop");
-            console.log('LARK');
+            //console.log('LARK');
         }
         else {
             $('nav.second-nav').removeClass("stickytop");

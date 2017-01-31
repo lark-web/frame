@@ -43,8 +43,9 @@ gulp.task('scripts', function() {
             'app/static/libs/second-menu/jquery.dropdownPlain.js',
             'app/static/libs/carousel/jcarousel.responsive.js',
             'app/static/libs/carousel/jquery.jcarousel.min.js',
-            'app/static/libs/fancybox/jquery.fancybox.pack.js'
-                        
+            'app/static/libs/fancybox/jquery.fancybox.pack.js',
+            'app/static/libs/flexslider/jquery.flexslider.js',
+            'app/static/libs/validate/jquery.validate.js'
         ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())

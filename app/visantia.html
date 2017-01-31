@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="static/css/libs.min.css">
     <link rel="stylesheet" type="text/css" href="static/css/main.css">
     <link rel="stylesheet" type="text/css" href="static/css/media.css">
-    <title>Главная страница
+    <title>Главная страница Отеля Византия
     </title>
   </head>
   <body><!--[if lt IE 8]>
@@ -29,7 +29,7 @@
                 <li><a href="javascript:void(0);">Наши отели</a>
                   <ul class="submenu">
                     <li><a href="visantia.html">Отель "Византия"</a></li>
-                    <li><a href="visantia_hotels.html">Отель "Исидор"</a></li>
+                    <li><a href="isidor.html">Отель "Исидор"</a></li>
                     <li><a href="javascript:void(0);">Отель "Христакис"</a></li>
                     <li><a href="javascript:void(0);">Отель "Южная ночь"</a></li>
                     <li><a href="javascript:void(0);">Отель "Родничок-Приморский"</a></li>
@@ -63,7 +63,7 @@
     <div class="base-wrap">
       <!--include ../common/second_menu-->
       <nav class="second-nav">
-        <ul class="class_visantia smenu">
+        <ul class="smenu" id="visantia">
           <li class="about"><a class="active" href="javascript:void(0);">Об отеле			</a></li>
           <li class="rooms"><a href="javascript:void(0);">Номера</a></li>
           <li class="price"><a href="javascript:void(0);">Цены</a></li>
@@ -74,7 +74,41 @@
         </ul>
       </nav>
     </div>
+    <!-- динамическая подгрузка контента -->
     <div id="loadcontent"></div>
+    <!-- далее компоненты которые не работают в динамической подгрузкой-->
+    <div class="base-wrap">
+      <!-- yandex map-->
+      <div class="map-wrap"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=sBKjkI7GqViju1QXTrcpJpEbAY9CMXOB&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script></div>
+      <div class="form-back-window">
+        <!-- форма обратной связи-->
+        <h2 class="text">Оставить отзыв </h2>
+        <div class="form-wrap">
+          <form method="POST" action="javascript:void(0);" onsubmit="ajax()" id="form">
+            <p>Ваше имя</p>
+            <div class="input">
+              <input class="name" type="text" name="name" value="" placeholder="Ваше имя" required pattern="Ваше имя">
+            </div>
+            <p>Ваш email</p>
+            <div class="input">
+              <input class="email" type="text" name="email" value="" placeholder="Ваш email">
+            </div>
+            <p>Тема</p>
+            <div class="input"> 
+              <input class="subject" type="text" name="subject" value="" placeholder="Тема">
+            </div>
+            <p>Сообщение</p>
+            <div class="input">
+              <textarea class="message" name="message" value=""></textarea>
+            </div>
+            <p>
+              <input class="send" type="submit" name="send" value="send">
+            </p>
+          </form>
+          <div id="results">вывод</div>
+        </div>
+      </div>
+    </div>
     <div class="footer_wrap">
       <div id="page-wrap-footer">
         <ul>
@@ -89,20 +123,20 @@
       <div class="soc_seti"><a class="social_1" title="В контакте" href="javascript:void(0);"><img src="../static/img/general/vkontakte-logo.png"></a><a class="social_2" title="В контакте" href="javascript:void(0);"><img src="../static/img/general/facebook-logo.png"></a><a class="social_3" title="В контакте" href="javascript:void(0);"><img src="../static/img/general/instagram-logo.png"></a></div>
       <p class="phone-company_hotels"></p>
       <!--p: -->
-      <!--	a( href="javascript:void(0);" title="Отель Византия" ) Отель Византия-->
-      <div class="nest_line"><a href="javascript:void(0);" title="Отель Византия">Отель Византия</a>
+      <!--	a( href="javascript:void(0);" title="Отель Византия" ) Отель "Византия"-->
+      <div class="nest_line"><a href="javascript:void(0);" title="Отель Византия">Отель "Исидор"</a>
         <p>,  Подмосковье (499) 444-44-44</p>
       </div>
-      <div class="nest_line"><a href="javascript:void(0);" title="Отель Византия">Отель Византия</a>
+      <div class="nest_line"><a href="javascript:void(0);" title="Отель Византия">Отель "Христакис"</a>
         <p>,  Подмосковье (499) 444-44-44</p>
       </div>
-      <div class="nest_line"><a href="javascript:void(0);" title="Отель Византия">Отель Византия</a>
+      <div class="nest_line"><a href="javascript:void(0);" title="Отель Византия">Отель "Южная ночь"</a>
         <p>,  Подмосковье (499) 444-44-44</p>
       </div>
-      <div class="nest_line"><a href="javascript:void(0);" title="Отель Византия">Отель Византия</a>
+      <div class="nest_line"><a href="javascript:void(0);" title="Отель Византия">Отель "Родничок-Приморский"</a>
         <p>,  Подмосковье (499) 444-44-44</p>
       </div>
-      <div class="nest_line"><a href="javascript:void(0);" title="Отель Византия">Отель Византия</a>
+      <div class="nest_line"><a href="javascript:void(0);" title="Отель Византия">Отель "Базовый"</a>
         <p>,  Подмосковье (499) 444-44-44</p>
       </div>
       <div class="nest_line" id="sought">

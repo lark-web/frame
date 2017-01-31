@@ -14,32 +14,26 @@
     </div>
     <div class="show-all"><a href="javascript:void(0);">Все отзывы lark</a></a></div>
   </div>
-  <div class="form-back-window">
-    <div class="form-wrap">
-      <form metod="post" action="javascript:void(0);" onsubmit="ajax()" id="form">
-        <p>Ваше имя</p>
-        <p>
-          <input class="name" type="text" name="name" value=""/>
-        </p>
-        <p>Ваш email</p>
-        <p>
-          <input class="email" type="text" name="email" value=""/>
-        </p>
-        <p>Тема</p>
-        <p>
-          <input class="subject" type="text" name="subject" value=""/>
-        </p>
-        <p>Сообщение</p>
-        <p>
-          <p>
-            <textarea class="message" name="message" value=""></textarea>
-          </p>
-        </p>
-        <p>
-          <input class="send" type="submit" name="send" value="send"/>
-        </p>
-      </form>
-      <div id="result"></div>
-    </div>
-  </div>
+  <div class="more-response"></div>
 </div>
+<!--
+div.form-back-window
+	div.form-wrap
+		form(method="POST" action="javascript:void(0);" onsubmit="ajax()")#form
+			p Ваше имя
+			p
+				input(type = "text" name="name" value="" placeholder ="Ваше имя" required).name
+			p Ваш email
+			p
+				input(type = "text" name="email" value="").email
+			p Тема
+			p
+				input(type = "text" name="subject" value="").subject
+			p Сообщение
+			p
+				p
+					textarea(name="message" value="").message
+			p
+				input(type="submit" name="send" value="send").send
+		div#results вывод
+-->
