@@ -67,13 +67,31 @@ function ajax() { //Ajax отправка формы
 
 
 
-
 $(document).ready(function(){
   $('.main-slider').bxSlider({
     'auto' : 'true'
   });
 });
+
+$(window).load(function () {
+    
+ var url = location.pathname;
+ //alert(url);
+        $('ul.smenu li').each(function() {
+            var href = $(this).find('a').attr('href');
+            //alert(href);
+            if(url == href) {
+                //alert(href);
+                $(this).find('a').addClass("active");
+            }
+        });
+    
+  });
+
+
+
 // загрузка страниц для Византии
+
 $(document).ready(function(){
     var hotel = $('ul.smenu').attr('id');
     link_default = 'block_'+ hotel +'_about' +'.html';
@@ -104,12 +122,16 @@ $(document).ready(function(){
         }
         var link = 'block_'+ idname +'_'+ linkname +'.html';
         //alert(link);
-        $('#loadcontent').load(link);
+        //$('#loadcontent').load(link);
         //console.log(this);
-        $test = $('ul.smenu li').children('a').removeClass('active');
+        //$test = $('ul.smenu li').children('a').removeClass('active');
         //console.log($test);
-        $(this).children('a').addClass('active');
+        //$(this).children('a').addClass('active');
     });
+
+
+
+
     // все отзывы
     $('div.test a').click(function(){
         alert('show all');

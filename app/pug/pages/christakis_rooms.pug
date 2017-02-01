@@ -1,0 +1,23 @@
+extends ../layout/layout
+include ../common/mixins
+block title
+	| Cтраница "Номера "  Отеля Христиакис
+
+
+block slider	
+block photo_desk
+	.base-wrap
+		.main-hotel-img
+		.banner
+			.inner
+				+hname('Отель','Христиакис','Анапа')
+
+
+
+block second_menu
+	.base-wrap
+		//include ../common/second_menu
+		+smenu('christakis','/christakis_about.html','/christakis_rooms.html','/christakis_price.html','/christakis_promoution.html','/christakis_gallery.html','/christakis_response.html','/christakis_contacts.html') 
+block content
+	.base-wrap
+		h2.text-name-page Номера
