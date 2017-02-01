@@ -22,3 +22,35 @@
     font-style: normal;
 
 }
+
+@font-face {
+    font-family: 'caviar_dreamsregular';
+    src: url('caviar-dreams.woff2') format('woff2'),
+         url('caviar-dreams.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'webfontregular';
+    src: url('decor3di.woff2') format('woff2'),
+         url('decor3di.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'helveticaneuecyrthin';
+    src: url('helveticaneuecyr-thin.woff2') format('woff2'),
+         url('helveticaneuecyr-thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Atelicathin';
+    src: url('HelveticaThin_atelica.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

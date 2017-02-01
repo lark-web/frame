@@ -40,14 +40,47 @@ block content
 						input(type = "text" name="name" value="" placeholder ="Ваше имя" required pattern = "Ваше имя").name
 					p Ваш email
 					div.input
-						input(type = "text" name="email" value="" placeholder ="Ваш email").email
+						input(type = "text" name="email" value="" placeholder ="Ваш email" required).email
 					p Тема
 					div.input 
-						input(type = "text" name="subject" value="" placeholder ="Тема").subject
+						input(type = "text" name="subject" value="" placeholder ="Тема" required).subject
 					p Сообщение
 					div.input
-						textarea(name="message" value="" ).message
+						textarea(name="message" value="" required).message
 					p
-						input(type="submit" name="send" value="send").send
-				div#results вывод
+						input(type="submit" name="send" value="Отправить").send
+	.base-wrap
+		div.room-desc
+			div.gallery
+				div#slider.flexslider
+					ul.slides
+						li
+							img(src="../static/img/rooms/kitchen_adventurer_lemon.jpg")
+						li
+							img(src="../static/img/rooms/kitchen_adventurer_donut.jpg")
+						li
+							img(src="../static/img/rooms/kitchen_adventurer_caramel.jpg")
+						li
+							img(src="../static/img/rooms/kitchen_adventurer_cheesecake_brownie.jpg")
+				div#carousel.flexslider
+					ul.slides
+						li
+							img(src="../static/img/rooms/kitchen_adventurer_lemon.jpg")
+						li
+							img(src="../static/img/rooms/kitchen_adventurer_donut.jpg")
+						li
+							img(src="../static/img/rooms/kitchen_adventurer_caramel.jpg")
+						li
+							img(src="../static/img/rooms/kitchen_adventurer_cheesecake_brownie.jpg")
+			div.desc-text
+				div.header-text
+					p 2-х местный «Стандарт» (раздельные)
+				div.text-item
+					ul
+						li Количество номеров: 4
+						li Кол-во доп. мест: 1
+						li Спальным местом основным является кровать размером 0,9*1,8м, дополнительным кресло-кровать.
+						li Холодильник, сплит - система, ТВ, санузел/душевая, Wi-fi, спальная мебель, балкон.
+				a(href="javascript:void(0);").bron Забронировать 
+
 
