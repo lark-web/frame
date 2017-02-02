@@ -32,8 +32,8 @@
               <ul class="dropdown">
                 <li><a href="javascript:void(0);">Наши отели</a>
                   <ul class="submenu">
-                    <li><a href="visantia.html">Отель "Византия"</a></li>
-                    <li><a href="isidor.html">Отель "Исидор"</a></li>
+                    <li><a href="visantia_about.html">Отель "Византия"</a></li>
+                    <li><a href="isidor_about.html">Отель "Исидор"</a></li>
                     <li><a href="christakis_about.html">Отель "Христакис"</a></li>
                     <li><a href="javascript:void(0);">Отель "Южная ночь"</a></li>
                     <li><a href="javascript:void(0);">Отель "Родничок-Приморский"</a></li>
@@ -80,6 +80,47 @@
     </div>
     <div class="base-wrap">
       <h2 class="text-name-page">Отзывы</h2>
+      <div class="resp-window">
+        <div class="resp">
+          <p class="name">Галина, Самара</p>
+          <p class="date">2014-07-20</p>
+          <p class="text">Отдыхали здесь в августе 2013г. Все очень понравилось. Номер бронировали заранее . Администратор Наташа очень радушно нас встретила, хоть мы и приехали раньше расчетного часа заезда, номер уже был подготовлен и нас сразу заселили. Младший ребенок после того ,как мы приходили с моря, в номере практически не сидел, то в бассейне резвился , то в холле мультики смотрел и как бы громко они себя там не вели ни разу не слышала, чтобы на них кто за кричал или велел идти в номер. Мы могли в номере отдохнуть и не беспокоиться, что с ними что - то случиться. Спасибо всем сотрудникам за чистоту и порядок.</p>
+        </div>
+        <div class="resp">
+          <p class="name">Галина, Самара</p>
+          <p class="date">2014-07-20</p>
+          <p class="text">Отдыхали здесь в августе 2013г. Все очень понравилось. Номер бронировали заранее . Администратор Наташа очень радушно нас встретила, хоть мы и приехали раньше расчетного часа заезда, номер уже был подготовлен и нас сразу заселили. Младший ребенок после того ,как мы приходили с моря, в номере практически не сидел, то в бассейне резвился , то в холле мультики смотрел и как бы громко они себя там не вели ни разу не слышала, чтобы на них кто за кричал или велел идти в номер. Мы могли в номере отдохнуть и не беспокоиться, что с ними что - то случиться. Спасибо всем сотрудникам за чистоту и порядок.</p>
+        </div>
+        <div class="show-all"><a href="javascript:void(0);">Все отзывы</a></div>
+        <div class="more-response"></div>
+      </div>
+      <div class="form-back-window">
+        <!-- форма обратной связи-->
+        <h2 class="text">Оставить отзыв </h2>
+        <div class="form-wrap">
+          <form method="POST" action="javascript:void(0);" onsubmit="ajax()" id="form">
+            <p>Ваше имя</p>
+            <div class="input">
+              <input class="name" type="text" name="name" value="" placeholder="Ваше имя" required pattern="Ваше имя">
+            </div>
+            <p>Ваш email</p>
+            <div class="input">
+              <input class="email" type="text" name="email" value="" placeholder="Ваш email" required>
+            </div>
+            <p>Тема</p>
+            <div class="input"> 
+              <input class="subject" type="text" name="subject" value="" placeholder="Тема" required>
+            </div>
+            <p>Сообщение</p>
+            <div class="input">
+              <textarea class="message" name="message" value="" required></textarea>
+            </div>
+            <p>
+              <input class="sbutton send" type="submit" name="send" value="Отправить">
+            </p>
+          </form>
+        </div>
+      </div>
     </div>
     <div class="footer_wrap">
       <div id="page-wrap-footer">

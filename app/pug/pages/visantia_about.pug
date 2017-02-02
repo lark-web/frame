@@ -1,0 +1,24 @@
+extends ../layout/layout
+include ../common/mixins
+block title
+	| Главная страница Отеля Византия
+
+
+block slider	
+block photo_desk
+	.base-wrap
+		.main-hotel-img
+		.banner
+			.inner
+				+hname('Отель','Византия','Анапа')
+
+
+
+block second_menu
+	.base-wrap
+		//include ../common/second_menu
+		+smenu('visantia','/visantia_about.html','javascript:void(0);','javascript:void(0);','javascript:void(0);','javascript:void(0);','javascript:void(0);','javascript:void(0);') 
+
+block content
+	.base-wrap
+		h2.text-name-page Об отеле

@@ -1,0 +1,24 @@
+extends ../layout/layout
+include ../common/mixins
+block title
+	| Страница  "Номера"Отеля Исидор
+
+
+block slider	
+block photo_desk
+	.base-wrap
+		.main-hotel-img
+		.banner
+			.inner
+				+hname('Отель','Исидор','Анапа')
+
+
+
+block second_menu
+	.base-wrap
+		//include ../common/second_menu
+		+smenu('isidor','/isidor_about.html','/isidor_rooms.html','/isidor_price.html','/isidor_promotion.html','/isidor_gallery.html','/isidor_response.html','/isidor_contacts.html') 
+
+block content
+	.base-wrap
+		h2.text-name-page Номера

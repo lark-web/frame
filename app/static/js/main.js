@@ -98,7 +98,7 @@ $(document).ready(function(){
     //alert(link_default);
     $('#loadcontent').load('block_visantia_about.html');
     $('.map-wrap').hide();
-    $('.form-back-window').hide();
+    //$('.form-back-window').hide();
     //$('.room-desc').hide();
     $('ul.smenu li').click(function(){
         var linkname = $(this).attr('class');
@@ -110,11 +110,11 @@ $(document).ready(function(){
         }else{
             $('.map-wrap').hide();
         }
-        if (linkname == 'response'){
-            $('.form-back-window').show();
-        }else{
-            $('.form-back-window').hide();
-        }
+        //if (linkname == 'response'){
+        //    $('.form-back-window').show();
+        //}else{
+        //    $('.form-back-window').hide();
+        //}
         if (linkname == 'rooms'){
             $('.room-desc').show();
         }else{

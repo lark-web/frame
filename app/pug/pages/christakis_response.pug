@@ -20,5 +20,38 @@ block second_menu
 		+smenu('christakis','/christakis_about.html','/christakis_rooms.html','/christakis_price.html','/christakis_promoution.html','/christakis_gallery.html','/christakis_response.html','/christakis_contacts.html') 
 
 block content
+
 	.base-wrap
 		h2.text-name-page Отзывы
+		div.resp-window
+			div.resp
+				p.name Галина, Самара
+				p.date 2014-07-20
+				p.text Отдыхали здесь в августе 2013г. Все очень понравилось. Номер бронировали заранее . Администратор Наташа очень радушно нас встретила, хоть мы и приехали раньше расчетного часа заезда, номер уже был подготовлен и нас сразу заселили. Младший ребенок после того ,как мы приходили с моря, в номере практически не сидел, то в бассейне резвился , то в холле мультики смотрел и как бы громко они себя там не вели ни разу не слышала, чтобы на них кто за кричал или велел идти в номер. Мы могли в номере отдохнуть и не беспокоиться, что с ними что - то случиться. Спасибо всем сотрудникам за чистоту и порядок.
+			div.resp
+				p.name Галина, Самара
+				p.date 2014-07-20
+				p.text Отдыхали здесь в августе 2013г. Все очень понравилось. Номер бронировали заранее . Администратор Наташа очень радушно нас встретила, хоть мы и приехали раньше расчетного часа заезда, номер уже был подготовлен и нас сразу заселили. Младший ребенок после того ,как мы приходили с моря, в номере практически не сидел, то в бассейне резвился , то в холле мультики смотрел и как бы громко они себя там не вели ни разу не слышала, чтобы на них кто за кричал или велел идти в номер. Мы могли в номере отдохнуть и не беспокоиться, что с ними что - то случиться. Спасибо всем сотрудникам за чистоту и порядок.
+			div.show-all
+				a(href="javascript:void(0);") Все отзывы
+			div.more-response
+		div.form-back-window
+			// форма обратной связи
+			h2.text Оставить отзыв 
+			div.form-wrap
+				form(method="POST" action="javascript:void(0);" onsubmit="ajax()")#form
+					p Ваше имя
+					div.input
+						input(type = "text" name="name" value="" placeholder ="Ваше имя" required pattern = "Ваше имя").name
+					p Ваш email
+					div.input
+						input(type = "text" name="email" value="" placeholder ="Ваш email" required).email
+					p Тема
+					div.input 
+						input(type = "text" name="subject" value="" placeholder ="Тема" required).subject
+					p Сообщение
+					div.input
+						textarea(name="message" value="" required).message
+					p
+						input.sbutton(type="submit" name="send" value="Отправить").send
+
