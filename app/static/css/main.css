@@ -1,6 +1,5 @@
 .top_header {
   position: relative;
-  height: 100px;
   padding: 10px 10px;
 }
 .header-logo {
@@ -77,11 +76,12 @@ ul.submenu li a:hover {
 .stickytop {
   position: fixed;
   top: 0;
+  z-index: 10;
 }
 .second-nav {
   margin-left: 150px;
-  width: 100%;
-  margin: 0 auto;
+  width: 1250px;
+  margin: 0 auto 20px auto;
   text-align: center;
   background-color: #dcdcdc;
 }
@@ -245,6 +245,12 @@ div.resp p.text {
   font-size: 14px;
   color: #888;
 }
+div.resp p.date {
+  font-size: 12px;
+}
+div.resp p.theme {
+  font-weigth: 800;
+}
 div.form-back-window {
   display: inline-block;
   width: 30%;
@@ -380,6 +386,9 @@ div.text-name-block-gallery {
 }
 div.text-name-block-gallery h3 {
   font-size: 18px;
+}
+div.wrap-smenu {
+  position: static;
 }
 .main-hotel-img {
   background: rgba(0,0,0,0) url("../img/general/fon_lipki.jpg") center center no-repeat;

@@ -1,35 +1,47 @@
 extends ../layout/layout
 include ../common/mixins
 block title
-	| страница Контакты
+	| Cтраница "Об отеле" Отеля Византия
 
 
 block slider	
-
 block photo_desk
-	.contacts-img
+	.base-wrap
+		.main-hotel-img
+		.banner
+			.inner
+				+hname('Отель','Византия','Анапа')
+
 
 
 block second_menu
-	include ../common/second_menu
-	
+	.base-wrap
+		//include ../common/second_menu
+		+smenu('visantia','/visantia_about.html','/visantia_rooms.html','visantia_price.html','visantia_promoution.html','visantia_gallery.html','visantia_response.html','visantia_contacts.html')
+ 
 
 block content
 	.base-wrap
+		h2.text-name-page Контакты
 		.contacts-wrap
 			.contacts-tel
-				span Тел.
-				p +7 (555) 555 55 55
+				span Тел.: 
+				p +7 (...) ... .. ..
 			.contacts-email
-				span email:
-				p  google@google.ru
+				span E-mail: 
+				p  ...@....ru
 			.contacts-address
-				span Наш адрес:
-				p Россия, Краснодарский край, г-к Анапа, поселок Витязево, Александрийский проезд, д.15 
+				span Наш адрес: 
+				p Россия, Краснодарский край, г-к Анапа, поселок Витязево, Александрийский проезд, д.15. 
 			.contacts-transfer
-				span Как добраться от аэропорта
-				P Такси
+				span Трансфер: 
+				P ...
 			.contacts-how-to-get
-				span Как добраться от аэропорта
-				P Автобусом
+				span Проезд: 
+				P ..
 
+
+
+			.map-wrap
+				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=sBKjkI7GqViju1QXTrcpJpEbAY9CMXOB&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+		 		

@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="static/css/libs.min.css">
     <link rel="stylesheet" type="text/css" href="static/css/main.css">
     <link rel="stylesheet" type="text/css" href="static/css/media.css">
-    <title>Главная страница
+    <title>Cтраница "Фотогалерея" Отеля Византия
     </title>
   </head>
   <body><!--[if lt IE 8]>
@@ -19,6 +19,7 @@
       Please <a href="http://browsehappy.com/">upgrade your browser</a>
       to improve your experience.
     </p><![endif]-->
+    <div class="virtual-block"></div>
     <div class="wrap_strip">
       <div class="base-wrap">
         <header>
@@ -65,18 +66,24 @@
     <!-- coment-->
     <!--block slider-->
     <div class="base-wrap">
-      <nav class="second-nav">
-        <ul>
-          <li><a href="javascript:void(0);">Об отеле</a></li>
-          <li><a href="javascript:void(0);">Номера</a></li>
-          <li><a href="javascript:void(0);">Цены</a></li>
-          <li><a href="javascript:void(0);">Акции</a></li>
-          <li><a href="visantia_gallery.html">Фото</a></li>
-          <li><a href="javascript:void(0);">Отзывы</a></li>
-          <li><a href="visantia_contacts.html">Контакты</a></li>
-        </ul>
-      </nav>
-    </div><a class="fancybox" href="../static/img/general/lipki.png" data-fancybox-group="gallery" alt="" title="Lorem ipsum dolor sit amet"><img src="../static/img/general/lipki.png"></a><a class="fancybox" href="../static/img/general/lipki.png" data-fancybox-group="gallery" alt="" title="Lorem ipsum dolor sit amet"><img src="../static/img/general/lipki.png"></a><a class="fancybox" href="../static/img/general/lipki.png" data-fancybox-group="gallery" alt="" title="Lorem ipsum dolor sit amet"><img src="../static/img/general/lipki.png"></a>
+      <!--include ../common/second_menu-->
+      <div class="wrap-smenu">
+        <nav class="second-nav">
+          <ul class="smenu" id="visantia">
+            <li class="about"><a href="/visantia_about.html">Об отеле			</a></li>
+            <li class="rooms"><a href="/visantia_rooms.html">Номера</a></li>
+            <li class="price"><a href="visantia_price.html">Цены</a></li>
+            <li class="promoution"><a href="visantia_promoution.html">Акции</a></li>
+            <li class="gallery"><a href="visantia_gallery.html">Фото</a></li>
+            <li class="response"><a href="visantia_response.html">Отзывы</a></li>
+            <li class="contacts"><a href="visantia_contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="base-wrap">
+      <h2 class="text-name-page">Фотогалерея</h2><a class="fancybox" href="../static/img/general/lipki.png" data-fancybox-group="gallery" alt="" title="Lorem ipsum dolor sit amet"><img src="../static/img/general/lipki.png"></a><a class="fancybox" href="../static/img/general/lipki.png" data-fancybox-group="gallery" alt="" title="Lorem ipsum dolor sit amet"><img src="../static/img/general/lipki.png"></a><a class="fancybox" href="../static/img/general/lipki.png" data-fancybox-group="gallery" alt="" title="Lorem ipsum dolor sit amet"><img src="../static/img/general/lipki.png"></a>
+    </div>
     <div class="footer_wrap">
       <div id="page-wrap-footer">
         <ul>

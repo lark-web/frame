@@ -17,70 +17,10 @@ block photo_desk
 block second_menu
 	.base-wrap
 		//include ../common/second_menu
-		+smenu('visantia','/visantia_about.html','javascript:void(0);','javascript:void(0);','javascript:void(0);','javascript:void(0);','javascript:void(0);','javascript:void(0);') 
+		+smenu('visantia','/visantia_about.html','/visantia_rooms.htm','visantia_price.htm','visantia_promoution.htm','visantia_gallery.htm','visantia_response.htm','visantia_contacts.htm') 
 
 block content
 	// динамическая подгрузка контента 
 	div#loadcontent
 	// далее компоненты которые не работают в динамической подгрузкой
 	 
-	.base-wrap
-		// yandex map
-		.map-wrap
-			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=sBKjkI7GqViju1QXTrcpJpEbAY9CMXOB&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
-	 		
-
-		div.form-back-window
-			// форма обратной связи
-			h2.text Оставить отзыв 
-			div.form-wrap
-				form(method="POST" action="javascript:void(0);" onsubmit="ajax()")#form
-					p Ваше имя
-					div.input
-						input(type = "text" name="name" value="" placeholder ="Ваше имя" required pattern = "Ваше имя").name
-					p Ваш email
-					div.input
-						input(type = "text" name="email" value="" placeholder ="Ваш email" required).email
-					p Тема
-					div.input 
-						input(type = "text" name="subject" value="" placeholder ="Тема" required).subject
-					p Сообщение
-					div.input
-						textarea(name="message" value="" required).message
-					p
-						input(type="submit" name="send" value="Отправить").send
-	.base-wrap
-		div.room-desc
-			div.gallery
-				div#slider.flexslider
-					ul.slides
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_lemon.jpg")
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_donut.jpg")
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_caramel.jpg")
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_cheesecake_brownie.jpg")
-				div#carousel.flexslider
-					ul.slides
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_lemon.jpg")
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_donut.jpg")
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_caramel.jpg")
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_cheesecake_brownie.jpg")
-			div.desc-text
-				div.header-text
-					p 2-х местный «Стандарт» (раздельные)
-				div.text-item
-					ul
-						li Количество номеров: 4
-						li Кол-во доп. мест: 1
-						li Спальным местом основным является кровать размером 0,9*1,8м, дополнительным кресло-кровать.
-						li Холодильник, сплит - система, ТВ, санузел/душевая, Wi-fi, спальная мебель, балкон.
-				a(href="javascript:void(0);").bron Забронировать 
-
-

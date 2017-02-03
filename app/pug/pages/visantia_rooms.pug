@@ -1,0 +1,58 @@
+extends ../layout/layout
+include ../common/mixins
+block title
+	| Cтраница "Номера" Отеля Византия
+
+
+block slider	
+block photo_desk
+	.base-wrap
+		.main-hotel-img
+		.banner
+			.inner
+				+hname('Отель','Византия','Анапа')
+
+
+
+block second_menu
+	.base-wrap
+		//include ../common/second_menu
+		+smenu('visantia','/visantia_about.html','/visantia_rooms.html','visantia_price.html','visantia_promoution.html','visantia_gallery.html','visantia_response.html','visantia_contacts.html')
+ 
+
+block content
+	.base-wrap
+		h2.text-name-page Номера
+		div.room-desc
+			div.gallery
+				div#slider.flexslider
+					ul.slides
+						li
+							img(src="../static/img/rooms/kitchen_adventurer_lemon.jpg")
+						li
+							img(src="../static/img/rooms/kitchen_adventurer_donut.jpg")
+						li
+							img(src="../static/img/rooms/kitchen_adventurer_caramel.jpg")
+						li
+							img(src="../static/img/rooms/kitchen_adventurer_cheesecake_brownie.jpg")
+				div#carousel.flexslider
+					ul.slides
+						li
+							img(src="../static/img/rooms/kitchen_adventurer_lemon.jpg")
+						li
+							img(src="../static/img/rooms/kitchen_adventurer_donut.jpg")
+						li
+							img(src="../static/img/rooms/kitchen_adventurer_caramel.jpg")
+						li
+							img(src="../static/img/rooms/kitchen_adventurer_cheesecake_brownie.jpg")
+			div.desc-text
+				div.header-text
+					p 2-х местный «Стандарт» (раздельные)
+				div.text-item
+					ul
+						li Количество номеров: 4
+						li Кол-во доп. мест: 1
+						li Спальным местом основным является кровать размером 0,9*1,8м, дополнительным кресло-кровать.
+						li Холодильник, сплит - система, ТВ, санузел/душевая, Wi-fi, спальная мебель, балкон.
+				a(href="javascript:void(0);").bron Забронировать 
+

@@ -1,7 +1,7 @@
 extends ../layout/layout
 include ../common/mixins
 block title
-	| Главная страница
+	| Cтраница "Фотогалерея" Отеля Византия
 
 
 block slider	
@@ -16,14 +16,16 @@ block photo_desk
 
 block second_menu
 	.base-wrap
-		include ../common/second_menu
-
+		//include ../common/second_menu
+		+smenu('visantia','/visantia_about.html','/visantia_rooms.html','visantia_price.html','visantia_promoution.html','visantia_gallery.html','visantia_response.html','visantia_contacts.html')
+ 
 
 block content
-	a(href="../static/img/general/lipki.png" data-fancybox-group="gallery" alt=""  title="Lorem ipsum dolor sit amet").fancybox
-		img(src="../static/img/general/lipki.png")
-	a(href="../static/img/general/lipki.png" data-fancybox-group="gallery" alt=""  title="Lorem ipsum dolor sit amet").fancybox
-		img(src="../static/img/general/lipki.png")
-	a(href="../static/img/general/lipki.png" data-fancybox-group="gallery" alt=""  title="Lorem ipsum dolor sit amet").fancybox
-		img(src="../static/img/general/lipki.png")
-	
+		.base-wrap
+			h2.text-name-page Фотогалерея
+			a(href="../static/img/general/lipki.png" data-fancybox-group="gallery" alt=""  title="Lorem ipsum dolor sit amet").fancybox
+				img(src="../static/img/general/lipki.png")
+			a(href="../static/img/general/lipki.png" data-fancybox-group="gallery" alt=""  title="Lorem ipsum dolor sit amet").fancybox
+				img(src="../static/img/general/lipki.png")
+			a(href="../static/img/general/lipki.png" data-fancybox-group="gallery" alt=""  title="Lorem ipsum dolor sit amet").fancybox
+				img(src="../static/img/general/lipki.png")
