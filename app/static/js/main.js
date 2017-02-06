@@ -157,7 +157,10 @@ $(document).ready(function() {
              *  Simple image gallery. Uses default settings
              */
 
-            $('.fancybox').fancybox();
+            $('.fancybox').fancybox({
+                'margin' : 5,
+                'padding' : 2
+            });
 
             /*
              *  Different effects
