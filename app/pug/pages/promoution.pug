@@ -1,0 +1,63 @@
+extends ../layout/layout
+
+
+include ../common/mixins
+
+
+block title
+	| Главная страница
+
+
+block slider	
+
+
+block photo_desk
+block second_menu
+	//include ../common/second_menu
+
+
+block content
+	.base-wrap
+		-  var x = 'тест переменных';
+		//p #{x}
+		//+mtest('просто = ',6)
+		section.promotion
+			h2.text-name-page Все Акции
+			.promo-single-wrap
+				.img
+					img(src="../static/img/general/promo-1.jpg")
+				.promo-text-block
+					.promo-text-block-left
+						span.simbol &#9899
+						span Ранее бронирование
+						</br>
+						span.simbol &#9899
+						span Отель "Исидор", Анапа
+					.promo-text-block-right
+						span.simbol &#9899
+						span 01.02-31.03
+						</br>
+						span.simbol &#9899
+						span Скидки 5%
+				.select-prom
+					.b-wrap
+						a#standart(href="javascript:void(0);").bron Забронировать
+			.promo-single-wrap
+				.img
+					img(src="../static/img/general/promo-2.jpg")
+				.promo-text-block
+					.promo-text-block-left
+						span.simbol &#9899
+						span Продли удовольствие
+						</br>
+						span.simbol &#9899
+						span Отель "Исидор", Анапа
+					.promo-text-block-right
+						span.simbol &#9899
+						span 01.02-31.03
+						</br>
+						span.simbol &#9899
+						span Скидки 10%
+				.select-prom
+					.b-wrap
+						a#standart(href="javascript:void(0);").bron Забронировать

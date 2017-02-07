@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="static/css/main.css">
     <link rel="stylesheet" type="text/css" href="static/css/media.css">
     <script type="text/javascript" async="" src="http://pms.frontdesk24.ru/BookingWidgetFront/Scripts/widget.js"></script>
-    <title>Cтраница "Цены" Отеля Византия
+    <title>Главная страница
     </title>
   </head>
   <body><!--[if lt IE 8]>
@@ -53,36 +53,35 @@
         </header>
       </div>
     </div>
-    <div class="base-wrap">
-      <div class="main-hotel-img"></div>
-      <div class="banner">
-        <div class="inner">
-          <p>Отель</p>
-          <h2>Византия</h2>
-          <p>Анапа</p>
-        </div>
-      </div>
-    </div>
     <!-- coment-->
     <!--block slider-->
+    <!--include ../common/second_menu-->
     <div class="base-wrap">
-      <!--include ../common/second_menu-->
-      <div class="wrap-smenu">
-        <nav class="second-nav">
-          <ul class="smenu" id="visantia">
-            <li class="about"><a href="/visantia_about.html">Об отеле			</a></li>
-            <li class="rooms"><a href="/visantia_rooms.html">Номера</a></li>
-            <li class="price"><a href="visantia_price.html">Цены</a></li>
-            <li class="promoution"><a href="visantia_promoution.html">Акции</a></li>
-            <li class="gallery"><a href="visantia_gallery.html">Фото</a></li>
-            <li class="response"><a href="visantia_response.html">Отзывы</a></li>
-            <li class="contacts"><a href="visantia_contacts.html">Контакты</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-    <div class="base-wrap">
-      <h2 class="text-name-page">Цены</h2>
+      <!--p #{x}-->
+      <!--+mtest('просто = ',6)-->
+      <section class="promotion">
+        <h2 class="text-name-page">Все Акции</h2>
+        <div class="promo-single-wrap">
+          <div class="img"><img src="../static/img/general/promo-1.jpg"></div>
+          <div class="promo-text-block">
+            <div class="promo-text-block-left"><span class="simbol">&#9899</span><span>Ранее бронирование</span></br><span class="simbol">&#9899</span><span>Отель "Исидор", Анапа</span></div>
+            <div class="promo-text-block-right"><span class="simbol">&#9899</span><span>01.02-31.03</span></br><span class="simbol">&#9899</span><span>Скидки 5%</span></div>
+          </div>
+          <div class="select-prom">
+            <div class="b-wrap"><a class="bron" id="standart" href="javascript:void(0);">Забронировать</a></div>
+          </div>
+        </div>
+        <div class="promo-single-wrap">
+          <div class="img"><img src="../static/img/general/promo-2.jpg"></div>
+          <div class="promo-text-block">
+            <div class="promo-text-block-left"><span class="simbol">&#9899</span><span>Продли удовольствие</span></br><span class="simbol">&#9899</span><span>Отель "Исидор", Анапа</span></div>
+            <div class="promo-text-block-right"><span class="simbol">&#9899</span><span>01.02-31.03</span></br><span class="simbol">&#9899</span><span>Скидки 10%</span></div>
+          </div>
+          <div class="select-prom">
+            <div class="b-wrap"><a class="bron" id="standart" href="javascript:void(0);">Забронировать</a></div>
+          </div>
+        </div>
+      </section>
     </div>
     <div class="footer_wrap">
       <div id="page-wrap-footer">

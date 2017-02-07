@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="static/css/libs.min.css">
     <link rel="stylesheet" type="text/css" href="static/css/main.css">
     <link rel="stylesheet" type="text/css" href="static/css/media.css">
+    <script type="text/javascript" async="" src="http://pms.frontdesk24.ru/BookingWidgetFront/Scripts/widget.js"></script>
     <title>Главная страница
     </title>
   </head>
@@ -24,11 +25,10 @@
       <div class="base-wrap">
         <header>
           <div class="top_header">
-            <div class="header-logo"><a class="logo_pict" href="index.html"><img src="../static/img/general/logo-3.png"></a></div>
-            <div class="logo-text">
-              <p class="caviar-dream">ВЛЕТО</p></br>
-              <p class="decor3di">УПРАВЛЯЮЩАЯ КОМПАНИЯ</p>
-            </div>
+            <div class="header-logo"><a class="logo_pict" href="index.html"><img src="../static/img/general/logo-3-lark.png"></a></div>
+            <div class="logo-text"><a href="index.html">
+                <p class="caviar-dream">ВЛЕТО</p></br>
+                <p class="decor3di">УПРАВЛЯЮЩАЯ КОМПАНИЯ</p></a></div>
             <div id="page-wrap">
               <ul class="dropdown">
                 <li><a href="javascript:void(0);">Наши отели</a>
@@ -42,24 +42,27 @@
                   </ul>
                 </li>
                 <li><a href="javascript:void(0);">О компании</a></li>
-                <li><a href="all_actions.html">Акции</a></li>
+                <li><a href="promoution.html">Акции</a></li>
                 <li><a href="javascript:void(0);">Контакты</a></li>
               </ul>
             </div>
             <div class="top-social-links"> <span class="tel">+7(495) 222-22-22</span>
-              <div class="wrap-soc"><a class="social_1"><img src="../static/img/general/vkontakte-logo.png"></a><a class="social_2"><img src="../static/img/general/facebook-logo.png"></a><a class="social_3"><img src="../static/img/general/instagram-logo.png"></a></div>
+              <div class="wrap-soc"><a class="social_1"><img src="../static/img/general/soc-seti-1.png"></a><a class="social_2"><img src="../static/img/general/soc-seti-2.png"></a><a class="social_3"><img src="../static/img/general/soc-seti-3-2.png"></a><a class="social_3"><img src="../static/img/general/soc-seti-4.png"></a></div>
             </div>
           </div>
         </header>
       </div>
     </div>
-    <div class="main-slider-wrap">
-      <ul class="main-slider">
-        <li><img src="../static/img/content/slider/dsc_0578-4_sm.jpg" alt=""></li>
-        <li><img src="../static/img/content/slider/dsc_1533-5-4_sm.jpg" alt=""></li>
-        <li><img src="../static/img/content/slider/dsc_7029-4_sm.jpg" alt=""></li>
-      </ul>
+    <div class="commom-slider-wrap">
+      <div class="main-slider-wrap">
+        <ul class="main-slider">
+          <li><img src="../static/img/content/slider/dsc_0578-4_sm.jpg" alt=""></li>
+          <li><img src="../static/img/content/slider/dsc_1533-5-4_sm.jpg" alt=""></li>
+          <li><img src="../static/img/content/slider/dsc_7029-4_sm.jpg" alt=""></li>
+        </ul>
+      </div>
     </div>
+    <div id="search-widget"></div>
     <!-- coment-->
     <!--block slider-->
     <!--include ../common/second_menu-->
@@ -68,6 +71,26 @@
       <!--+mtest('просто = ',6)-->
       <section class="promotion">
         <h2 class="text-name-page">Акции	</h2>
+        <div class="promo-single-wrap">
+          <div class="img"><img src="../static/img/general/promo-1.jpg"></div>
+          <div class="promo-text-block">
+            <div class="promo-text-block-left"><span class="simbol">&#9899</span><span>Ранее бронирование</span></br><span class="simbol">&#9899</span><span>Отель "Исидор", Анапа</span></div>
+            <div class="promo-text-block-right"><span class="simbol">&#9899</span><span>01.02-31.03</span></br><span class="simbol">&#9899</span><span>Скидки 5%</span></div>
+          </div>
+          <div class="select-prom">
+            <div class="b-wrap"><a class="bron" id="standart" href="javascript:void(0);">Забронировать</a></div>
+          </div>
+        </div>
+        <div class="promo-single-wrap">
+          <div class="img"><img src="../static/img/general/promo-2.jpg"></div>
+          <div class="promo-text-block">
+            <div class="promo-text-block-left"><span class="simbol">&#9899</span><span>Продли удовольствие</span></br><span class="simbol">&#9899</span><span>Отель "Исидор", Анапа</span></div>
+            <div class="promo-text-block-right"><span class="simbol">&#9899</span><span>01.02-31.03</span></br><span class="simbol">&#9899</span><span>Скидки 10%</span></div>
+          </div>
+          <div class="select-prom">
+            <div class="b-wrap"><a class="bron" id="standart" href="javascript:void(0);">Забронировать</a></div>
+          </div>
+        </div>
         <div class="j-wrapper">
           <div class="jcarousel">
             <ul>
@@ -141,7 +164,7 @@
             <div class="img_hotel"><a href="javascript:void(0);"> <img src="../static/img/visantia/hotel.jpg"/></a></div>
             <div class="desc-hotel">
               <div class="hotel-info">
-                <div class="name"><a href="http://www.atelica.ru/atelika-lipki/description/">Отель &quot;Византия&quot;</a></div>
+                <div class="name"><a href="#">Отель &quot;Византия&quot;</a></div>
                 <div class="geo">
                   <p>Анапа, пос. Витязево </p>
                 </div>
@@ -151,45 +174,57 @@
                 <p>Мы находимся в центре поселка Витязево (Анапа) – в его первой курортной зоне: в 300 метрах от морского побережья, добраться до которого можно пешком за пять минут. Песчаный пляж настолько близок, что посещать его можно ежедневно!</p>
               </div>
               <div class="hotel-price-info">
-                <div class="hotel-price"> <span>от 1700</span><span class="rub">P</span><a class="bron" href="javascript:void(0);">Забронировать</a></div>
+                <div class="hotel-price"> <span>от 1700</span>
+                  <!--span.rub P--><span>.-</span>
+                </div>
+                <div class="bbron"><a class="bron" id="standart" href="javascript:void(0);">Забронировать</a></div>
               </div>
             </div>
-            <div class="dop-menu">
-              <div class="inline-block desc"><a href="javascript:void(0);">Описание</a></div>
-              <div class="inline-block price"><a href="javascript:void(0);">Цены</a></div>
-              <div class="inline-block foto"><a href="javascript:void(0);">Фото</a></div>
-              <div class="inline-block rewiews"><a href="javascript:void(0);">Отзывы</a></div>
-            </div>
+            <!--.dop-menu-->
+            <!--	.inline-block.desc-->
+            <!--		a(href="javascript:void(0);") Описание-->
+            <!--	.inline-block.price-->
+            <!--		a(href="javascript:void(0);") Цены-->
+            <!--	.inline-block.foto-->
+            <!--		a(href="javascript:void(0);") Фото-->
+            <!--	.inline-block.rewiews-->
+            <!--		a(href="javascript:void(0);") Отзывы-->
           </div>
           <div class="item-hotel">
             <div class="img_hotel"><a href="javascript:void(0);"> <img src="../static/img/isidor/hotel.jpg"/></a></div>
             <div class="desc-hotel">
               <div class="hotel-info">
-                <div class="name"><a href="http://www.atelica.ru/atelika-lipki/description/">Отель &quot;Исидор&quot;</a></div>
+                <div class="name"><a href="#">Отель &quot;Исидор&quot;</a></div>
                 <div class="geo">
                   <p>Анапа, пос. Витязево </p>
                 </div>
                 <div class="logo"></div>
               </div>
               <div class="hotel-text">
-                <p>Гостиница “Исидор” расположен в курортном поселке Витязево – в 5-10 мин. ходьбы до моря, в непосредственной близости от развлекательного центра ( боулинг клуб, рестораны, парк с аттракционами), однако не настолько близко, чтобы Вашему комфортному отдыху мешал посторонний шум в вечернее время суток. </p>
+                <p>Гостиница “Исидор” расположен в курортном поселке Витязево – в 5-10 мин. ходьбы до моря, в непосредственной близости от развлекательного центра ( боулинг клуб, рестораны, парк с аттракционами), однако не настолько близко.. </p>
               </div>
               <div class="hotel-price-info">
-                <div class="hotel-price"> <span>от 1700</span><span class="rub">P</span><a class="bron" href="javascript:void(0);">Забронировать</a></div>
+                <div class="hotel-price"> <span>от 1700</span>
+                  <!--span.rub P--><span>.-</span>
+                </div>
+                <div class="bbron"><a class="bron" id="standart" href="javascript:void(0);">Забронировать</a></div>
               </div>
             </div>
-            <div class="dop-menu">
-              <div class="inline-block desc"><a href="javascript:void(0);">Описание</a></div>
-              <div class="inline-block price"><a href="javascript:void(0);">Цены</a></div>
-              <div class="inline-block foto"><a href="javascript:void(0);">Фото</a></div>
-              <div class="inline-block rewiews"><a href="javascript:void(0);">Отзывы</a></div>
-            </div>
+            <!--.dop-menu-->
+            <!--	.inline-block.desc-->
+            <!--		a(href="javascript:void(0);") Описание-->
+            <!--	.inline-block.price-->
+            <!--		a(href="javascript:void(0);") Цены-->
+            <!--	.inline-block.foto-->
+            <!--		a(href="javascript:void(0);") Фото-->
+            <!--	.inline-block.rewiews-->
+            <!--		a(href="javascript:void(0);") Отзывы-->
           </div>
           <div class="item-hotel">
             <div class="img_hotel"><a href="javascript:void(0);"> <img src="../static/img/yug_anapa/hotel.jpg"/></a></div>
             <div class="desc-hotel">
               <div class="hotel-info">
-                <div class="name"><a href="http://www.atelica.ru/atelika-lipki/description/">Отель &quot;Южная ночь&quot;</a></div>
+                <div class="name"><a href="#">Отель &quot;Южная ночь&quot;</a></div>
                 <div class="geo">
                   <p>Анапа </p>
                 </div>
@@ -199,45 +234,57 @@
                 <p>В курортном поселке Джемете, на второй линии Пионерского проспекта, на расстоянии 300 метров от городского песчаного пляжа, находится отель «Южная ночь».</p>
               </div>
               <div class="hotel-price-info">
-                <div class="hotel-price"> <span>от 1700</span><span class="rub">P</span><a class="bron" href="javascript:void(0);">Забронировать</a></div>
+                <div class="hotel-price"> <span>от 1700</span>
+                  <!--span.rub P--><span>.-</span>
+                </div>
+                <div class="bbron"><a class="bron" id="standart" href="javascript:void(0);">Забронировать</a></div>
               </div>
             </div>
-            <div class="dop-menu">
-              <div class="inline-block desc"><a href="javascript:void(0);">Описание</a></div>
-              <div class="inline-block price"><a href="javascript:void(0);">Цены</a></div>
-              <div class="inline-block foto"><a href="javascript:void(0);">Фото</a></div>
-              <div class="inline-block rewiews"><a href="javascript:void(0);">Отзывы</a></div>
-            </div>
+            <!--.dop-menu-->
+            <!--	.inline-block.desc-->
+            <!--		a(href="javascript:void(0);") Описание-->
+            <!--	.inline-block.price-->
+            <!--		a(href="javascript:void(0);") Цены-->
+            <!--	.inline-block.foto-->
+            <!--		a(href="javascript:void(0);") Фото-->
+            <!--	.inline-block.rewiews-->
+            <!--		a(href="javascript:void(0);") Отзывы-->
           </div>
           <div class="item-hotel">
             <div class="img_hotel"><a href="javascript:void(0);"> <img src="../static/img/primorski/hotel.jpg"/></a></div>
             <div class="desc-hotel">
               <div class="hotel-info">
-                <div class="name"><a href="http://www.atelica.ru/atelika-lipki/description/">Отель &quot;Приморский&quot;</a></div>
+                <div class="name"><a href="#">Отель &quot;Приморский&quot;</a></div>
                 <div class="geo">
                   <p>Анапа </p>
                 </div>
                 <div class="logo"></div>
               </div>
               <div class="hotel-text">
-                <p>Наш современный и уютный отель располагает просторными и современными номерами с  бесплатным Wi-Fi. Отель находится всего в 100 метрах от песчаного пляжа, а так же, в непосредственной близости от всей развлекательной инфраструктуры поселка Джемете, таких как городской аквапарк, анапский дельфинарий и многочисленные кафе и рестораны.</p>
+                <p>Наш современный и уютный отель располагает просторными и современными номерами с  бесплатным Wi-Fi. Отель находится всего в 100 метрах от песчаного пляжа, а так же, в непосредственной близости от ..</p>
               </div>
               <div class="hotel-price-info">
-                <div class="hotel-price"> <span>от 1700</span><span class="rub">P</span><a class="bron" href="javascript:void(0);">Забронировать</a></div>
+                <div class="hotel-price"> <span>от 1700</span>
+                  <!--span.rub P--><span>.-</span>
+                </div>
+                <div class="bbron"><a class="bron" id="standart" href="javascript:void(0);">Забронировать</a></div>
               </div>
             </div>
-            <div class="dop-menu">
-              <div class="inline-block desc"><a href="javascript:void(0);">Описание</a></div>
-              <div class="inline-block price"><a href="javascript:void(0);">Цены</a></div>
-              <div class="inline-block foto"><a href="javascript:void(0);">Фото</a></div>
-              <div class="inline-block rewiews"><a href="javascript:void(0);">Отзывы</a></div>
-            </div>
+            <!--.dop-menu-->
+            <!--	.inline-block.desc-->
+            <!--		a(href="javascript:void(0);") Описание-->
+            <!--	.inline-block.price-->
+            <!--		a(href="javascript:void(0);") Цены-->
+            <!--	.inline-block.foto-->
+            <!--		a(href="javascript:void(0);") Фото-->
+            <!--	.inline-block.rewiews-->
+            <!--		a(href="javascript:void(0);") Отзывы-->
           </div>
           <div class="item-hotel">
             <div class="img_hotel"><a href="javascript:void(0);"> <img src="../static/img/chistiakis/hotel.jpg"/></a></div>
             <div class="desc-hotel">
               <div class="hotel-info">
-                <div class="name"><a href="http://www.atelica.ru/atelika-lipki/description/">Отель &quot;Кристиакис&quot;</a></div>
+                <div class="name"><a href="#">Отель &quot;Кристиакис&quot;</a></div>
                 <div class="geo">
                   <p>Анапа </p>
                 </div>
@@ -247,39 +294,51 @@
                 <p>Гостиница &quot;Христиакис&quot; ...</p>
               </div>
               <div class="hotel-price-info">
-                <div class="hotel-price"> <span>от 1700</span><span class="rub">P</span><a class="bron" href="javascript:void(0);">Забронировать</a></div>
+                <div class="hotel-price"> <span>от 1700</span>
+                  <!--span.rub P--><span>.-</span>
+                </div>
+                <div class="bbron"><a class="bron" id="standart" href="javascript:void(0);">Забронировать</a></div>
               </div>
             </div>
-            <div class="dop-menu">
-              <div class="inline-block desc"><a href="javascript:void(0);">Описание</a></div>
-              <div class="inline-block price"><a href="javascript:void(0);">Цены</a></div>
-              <div class="inline-block foto"><a href="javascript:void(0);">Фото</a></div>
-              <div class="inline-block rewiews"><a href="javascript:void(0);">Отзывы</a></div>
-            </div>
+            <!--.dop-menu-->
+            <!--	.inline-block.desc-->
+            <!--		a(href="javascript:void(0);") Описание-->
+            <!--	.inline-block.price-->
+            <!--		a(href="javascript:void(0);") Цены-->
+            <!--	.inline-block.foto-->
+            <!--		a(href="javascript:void(0);") Фото-->
+            <!--	.inline-block.rewiews-->
+            <!--		a(href="javascript:void(0);") Отзывы-->
           </div>
           <div class="item-hotel">
             <div class="img_hotel"><a href="javascript:void(0);"> <img src="../static/img/rodnichok/hotel.jpg"/></a></div>
             <div class="desc-hotel">
               <div class="hotel-info">
-                <div class="name"><a href="http://www.atelica.ru/atelika-lipki/description/">Отель &quot;Родничок&quot;</a></div>
+                <div class="name"><a href="#">Отель &quot;Родничок&quot;</a></div>
                 <div class="geo">
                   <p>Анапа </p>
                 </div>
                 <div class="logo"></div>
               </div>
               <div class="hotel-text">
-                <p>Гостевой дом &quot;Родничок&quot; находится в курортном поселке Джемете 20 м от песчаного пляжа в самом центре Пионерского проспекта. В 200 м новый аквапарк &quot;Тики-Так&quot;, рядом кафе, рестораны, магазины, рынок, остановка. На пляже причал, откуда катера совершают морские прогулки на Утриш, в Новороссийск и Геленджик.</p>
+                <p>Гостевой дом &quot;Родничок&quot; находится в курортном поселке Джемете 20 м от песчаного пляжа в самом центре Пионерского проспекта. В 200 м новый аквапарк &quot;Тики-Так&quot;, рядом кафе, рестораны, магазины, рынок, остановка.</p>
               </div>
               <div class="hotel-price-info">
-                <div class="hotel-price"> <span>от 1700</span><span class="rub">P</span><a class="bron" href="javascript:void(0);">Забронировать</a></div>
+                <div class="hotel-price"> <span>от 1700</span>
+                  <!--span.rub P--><span>.-</span>
+                </div>
+                <div class="bbron"><a class="bron" id="standart" href="javascript:void(0);">Забронировать</a></div>
               </div>
             </div>
-            <div class="dop-menu">
-              <div class="inline-block desc"><a href="javascript:void(0);">Описание</a></div>
-              <div class="inline-block price"><a href="javascript:void(0);">Цены</a></div>
-              <div class="inline-block foto"><a href="javascript:void(0);">Фото</a></div>
-              <div class="inline-block rewiews"><a href="javascript:void(0);">Отзывы</a></div>
-            </div>
+            <!--.dop-menu-->
+            <!--	.inline-block.desc-->
+            <!--		a(href="javascript:void(0);") Описание-->
+            <!--	.inline-block.price-->
+            <!--		a(href="javascript:void(0);") Цены-->
+            <!--	.inline-block.foto-->
+            <!--		a(href="javascript:void(0);") Фото-->
+            <!--	.inline-block.rewiews-->
+            <!--		a(href="javascript:void(0);") Отзывы-->
           </div>
         </div>
       </section>
@@ -295,7 +354,7 @@
       </div>
       <p class="phone-company">номер компании</p>
       <p class="phone">+7 (495) 333-33-33</p>
-      <div class="soc_seti"><a class="social_1" title="В контакте" href="javascript:void(0);"><img src="../static/img/general/vkontakte-logo.png"></a><a class="social_2" title="В контакте" href="javascript:void(0);"><img src="../static/img/general/facebook-logo.png"></a><a class="social_3" title="В контакте" href="javascript:void(0);"><img src="../static/img/general/instagram-logo.png"></a></div>
+      <div class="soc_seti"><a class="social_1" title="В контакте" href="javascript:void(0);"><img src="../static/img/general/soc-seti-1.png"></a><a class="social_2" title="В контакте" href="javascript:void(0);"><img src="../static/img/general/soc-seti-2.png"></a><a class="social_3" title="В контакте" href="javascript:void(0);"><img src="../static/img/general/soc-seti-3-2.png"></a><a class="social_3" title="В контакте" href="javascript:void(0);"><img src="../static/img/general/soc-seti-4.png"></a></div>
       <p class="phone-company_hotels"></p>
       <!--p: -->
       <!--	a( href="javascript:void(0);" title="Отель Византия" ) Отель "Византия"-->
