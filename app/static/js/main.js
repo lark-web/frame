@@ -1,7 +1,7 @@
    var widgetOptions = {
         token: '3EEB66E7-F189-4553-8B7A-0D3D29A50033',
         //css: 'http://pms.frontdesk24.ru/BookingWidgetFront/styles/default.css',
-        css: 'http://u21744.onhh.ru/frontdesk24.css', 
+        css: 'http://ug-service.info/frontdesk24.css', 
         target: 'search-widget',
         language: 'ru',
         popupHeader: '',
@@ -109,16 +109,102 @@ $(document).ready(function(){
 });
 
 // бронирование 
+//Ранее бронирование, скидка 5%      5354
 $(document).ready(function(){
-        $("#standart").click(function () {
-        alert ('Нажали на кнопку Заказать');
-         popupRooms('3413','' ,undefined ,undefined , '2','0', '2','2');
- //      popupRooms(tariff, room, arrival, departure, adults, children, maxAdults, maxChildren);
+        $("#isidor-early-bron").click(function () {
+        //alert ('Нажали на кнопку Заказать');
+         popupRooms('5354','' ,undefined ,undefined , '2','0', '2','2');
+  });
+});
+//Продли удовольствие, скидка 10%    5355
+$(document).ready(function(){
+        $("#isidor-prolong-pleasure").click(function () {
+        //alert ('Нажали на кнопку Заказать');
+         popupRooms('5355','' ,undefined ,undefined , '2','0', '2','2');
   });
 });
 
-// бронирование 
+$(document).ready(function(){
+//      popupRooms(tariff, room, arrival, departure, adults, children, maxAdults, maxChildren);
+ 
+//Исидор
+//Стандартный тариф                  5353
+//Ранее бронирование, скидка 5%      5354
+//Продли удовольствие, скидка 10%    5355
 
+//коды категорий номеров
+//2-местный Стандарт dbl             5873
+//2-местный Стандарт dbl+            5874
+//2-местный Стандарт dbl++           5875
+//2-местный Стандарт twin            5876
+//2-местный Стандарт twin++          5877
+//3-местный Стандарт                 5878
+//2-местный Студия++                 5879
+//4-местный 2-комнатный Люкс         5880
+//4-местный 2-комнатный Люкс+        5881
+
+        $("#isidor-standart2-dbl").click(function () {
+        //alert ('Нажали на кнопку Заказать');
+         popupRooms('5353','5873' ,undefined ,undefined , '2','0', '2','2');
+  });
+});
+
+$(document).ready(function(){
+        $("#isidor-standart2-dbl-plus").click(function () {
+        //alert ('Нажали на кнопку Заказать');
+         popupRooms('5353','5874' ,undefined ,undefined , '2','0', '2','2');
+  });
+});
+
+$(document).ready(function(){
+        $("isidor-#standart2-dbl-plus-plus").click(function () {
+        //alert ('Нажали на кнопку Заказать');
+         popupRooms('5353','5875' ,undefined ,undefined , '2','0', '2','2');
+  });
+});
+
+$(document).ready(function(){
+        $("#isidor-standart2-dbl-twin").click(function () {
+        //alert ('Нажали на кнопку Заказать');
+         popupRooms('5353','5876' ,undefined ,undefined , '2','0', '2','2');
+  });
+});
+
+$(document).ready(function(){
+        $("#isidor-standart2-dbl-twin-plus-plus").click(function () {
+        //alert ('Нажали на кнопку Заказать');
+         popupRooms('5353','5877' ,undefined ,undefined , '2','0', '2','2');
+  });
+});
+
+$(document).ready(function(){
+        $("#isidor-standart3").click(function () {
+        //alert ('Нажали на кнопку Заказать');
+         popupRooms('5353','5878' ,undefined ,undefined , '2','0', '2','2');
+  });
+});
+
+$(document).ready(function(){
+        $("#isidor-studio2-plus-plus").click(function () {
+        //alert ('Нажали на кнопку Заказать');
+         popupRooms('5353','5879' ,undefined ,undefined , '2','0', '2','2');
+  });
+});
+
+$(document).ready(function(){
+        $("#isidor-4place-rooms2-lux").click(function () {
+        //alert ('Нажали на кнопку Заказать');
+         popupRooms('5353','5880' ,undefined ,undefined , '2','0', '2','2');
+  });
+});
+
+$(document).ready(function(){
+        $("#isidor-4place-rooms2-lux-plus").click(function () {
+        //alert ('Нажали на кнопку Заказать');
+         popupRooms('5353','5881' ,undefined ,undefined , '2','0', '2','2');
+  });
+});
+// бронирование - end
 
 $(window).load(function () {
     
@@ -127,6 +213,22 @@ $(window).load(function () {
         $('ul.smenu li').each(function() {
             var href = $(this).find('a').attr('href');
             //alert(href);
+            if(url == href) {
+                //alert(href);
+                $(this).find('a').addClass("active");
+            }
+        });
+    
+  });
+
+$(window).load(function () {
+    
+ var url = location.pathname;
+ //alert(url);
+        $('ul.dropdown li').each(function() {
+            var href = $(this).find('a').attr('href');
+            //alert(href);
+            //alert(url);
             if(url == href) {
                 //alert(href);
                 $(this).find('a').addClass("active");
