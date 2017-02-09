@@ -1,4 +1,4 @@
-extends ../layout/layout
+extends ../layout/layout_hotels
 include ../common/mixins
 block title
 	| Страница  "Цены" Отеля Исидор
@@ -24,3 +24,210 @@ block second_menu
 block content
 	.base-wrap
 		h2.text-name-page Цены
+		.price-wrap
+			p
+				b  Категории номеров, описание
+			table.tprice
+				tr
+					td.thead
+						p Тип номера
+					td.thead
+						p Осн.
+						p мест
+					td.thead
+						p Доп.
+						p мест
+					td.thead
+						p Спальные места
+					td.thead
+						p В номере
+					td.thead
+						p Кол-во номеров
+				tr
+					td
+						p 2-местный Стандарт dbl
+					td.tcenter
+						p 2
+					td.tcenter
+						p 0
+					td
+						p двуспальная кровать 1,4*1,8
+					td
+						p сплит-система, ТВ, холодильник, санузел, душ
+					td.tcenter
+						p 16
+				tr
+					td
+						p 2-местный Стандарт dbl+
+					td.tcenter
+						p 2
+					td.tcenter
+						p 1
+					td
+						p двуспальная кровать 1,4*1,8,
+						p 1 доп. место - кресло-кровать
+					td
+						p сплит-система, ТВ, холодильник, санузел, душ
+					td.tcenter
+						p 15
+				tr
+					td
+						p 2-местный Стандарт dbl++
+					td.tcenter
+						p 2
+					td.tcenter
+						p 2
+					td
+						p двуспальная кровать 1,4*1,8,
+						p 2 доп. места - диван-кровать
+					td
+						p сплит-система, ТВ, холодильник, санузел, душ
+					td.tcenter
+						p 17
+				tr
+					td
+						p 2-местный Стандарт twin
+					td.tcenter
+						p 2
+					td.tcenter
+						p 0
+					td.tcenter
+						p две односпальные кровати 0,9*1,8
+					td
+						p сплит-система, ТВ, холодильник, санузел, душ
+					td.tcenter
+						p 4
+				tr
+					td
+						p 2-местный Стандарт twin++
+					td.tcenter
+						p 2
+					td.tcenter
+						p 2
+					td
+						p две односпальные кровати 0,9*1,8
+						p 2 доп. места - диван-кровать
+					td
+						p сплит-система, ТВ, холодильник, санузел, душ
+					td.tcenter
+						p 1
+				tr
+					td
+						p 2-местный Студия
+					td.tcenter
+						p 2
+					td.tcenter
+						p 2
+					td
+						p двуспальная кровать 1,4*1,8
+						p 2 доп. места - диван-кровать
+					td
+						p сплит-система, ТВ, холодильник, санузел, душ, барная стойка
+					td.tcenter
+						p 1
+				tr
+					td
+						p 3-местный Стандарт
+					td.tcenter
+						p 3
+					td.tcenter
+						p 0
+					td
+						p двуспальная кровать 1,4*1,8
+						p и односпальная кровать 0,9*1,8
+					td
+						p сплит-система, ТВ, холодильник, санузел, душ
+					td.tcenter
+						p 14
+				tr
+					td
+						p 4-местный 2-комнатный Люкс
+					td.tcenter
+						p 4
+					td.tcenter
+						p 1
+					td
+						p двуспальная кровать 1,4*1,8
+						p две односпальные кровати 0,9*1,8
+						p 1 доп. место - диван
+					td
+						p сплит-система, ТВ, холодильник, санузел, душ
+					td.tcenter
+						p 1
+				tr
+					td
+						p 4-местный 2-комнатный Люкс+
+					td.tcenter
+						p 4
+					td.tcenter
+						p 0
+					td
+						p двуспальная кровать 1,4*1,8
+						p две односпальные кровати 0,9*1,8
+					td
+						p сплит-система, ТВ, холодильник, санузел, душ
+					td.tcenter
+						p 1
+
+
+			p
+				b Стоимость основного места, руб. /сутки
+			table.tprice
+				tr
+					td
+						p Период
+					td
+						p Стандарт
+					td
+						p Студио, Люкс
+				tr
+					td
+						p 29.04 – 31.05
+					td.tcenter
+						p 650
+					td.tcenter
+						p 700
+				tr
+					td
+						p 01.06 – 05.06
+					td.tcenter
+						p 780
+					td.tcenter
+						p 800
+				tr
+					td
+						p 06.06 – 15.06
+					td.tcenter
+						p 1050
+					td.tcenter
+						p 1050
+				tr
+					td
+						p 16.06 – 25.06
+					td.tcenter
+						p 1300
+					td.tcenter
+						p 1500
+				tr
+					td
+						p 26.06 – 25.08
+					td.tcenter
+						p 1560
+					td.tcenter
+						p 1900
+				tr
+					td
+						p 26.08 – 15.09
+					td.tcenter
+						p 1050
+					td.tcenter
+						p 1150
+				tr
+					td
+						p 16.09 – 10.10
+					td.tcenter
+						p 650
+					td.tcenter
+						p 700
+
+

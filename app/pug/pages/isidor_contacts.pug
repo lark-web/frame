@@ -1,4 +1,4 @@
-extends ../layout/layout
+extends ../layout/layout_hotels
 include ../common/mixins
 block title
 	| Страница  "Контакты" Отеля Исидор
@@ -40,5 +40,6 @@ block content
 			.contacts-how-to-get
 				span Проезд: 
 				P ..
-		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=VPztNR_I2SVEBtLRyjleLnHKogRy16Wj&amp;width=1250&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+				.map-wrap
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=VPztNR_I2SVEBtLRyjleLnHKogRy16Wj&amp;width=1250&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
 
