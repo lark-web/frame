@@ -342,6 +342,12 @@ input.sbutton {
 .map-wrap {
   margin-bottom: 20px;
 }
+.bron-for-hotel-pages {
+  color: #fff;
+  position: absolute;
+  top: 210px;
+  left: 300px;
+}
 .main-hotel-img {
   background: rgba(0,0,0,0) url("../img/isidor/isidor_main.jpg") center center no-repeat;
   z-index: 2;
@@ -414,17 +420,27 @@ table {
   margin-bottom: 20px;
 }
 div.room-desc {
-  width: 50%;
-  height: 290px;
+  width: 550px;
+  height: 230px;
   border: 1px solid #999;
-  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 20px 20px 20px;
+  text-align: left;
 }
 div.room-desc .gallery {
-  width: 300px;
+  width: 230px;
   float: left;
+}
+div.room-desc .knopka {
+  position: absolute;
+  top: 180px;
+  left: 360px;
 }
 div.room-desc div.desc-text {
   color: #444;
+  width: 300px;
 }
 .desc-text {
   display: inline-block;
@@ -434,16 +450,25 @@ div.room-desc div.desc-text {
   font-size: 18px;
   font-width: 800;
   padding: 5px 0px 5px 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .desc-text .text-item {
   margin-bottom: 20px;
 }
-.desc-text .text-item ul {
-  list-style-image: none;
-  list-style-type: circle;
+.desc-text .text-item span {
+  padding-left: 5px;
+  line-height: 25px;
+  font-weight: 800;
+  font-size: 11px;
 }
-.desc-text .text-item ul li {
-  padding-left: 20px;
+.desc-text .text-item span.simbol-text-room {
+  padding-left: 10px;
+  list-style-type: disk;
+  color: #444;
+  font-size: 12px;
+  line-heigth: 20px;
+  font-family: roboto_slabregular;
 }
 .flexslider {
   margin-bottom: 10px;
@@ -599,6 +624,7 @@ textarea {
   max-width: 1250px;
   margin: 0 auto;
   position: relative;
+  text-align: center;
 }
 body {
   font-family: 'roboto_slabregular', sans-serif;
@@ -768,7 +794,7 @@ body {
   width: 35%;
   float: right;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .promo-text-block {
   background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#d7d7d7));

@@ -17,6 +17,33 @@
         usePaygate: true,
         showHours: true         
     };
+// для страницы Исидор
+   var widgetOptions = {
+        token: '3EEB66E7-F189-4553-8B7A-0D3D29A50033',
+        //css: 'http://pms.frontdesk24.ru/BookingWidgetFront/styles/default.css',
+        css: 'http://ug-service.info/frontdesk24.css', 
+        target: 'search-widget-isidor',
+        language: 'ru',
+        popupHeader: '',
+        maxAdults: 10,
+        widget_width: 928,
+        align: 'left',
+        showGuestsCount: true,
+        showChildren: false,
+        minAge: 1,
+        maxAge: 17,
+        method: 'popup',
+        showAllIfNotExists: true, 
+        usePaygate: true,
+        showHours: true         
+    };
+
+
+
+
+
+
+
 
     (function () {
 
@@ -65,7 +92,7 @@ $(window).load(function() {
     controlNav: false,
     animationLoop: false,
     slideshow: false,
-    itemWidth: 100,
+    itemWidth: 70,
     itemMargin: 5,
     asNavFor: '#slider'
   });
@@ -78,6 +105,182 @@ $(window).load(function() {
     sync: "#carousel"
   });
 });
+
+$(window).load(function() {
+  // The slider being synced must be initialized first
+  $('#carousel-isidor-standart2-dbl-plus').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 70,
+    itemMargin: 5,
+    asNavFor: '#slider-isidor-standart2-dbl-plus'
+  });
+ 
+  $('#slider-isidor-standart2-dbl-plus').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    sync: "#carousel-isidor-standart2-dbl-plus"
+  });
+});
+
+$(window).load(function() {
+  // The slider being synced must be initialized first
+  $('#carousel-isidor-standart2-dbl-plus-plus').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 70,
+    itemMargin: 5,
+    asNavFor: '#slider-isidor-standart2-dbl-plus-plus'
+  });
+ 
+  $('#slider-isidor-standart2-dbl-plus-plus').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    sync: "#carousel-isidor-standart2-dbl-plus-plus"
+  });
+});
+
+$(window).load(function() {
+  // The slider being synced must be initialized first
+  $('#carousel-isidor-standart2-dbl-twin').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 70,
+    itemMargin: 5,
+    asNavFor: '#slider-isidor-standart2-dbl-twin'
+  });
+ 
+  $('#slider-isidor-standart2-dbl-twin').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    sync: "#carousel-isidor-standart2-dbl-twin"
+  });
+});
+
+$(window).load(function() {
+  // The slider being synced must be initialized first
+  $('#carousel-isidor-standart2-dbl-twin-plus-plus').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 70,
+    itemMargin: 5,
+    asNavFor: '#slider-isidor-standart2-dbl-twin-plus-plus'
+  });
+ 
+  $('#slider-isidor-standart2-dbl-twin-plus-plus').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    sync: "#carousel-isidor-standart2-dbl-twin-plus-plus"
+  });
+});
+
+
+$(window).load(function() {
+  // The slider being synced must be initialized first
+  $('#carousel-isidor-standart3').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 70,
+    itemMargin: 5,
+    asNavFor: '#slider-isidor-standart3'
+  });
+ 
+  $('#slider-isidor-standart3').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    sync: "#carousel-isidor-standart3"
+  });
+});
+
+$(window).load(function() {
+  // The slider being synced must be initialized first
+  $('#carousel-isidor-studio2-plus-plus').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 70,
+    itemMargin: 5,
+    asNavFor: '#slider-isidor-studio2-plus-plus'
+  });
+ 
+  $('#slider-isidor-studio2-plus-plus').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    sync: "#carousel-isidor-studio2-plus-plus"
+  });
+});
+
+$(window).load(function() {
+  // The slider being synced must be initialized first
+  $('#carousel-isidor-4place-rooms2-lux').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 70,
+    itemMargin: 5,
+    asNavFor: '#slider-isidor-4place-rooms2-lux'
+  });
+ 
+  $('#slider-isidor-4place-rooms2-lux').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    sync: "#carousel-isidor-4place-rooms2-lux"
+  });
+});
+
+$(window).load(function() {
+  // The slider being synced must be initialized first
+  $('#carousel-isidor-4place-rooms2-lux-plus').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 70,
+    itemMargin: 5,
+    asNavFor: '#slider-isidor-4place-rooms2-lux-plus'
+  });
+ 
+  $('#slider-isidor-4place-rooms2-lux-plus').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    sync: "#carousel-isidor-4place-rooms2-lux-plus"
+  });
+});
+
+
+
+
+
+
+
 
 
 
@@ -159,7 +362,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-        $("isidor-#standart2-dbl-plus-plus").click(function () {
+        $("#isidor-standart2-dbl-plus-plus").click(function () {
         //alert ('Нажали на кнопку Заказать');
          popupRooms('5353','5875' ,undefined ,undefined , '2','0', '2','2');
   });

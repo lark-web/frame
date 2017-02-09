@@ -1,14 +1,22 @@
 div.room-desc
-	width 50%
-	height 290px
+	width 550px
+	height 230px
 	border 1px solid  #999
-	margin-bottom 20px
+	position relative
+	display inline-block
+	vertical-align top
+	margin 0 20px 20px 20px
+	text-align left
 	.gallery
-		width 300px
+		width 230px
 		float left
-		
+	.knopka
+		position absolute
+		top 180px
+		left 360px
 	div.desc-text
 		color #444
+		width 300px
 		
 .desc-text
 	display inline-block
@@ -18,16 +26,22 @@ div.room-desc
 			font-size 18px
 			font-width 800
 			padding 5px 0px 5px 20px
+			margin-bottom 10px
+			margin-top 10px
 	.text-item
 		margin-bottom 20px
-		ul
-			list-style-image none
-			list-style-type circle
-			li
-				padding-left 20px 
-
-				
-			
+		span
+			padding-left 5px
+			line-height 25px
+			font-weight 800
+			font-size 11px
+			&.simbol-text-room
+				padding-left 10px 
+				list-style-type disk
+				color #444
+				font-size 12px
+				line-heigth 20px
+				font-family roboto_slabregular
 
 
 .flexslider 
