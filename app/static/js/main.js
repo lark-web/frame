@@ -104,7 +104,9 @@ $(document).ready(function(){
   $('.main-slider').bxSlider({
     'auto' : 'true',
     controls:false,
-    nextSelector:null
+    nextSelector:null,
+    speed:1000,
+    pause:8000
   });
 });
 

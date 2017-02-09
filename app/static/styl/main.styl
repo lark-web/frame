@@ -160,10 +160,11 @@ body
 
 .bron-table-wrap
   background-color #eef5f7
+  margin-bottom 20px
 #search-widget
-  z-index 20
   width 90%
   left 350px
+  
 
 
 .search 
@@ -220,6 +221,7 @@ body
 
 .promotion 
   text-align center
+  margin-top 30px
   
 .promo-single-wrap
   width 582px
@@ -227,6 +229,70 @@ body
   display inline-block
   margin 0px 20px  0px 20px
   //border-bottom 1px solid #ddd
+  .view
+    width 100%
+    height 323px
+    overflow hiden
+    position relative
+    text-align center
+    overflow hidden
+    img
+      display block
+      position relative
+      height 100%
+      width 100%
+    .mask
+      width 100%
+      height 100%
+      position absolute
+      overflow hidden
+      top 0
+      left 0
+    h2
+      color #fff
+      text-align center
+      position relative
+      font-family 22px
+      padding-top 60px
+      padding-bottom 20px
+      //background rgba(0,0,0,0.8)
+    p
+      font-size 17px
+      position relative
+      color #fff
+      text-align center
+      padding 0px 20px
+      
+// ДЕЛАЕМ НАПЛЫВ ТЕКСТА ПРИ НАВЕДЕНИИ
+.view-first
+  .img
+    transition all 0.2s linear
+  .mask
+    opacity 0 
+    background-color rgba(127,127,127,0.7)
+    transition all 0.4s ease-in-out 
+  h2
+    transform translateY(-100px)
+    opacity 0
+    transition all 0.2s ease-in-out
+  p
+    transform translateY(100px)
+    opacity 0
+    transition all 0.2s linear
+  &:hover 
+    img 
+      transform scale(1.1)
+    .mask 
+        opacity 1
+    h2,p
+      opacity 1
+      transform translateY(0px)
+    p 
+    transition-delay 0.1s
+
+
+
+
 .select-prom
   width 582px 
   text-align right
@@ -255,6 +321,7 @@ body
       padding 0px 0 3px 20px
       line-height 30px
       &.simbol
+        font-size 16px
         color red
         margin-left 10px
         font-family helv__thin
@@ -281,8 +348,14 @@ body
       padding 0px 0 3px 20px
       line-height 30px
       &.simbol
+        font-size 16px
         color red
         margin-left 50px
+        font-family helv__thin
+        
+  span
+    &.colored
+      color #dd4444
 
 
 
@@ -298,7 +371,7 @@ body
       background-color #e9e9e
       padding 5px
   .item
-    .img
+    .view
       width 275px
       position relative
       margin 0 auto
@@ -358,6 +431,10 @@ body
   background-position -28px 0
           
 // ---------------------------- НОВОСТИ ------------------------
+
+.news
+  margin-bottom 30px
+  
 .block-item-news
   margin-bottom 25px
   width 70%
@@ -394,12 +471,14 @@ body
       text-decoration none
         
 // ---------------------------- НАШИ ОТЕЛИ ------------------------
-
+.our-hotels
+  margin-top 30px
 //.second_menu 
 //  display block
 //  height 100px     
 
-
+.block-item-hotels
+  color #333
       
 .item-hotel
   border-bottom 1px solid #aaa
@@ -448,6 +527,7 @@ body
   .bbron
     width 50%
     float right
+    margin-right 20px
   .hotel-price
     float left
     span 
@@ -465,7 +545,7 @@ body
      
 
 .bron 
-  background-color #c30303  
+  //background-color #c30303  
   text-align center
   width 150px
   display block
@@ -474,9 +554,10 @@ body
   margin-left 30px
   font-size 15px
   height 37px
-  color #fff
+  color #444
   font-weight 800
-  padding 7px 5px 0 5px
+  padding 5px 5px 1px 5px
+  border 3px solid #ff5f18
   &:hover
     text-decoration underline
 .dop-menu

@@ -23,9 +23,12 @@ mixin smenu(hotel_name,ref1,ref2,ref3,ref4,ref5,ref6,ref7)
 
 
 mixin hname(text_desc,name_hotel,text_place)
-	p= text_desc
-	h2= name_hotel
-	p= text_place
+	.what
+		p= text_desc
+	.name-hotel-h2
+		h2= name_hotel
+	.place-text
+		p= text_place
 mixin mnews(urlpict,date,text)
 	.item-news
 		.img

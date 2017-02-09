@@ -54,3 +54,12 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'corinthiaregular';
+    src: url('corinthia.woff2') format('woff2'),
+         url('corinthia.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
