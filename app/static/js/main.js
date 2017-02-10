@@ -445,7 +445,7 @@ $(document).ready(function(){
     $(window).scroll(function() {
         var vscroll = $(this).scrollTop();
         //console.log(vscroll);
-        if ($(this).scrollTop() >= 190) {
+        if ($(this).scrollTop() >= 430) {
             $('nav.second-nav').addClass("stickytop");
             //console.log('LARK');
         }

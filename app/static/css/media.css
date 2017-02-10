@@ -1,0 +1,60 @@
+@media screen and (max-width: 1190px) {
+  .header-logo {
+    padding-left: 0px;
+  }
+  #page-wrap {
+    margin-left: 0px;
+  }
+  #page-wrap ul li {
+    margin-right: 0px;
+  }
+  #page-wrap ul li:last-child {
+    margin-right: 0px;
+  }
+}
+@media screen and (max-width: 890px) {
+  #page-wrap {
+    display: block;
+  }
+  #page-wrap ul {
+    height: 3px;
+  }
+  .top-social-links {
+    position: absolute;
+    top: 12px;
+    left: 230px;
+  }
+  .header-logo {
+    margin-top: 4px;
+  }
+  .header-logo a img {
+    width: 100px;
+    height: 80px;
+  }
+  .logo-text p.caviar-dream {
+    font-size: 30px;
+  }
+  .top-social-links span {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .item-hotel .img_hotel img {
+    width: 150px;
+    height: 114px;
+  }
+  .item-hotel .hotel-price {
+    top: 115px;
+    left: 30px;
+  }
+  .item-hotel .hotel-price span {
+    font-size: 17px;
+  }
+  .item-hotel .bbron {
+    top: 145px;
+    left: 0px;
+  }
+  .hotel-text {
+    width: 200px;
+  }
+}

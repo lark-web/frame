@@ -144,25 +144,25 @@ mixin mhotel_new(name)
 				.logo
 			.hotel-text
 				p= text
-			.hotel-price-info
-				.hotel-price 
-					span=price  
-					//span.rub P
-					span .-
-				.bbron
-					case name
-						when 'византия'
-							a(href="javascript:void(0);").bron#hotel-visantia-bron Забронировать
-						when 'исидор'
-							a(href="javascript:void(0);").bron#hotel-isidor-bron Забронировать
-						when 'южная ночь'
-							a(href="javascript:void(0);").bron#hotel-ug-bron Забронировать
-						when 'приморский'
-							a(href="javascript:void(0);").bron#hotel-primor-bron Забронировать
-						when 'христакис'
-							a(href="javascript:void(0);").bron#hotel-christakis-bron Забронировать
-						when 'родничок'
-							a(href="javascript:void(0);").bron#hotel-rodnik-bron Забронировать
+		.hotel-price 
+			span=price  
+			//span.rub P
+			span .-
+
+		.bbron
+			case name
+				when 'византия'
+					a(href="javascript:void(0);").bron#hotel-visantia-bron Забронировать
+				when 'исидор'
+					a(href="javascript:void(0);").bron#hotel-isidor-bron Забронировать
+				when 'южная ночь'
+					a(href="javascript:void(0);").bron#hotel-ug-bron Забронировать
+				when 'приморский'
+					a(href="javascript:void(0);").bron#hotel-primor-bron Забронировать
+				when 'христакис'
+					a(href="javascript:void(0);").bron#hotel-christakis-bron Забронировать
+				when 'родничок'
+					a(href="javascript:void(0);").bron#hotel-rodnik-bron Забронировать
 
 
 

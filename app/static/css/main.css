@@ -247,14 +247,17 @@ ul.submenu li a:hover {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.resp-wrap {
+  text-align: left;
+}
 div.resp-window,
 div.more-response {
   display: inline-block;
   width: 60%;
-  margin-left: 20px;
+  text-align: left;
 }
 div.resp {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   padding-bottom: 5px;
   border-bottom: 1px solid #ccc;
   text-align: left;
@@ -416,21 +419,19 @@ input.sbutton {
   display: block;
 }
 .tprice {
-  border: 1px solid #888;
+  border: 1px solid #777;
   border-collapse: collapse;
   text-align: center;
 }
 .tprice tr td {
+  font-size: 14px;
   border: 1px solid #eee;
-  padding: 2px 5px;
-  width: 200px;
+  padding: 5px 5px;
+  width: 300px;
 }
 .tprice tr td.zag-table {
   font-weight: bold;
   font-size: 14px;
-  text-align: center;
-}
-.tprice tr td.tcenter {
   text-align: center;
 }
 .tprice tr td.thead {
@@ -438,6 +439,9 @@ input.sbutton {
 }
 table {
   margin-bottom: 20px;
+}
+.table-wrap {
+  text-align: center;
 }
 .price-wrap {
   text-align: left;
@@ -447,9 +451,8 @@ table {
   list-style-type: circle;
   line-height: 22px;
   margin-left: 20px;
-}
-.price-wrap ul li span {
   font-size: 14px;
+  font-family: Verdana;
 }
 .price-wrap ul li span {
   font-size: 14px;
@@ -457,13 +460,18 @@ table {
 .price-wrap ul li span.t-bolt {
   font-weight: bold;
 }
-p.text-zag,
-span.text-zag {
-  font-weight: bold;
-  font-size: 16px;
+.price-wrap p,
+.price-wrap span {
+  font-size: 14px;
+  font-family: Verdana;
+}
+.price-wrap p.text-zag,
+.price-wrap span.text-zag {
+  font-weight: 600;
+  font-size: 14px;
   padding-bottom: 10px;
 }
-p.zag-table {
+.price-wrap p.zag-table {
   font-weight: bold;
   font-size: 14px;
   text-align: center;
@@ -471,7 +479,7 @@ p.zag-table {
 div.room-desc {
   width: 550px;
   height: 230px;
-  border: 1px solid #999;
+  border: 1px solid #eee;
   position: relative;
   display: inline-block;
   vertical-align: top;
@@ -485,7 +493,7 @@ div.room-desc .gallery {
 div.room-desc .knopka {
   position: absolute;
   top: 180px;
-  left: 360px;
+  left: 400px;
 }
 div.room-desc div.desc-text {
   color: #444;
@@ -499,8 +507,7 @@ div.room-desc div.desc-text {
   font-size: 18px;
   font-width: 800;
   padding: 5px 0px 5px 20px;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin-bottom: 5px;
 }
 .desc-text .text-item {
   margin-bottom: 20px;
@@ -509,7 +516,8 @@ div.room-desc div.desc-text {
   padding-left: 5px;
   line-height: 25px;
   font-weight: 800;
-  font-size: 11px;
+  font-size: 12px;
+  font-family: Helvetica;
 }
 .desc-text .text-item span.simbol-text-room {
   padding-left: 10px;
@@ -1054,6 +1062,8 @@ body {
   width: 600px;
   margin-bottom: 50px;
   margin-left: 20px;
+  position: relative;
+  padding-bottom: 20px;
 }
 .item-hotel .img_hotel {
   display: table-cell;
@@ -1094,18 +1104,17 @@ body {
   margin-bottom: 10px;
   height: 84px;
 }
-.hotel-price-info {
-  display: table;
-  width: 100%;
+.bbron {
+  position: absolute;
+  top: 150px;
+  left: 420px;
 }
-.hotel-price-info .bbron {
-  float: right;
-  margin-right: 20px;
+.hotel-price {
+  position: absolute;
+  top: 160px;
+  left: 260px;
 }
-.hotel-price-info .hotel-price {
-  float: left;
-}
-.hotel-price-info .hotel-price span {
+.hotel-price span {
   font-size: 24px;
   font-family: verdana, sans-serif;
   font-weight: 800;

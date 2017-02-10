@@ -492,6 +492,8 @@ body
   width 600px
   margin-bottom 50px
   margin-left 20px
+  position relative
+  padding-bottom 20px
   .img_hotel
     display table-cell
     img
@@ -527,16 +529,19 @@ body
 .hotel-text
   margin-bottom 10px  
   height 84px
-.hotel-price-info
-  display table
-  width 100%
-  .bbron
-    //width 50%
-    float right
-    margin-right 20px
 
-  .hotel-price
-    float left
+
+.bbron
+  position absolute
+  top 150px
+  left 420px
+
+.hotel-price
+    position absolute
+    //top 250px
+    //left 330px
+    top 160px
+    left 260px
     span 
       font-size 24px
       font-family verdana,sans-serif
