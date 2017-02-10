@@ -32,82 +32,76 @@ block content
 			h2.text-name-page Наши отели
 			.block-item-hotels
 				-  var text_hotel = 'LARK Загородный отель «АТЕЛИКА ЛИПКИ» расположен на западе Московской области, в Одинцовском районе, в живописных окрестностях Звенигорода с экологически чистой природой, называемой «Русской Швейцарией». Отель представляет собой единый архитектурный …';
-				
-				+mhotel('../static/img/visantia/hotel.jpg','Отель "Византия"','Анапа, пос. Витязево ','Мы находимся в центре поселка Витязево (Анапа) – в его первой курортной зоне: в 300 метрах от морского побережья, добраться до которого можно пешком за пять минут. Песчаный пляж настолько близок, что посещать его можно ежедневно!','от 1700')
-				
-				+mhotel('../static/img/isidor/hotel.jpg','Отель "Исидор"','Анапа, пос. Витязево ','Гостиница “Исидор” расположен в курортном поселке Витязево – в 5-10 мин. ходьбы до моря, в непосредственной близости от развлекательного центра ( боулинг клуб, рестораны, парк с аттракционами), однако не настолько близко.. ','от 1700')
-
-				+mhotel('../static/img/yug_anapa/hotel.jpg','Отель "Южная ночь"','Анапа ','В курортном поселке Джемете, на второй линии Пионерского проспекта, на расстоянии 300 метров от городского песчаного пляжа, находится отель «Южная ночь».','от 1700')
-
-				+mhotel('../static/img/primorski/hotel.jpg','Отель "Приморский"','Анапа ','Наш современный и уютный отель располагает просторными и современными номерами с  бесплатным Wi-Fi. Отель находится всего в 100 метрах от песчаного пляжа, а так же, в непосредственной близости от ..','от 1700')
-
-				+mhotel('../static/img/chistiakis/hotel.jpg','Отель "Христакис"','Анапа ','Гостиница "Христакис" ...','от 1700')
-
-				+mhotel('../static/img/rodnichok/hotel.jpg','Отель "Родничок"','Анапа ','Гостевой дом "Родничок" находится в курортном поселке Джемете 20 м от песчаного пляжа в самом центре Пионерского проспекта. В 200 м новый аквапарк "Тики-Так", рядом кафе, рестораны, магазины, рынок, остановка.','от 1700')
+				+mhotel_new('византия')
+				+mhotel_new('исидор')
+				+mhotel_new('южная ночь')
+				+mhotel_new('приморский')
+				+mhotel_new('христакис')
+				+mhotel_new('родничок')
 
 
 
 
+	.promotion-wrap
+		.base-wrap
+			-  var x = 'тест переменных';
+			//p #{x}
+			//+mtest('просто = ',6)
+			section.promotion 
+				h2.text-name-page Акции	
+				.promo-single-wrap
+					.view.view-first
+						img(src="../static/img/general/promo-1.jpg")
+						.mask
+							h2 "Раннее бронирование"
+							p  При бронировании и 100% оплате до 31 марта 2017 года предоставляется скидка в размере 5%. Действие акции до 31.03.2017 года.
+					.promo-text-block
+						.promo-text-block-left
+							//span.simbol &#9899
+							span.simbol &#8226
+							span Раннее бронирование
+							</br>
+							span.simbol &#8226
+							span Отель "Исидор", Анапа
+						.promo-text-block-right
+							span.simbol &#8226
+							span 01.02.2017-31.03.2017
+							</br>
+							span.simbol &#8226
+							span Скидка
+							span.colored 5%
+					.select-prom
+						.b-wrap
+							a#isidor-early-bron(href="javascript:void(0);").bron Получить скидку
 
+				.promo-single-wrap
+					.view.view-first
+						img(src="../static/img/general/promo-2.jpg")
+						.mask
+							h2 "Продли удовольствие"
+							p  При бронировании от 10 ночей и 100% оплате до 31.03.2017 года предоставляется скидка в размере 10%. Скидка суммируются с другими скидками, действующими на момент бронирования.
+					.promo-text-block
+						.promo-text-block-left
+							span.simbol &#8226
+							span Продли удовольствие
+							</br>
+							span.simbol &#8226
+							span Отель "Исидор", Анапа
+						.promo-text-block-right
+							span.simbol &#8226
+							span 01.02.2017-31.03.2017
+							</br>
+							span.simbol &#8226
+							span Скидка
+							span.colored 10%
+					.select-prom
+						.b-wrap
+							a#isidor-prolong-pleasure(href="javascript:void(0);").bron Получить скидку
+			.line-divide
+			.more-promotion
+				a(href="/promoution.html") Показать все акции 
 
-		-  var x = 'тест переменных';
-		//p #{x}
-		//+mtest('просто = ',6)
-		section.promotion 
-			h2.text-name-page Акции	
-			.promo-single-wrap
-				.view.view-first
-					img(src="../static/img/general/promo-1.jpg")
-					.mask
-						h2 "Раннее бронирование"
-						p  При бронировании и 100% оплате до 31 марта 2017 года предоставляется скидка в размере 5%. Действие акции до 31.03.2017 года.
-				.promo-text-block
-					.promo-text-block-left
-						//span.simbol &#9899
-						span.simbol &#8226
-						span Раннее бронирование
-						</br>
-						span.simbol &#8226
-						span Отель "Исидор", Анапа
-					.promo-text-block-right
-						span.simbol &#8226
-						span 01.02.2017-31.03.2017
-						</br>
-						span.simbol &#8226
-						span Скидка
-						span.colored 5%
-				.select-prom
-					.b-wrap
-						a#isidor-early-bron(href="javascript:void(0);").bron Получить скидку
-
-			.promo-single-wrap
-				.view.view-first
-					img(src="../static/img/general/promo-2.jpg")
-					.mask
-						h2 "Продли удовольствие"
-						p  При бронировании от 10 ночей и 100% оплате до 31.03.2017 года предоставляется скидка в размере 10%. Скидка суммируются с другими скидками, действующими на момент бронирования.
-				.promo-text-block
-					.promo-text-block-left
-						span.simbol &#8226
-						span Продли удовольствие
-						</br>
-						span.simbol &#8226
-						span Отель "Исидор", Анапа
-					.promo-text-block-right
-						span.simbol &#8226
-						span 01.02.2017-31.03.2017
-						</br>
-						span.simbol &#8226
-						span Скидка
-						span.colored 10%
-				.select-prom
-					.b-wrap
-						a#isidor-prolong-pleasure(href="javascript:void(0);").bron Получить скидку
-		.line-divide
-		.more-promotion
-			a(href="/promoution.html") Показать все акции 
-
-			
+	.base-wrap
 		section.news
 			h2.text-name-page Новости
 			.block-item-news

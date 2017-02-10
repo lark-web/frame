@@ -89,7 +89,7 @@ ul.submenu li a:hover {
   width: 1250px;
   margin: 0 auto 20px auto;
   text-align: center;
-  background-color: #dcdcdc;
+  background-color: #bbb;
 }
 .second-nav ul {
   display: inline-block;
@@ -334,6 +334,11 @@ input.sbutton {
   text-align: left;
   line-height: 22px;
 }
+.des-about h3 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
 .des-about p {
   font-size: 14px;
 }
@@ -411,14 +416,19 @@ input.sbutton {
   display: block;
 }
 .tprice {
-  border: 1px solid #eee;
-}
-.tprice tr {
-  border: 1px solid #eee;
+  border: 1px solid #888;
+  border-collapse: collapse;
+  text-align: center;
 }
 .tprice tr td {
   border: 1px solid #eee;
   padding: 2px 5px;
+  width: 200px;
+}
+.tprice tr td.zag-table {
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
 }
 .tprice tr td.tcenter {
   text-align: center;
@@ -431,6 +441,32 @@ table {
 }
 .price-wrap {
   text-align: left;
+  padding-left: 20px;
+}
+.price-wrap ul li {
+  list-style-type: circle;
+  line-height: 22px;
+  margin-left: 20px;
+}
+.price-wrap ul li span {
+  font-size: 14px;
+}
+.price-wrap ul li span {
+  font-size: 14px;
+}
+.price-wrap ul li span.t-bolt {
+  font-weight: bold;
+}
+p.text-zag,
+span.text-zag {
+  font-weight: bold;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+p.zag-table {
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
 }
 div.room-desc {
   width: 550px;
@@ -707,6 +743,9 @@ body {
   height: 1px;
   border-bottom: 1px solid #ddd;
 }
+.promotion-wrap {
+  background-color: #f2f2f2;
+}
 .promotion {
   text-align: center;
   margin-top: 30px;
@@ -804,10 +843,10 @@ body {
   text-align: right;
 }
 .select-prom .b-wrap {
-  width: 35%;
   float: right;
   margin-top: 10px;
   margin-bottom: 20px;
+  text-align: center;
 }
 .promo-text-block {
   background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#d7d7d7));
@@ -842,6 +881,7 @@ body {
 .more-promotion {
   text-align: center;
   margin-top: 15px;
+  padding-bottom: 15px;
 }
 .more-promotion a {
   color: #4980c4;
@@ -1009,10 +1049,10 @@ body {
   color: #333;
 }
 .item-hotel {
-  border-bottom: 1px solid #aaa;
+  border-bottom: 1px solid #ddd;
   display: inline-block;
   width: 600px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   margin-left: 20px;
 }
 .item-hotel .img_hotel {
@@ -1059,7 +1099,6 @@ body {
   width: 100%;
 }
 .hotel-price-info .bbron {
-  width: 50%;
   float: right;
   margin-right: 20px;
 }
@@ -1067,8 +1106,8 @@ body {
   float: left;
 }
 .hotel-price-info .hotel-price span {
-  font-size: 26px;
-  font-family: sans-serif;
+  font-size: 24px;
+  font-family: verdana, sans-serif;
   font-weight: 800;
 }
 .rub {
@@ -1078,20 +1117,20 @@ body {
   line-height: 5px;
 }
 .bron {
-  text-align: center;
-  width: 150px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff4402), to(#ff7a2e));
+  background: -webkit-linear-gradient(top, #ff4402, #ff7a2e);
+  background: linear-gradient(to bottom, #ff4402, #ff7a2e);
   display: block;
   -webkit-border-radius: 5px;
           border-radius: 5px;
   -webkit-box-shadow: 0 2px 6px #666;
           box-shadow: 0 2px 6px #666;
-  margin-left: 30px;
   font-size: 15px;
   height: 37px;
   color: #444;
   font-weight: 800;
-  padding: 5px 5px 1px 5px;
-  border: 3px solid #ff5f18;
+  padding: 7px 10px 0px 10px;
+  border: 1px solid #ff5f18;
 }
 .bron:hover {
   text-decoration: underline;
@@ -1168,6 +1207,7 @@ h2.text-name-page {
   font-size: 35px;
   text-align: left;
   padding-left: 20px;
+  padding-top: 15px;
   border-bottom: 1px solid #ccc;
   margin-bottom: 30px;
   font-family: helv__thin;

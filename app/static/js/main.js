@@ -268,6 +268,25 @@ $(document).ready(function(){
   });
 });
 
+
+// для наши отели на главной
+
+$(document).ready(function(){
+        // для страницы Исидор
+
+
+
+
+        $("#hotel-isidor-bron").click(function () {
+        //alert ('Нажали на кнопку Заказать');
+         popupRooms('5353',undefined,undefined ,undefined , '2','0', '2','2');
+  });
+});
+
+
+
+
+
 $(document).ready(function(){
 //      popupRooms(tariff, room, arrival, departure, adults, children, maxAdults, maxChildren);
  

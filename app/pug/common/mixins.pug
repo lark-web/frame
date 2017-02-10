@@ -75,3 +75,95 @@ mixin mhotel(urlpict,name,geo,text,price)
 
 mixin mtest(text,num)
 	p.proba #{text}#{num}
+
+
+
+
+mixin mhotel_new(name)
+	-var hotel_name
+	-var image
+	-var geo
+	-var price
+	-var text
+	-var a_ref
+	case name
+		when 'византия'
+			-image = '../static/img/visantia/hotel.jpg';
+			-hotel_name = 'Отель "Византия"';
+			-geo = 'Анапа, пос. Витязево ';
+			-price = 'от 1700';
+			-text = 'Мы находимся в центре поселка Витязево (Анапа) – в его первой курортной зоне: в 300 метрах от морского побережья, добраться до которого можно пешком за пять минут. Песчаный пляж настолько близок, что посещать его можно ежедневно!';
+			-a_ref  = '/visantia_about.html';
+		when 'исидор'
+			-image = '../static/img/isidor/hotel.jpg';
+			-hotel_name = 'Отель "Исидор"';
+			-geo = 'Анапа, пос. Витязево ';
+			-price = 'от 1700';
+			- text = 'Гостиница “Исидор” расположен в курортном поселке Витязево – в 5-10 мин. ходьбы до моря, в непосредственной близости от развлекательного центра ( боулинг клуб, рестораны, парк с аттракционами), однако не настолько близко.. ';
+			-a_ref  = '/isidor_about.html';
+		when 'южная ночь'
+			-image = '../static/img/yug_anapa/hotel.jpg';
+			-hotel_name = 'Отель "Южная ночь"';
+			-geo = 'Анапа ';
+			-price = 'от 1700';
+			-text = 'В курортном поселке Джемете, на второй линии Пионерского проспекта, на расстоянии 300 метров от городского песчаного пляжа, находится отель «Южная ночь».';
+			-a_ref  = '#';
+		when 'приморский'
+			-image = '../static/img/primorski/hotel.jpg';
+			-hotel_name = 'Отель "Приморский"';
+			-geo = 'Анапа ';
+			-price = 'от 1700';
+			-text = 'Наш современный и уютный отель располагает просторными и современными номерами с  бесплатным Wi-Fi. Отель находится всего в 100 метрах от песчаного пляжа, а так же, в непосредственной близости от ..';
+			-a_ref  = '#';
+		when 'христакис'
+			-image = '../static/img/chistiakis/hotel.jpg';
+			-hotel_name = 'Отель "Христакис"';
+			-geo = 'Анапа ';
+			-price = 'от 1700';
+			-text = 'Гостиница "Христакис" Гостиница "Христакис" Гостиница "Христакис" Гостиница "Христакис" Гостиница "Христакис" Гостиница "Христакис" Гостиница "Христакис" ...';
+			-a_ref  = '#';
+		when 'родничок'
+			-image = '../static/img/rodnichok/hotel.jpg';
+			-hotel_name = 'Отель "Родничок"';
+			-geo = 'Анапа ';
+			-price = 'от 1700';
+			-text = 'Гостиница "Родничок" Гостиница "Родничок" Гостиница "Родничок" Гостиница "Родничок" Гостиница "Родничок" Гостиница "Родничок" Гостиница "Родничок" ...';
+			-a_ref  = '#';
+
+
+	.item-hotel
+		.img_hotel
+			a(href= a_ref)
+				img(src= image)
+		.desc-hotel
+			.hotel-info
+				.name
+					a(href=a_ref)=hotel_name
+				.geo
+					p= geo
+				.logo
+			.hotel-text
+				p= text
+			.hotel-price-info
+				.hotel-price 
+					span=price  
+					//span.rub P
+					span .-
+				.bbron
+					case name
+						when 'византия'
+							a(href="javascript:void(0);").bron#hotel-visantia-bron Забронировать
+						when 'исидор'
+							a(href="javascript:void(0);").bron#hotel-isidor-bron Забронировать
+						when 'южная ночь'
+							a(href="javascript:void(0);").bron#hotel-ug-bron Забронировать
+						when 'приморский'
+							a(href="javascript:void(0);").bron#hotel-primor-bron Забронировать
+						when 'христакис'
+							a(href="javascript:void(0);").bron#hotel-christakis-bron Забронировать
+						when 'родничок'
+							a(href="javascript:void(0);").bron#hotel-rodnik-bron Забронировать
+
+
+
+

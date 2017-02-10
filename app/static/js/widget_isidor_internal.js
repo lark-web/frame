@@ -6,7 +6,7 @@
         css: 'http://ug-service.info/frontdesk24.css', 
         target: 'search-widget-isidor',
         language: 'ru',
-        popupHeader: '',
+        popupHeader: 'Отель "Исидор"',
         maxAdults: 10,
         widget_width: 928,
         align: 'left',

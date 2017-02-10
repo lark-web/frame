@@ -1,11 +1,17 @@
 .tprice
 	//border-collapse collapse
-	border 1px solid #eee
+	border 1px solid #888
+	border-collapse collapse
+	text-align center
 	tr
-		border 1px solid #eee
 		td
+			&.zag-table
+					font-weight bold
+					font-size 14px
+					text-align center
 			border 1px solid #eee
 			padding 2px 5px
+			width 200px
 			&.tcenter 
 				text-align center
 			&.thead 
@@ -15,3 +21,25 @@ table
 
 .price-wrap
 	text-align left
+	padding-left 20px
+	ul
+		li
+			list-style-type circle
+			line-height 22px
+			margin-left 20px
+			span
+				font-size 14px
+			span
+				font-size 14px
+				&.t-bolt
+					font-weight bold
+				
+p,span
+	&.text-zag
+		font-weight bold
+		font-size 16px
+		padding-bottom 10px
+p.zag-table
+	font-weight bold
+	font-size 14px
+	text-align center
