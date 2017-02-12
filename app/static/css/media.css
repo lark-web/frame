@@ -37,6 +37,14 @@
   .top-social-links span {
     font-size: 16px;
   }
+  .second-nav ul li {
+    margin-right: 10px;
+  }
+  .second-nav ul li a {
+    margin-right: 0px;
+    padding: 0px;
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 640px) {
   .item-hotel .img_hotel img {
@@ -56,5 +64,55 @@
   }
   .hotel-text {
     width: 200px;
+  }
+  .form-back-window {
+    width: 300px;
+  }
+  .promo-single-wrap {
+    width: 320px;
+  }
+  .promo-single-wrap .view h2 {
+    padding-top: 20px;
+  }
+  .promo-single-wrap .view p {
+    font-size: 14px;
+  }
+  .promo-single-wrap .promo-text-block-left span {
+    font-size: 12px;
+    margin-left: 0px;
+    padding-left: 5px;
+  }
+  .promo-single-wrap .promo-text-block-left span.simbol {
+    margin-left: 0px;
+    padding-left: 5px;
+  }
+  .promo-single-wrap .promo-text-block-left p {
+    font-size: 12px;
+  }
+  .promo-single-wrap .promo-text-block-right span {
+    font-size: 12px;
+    margin-left: 0px;
+    padding-left: 5px;
+  }
+  .promo-single-wrap .promo-text-block-right span.simbol {
+    margin-left: 0px;
+    padding-left: 5px;
+  }
+  .promo-single-wrap .promo-text-block-right p {
+    font-size: 12px;
+  }
+  .soc_seti {
+    position: static;
+  }
+  .desc-text {
+    display: block;
+  }
+  div.room-desc {
+    width: 300px;
+  }
+  div.room-desc .knopka {
+    position: static;
+    width: 130px;
+    margin: 0px auto;
   }
 }
