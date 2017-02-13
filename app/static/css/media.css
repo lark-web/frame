@@ -45,6 +45,13 @@
     padding: 0px;
     font-size: 12px;
   }
+  .tprice tr td {
+    width: 200px;
+  }
+  div.isingle {
+    width: 100px;
+    height: 66px;
+  }
 }
 @media screen and (max-width: 640px) {
   .item-hotel .img_hotel img {
@@ -114,5 +121,17 @@
     position: static;
     width: 130px;
     margin: 0px auto;
+  }
+  div.room-desc .tprice td,
+  div.room-desc tr td {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .ifour {
+    min-width: 450px;
+  }
+  .map-wrap {
+    min-width: 400px;
   }
 }

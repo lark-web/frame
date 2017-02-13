@@ -1,0 +1,94 @@
+extends ../layout/layout_hotels
+include ../common/mixins
+block title
+	| Страница  "Цены" Отеля Исидор
+
+
+block slider	
+block photo_desk
+	.base-wrap
+		.main-hotel-img
+		.bron-for-hotel-pages
+			#search-widget-isidor
+		.banner
+			.inner
+				+hname('Отель','Приморский','Анапа')
+
+
+
+block second_menu
+	.base-wrap
+		//include ../common/second_menu
+		+smenu('primorski','/primorski_about.html','/primorski_rooms.html','/primorski_price.html','/primorski_promoution.html','/primorski_gallery.html','/primorski_response.html','/primorski_contacts.html') 
+block content
+	.base-wrap
+		h2.text-name-page Цены
+		.price-wrap
+			p.text-zag Приморский. Цены.
+			p.text-zag Номера:
+
+			ul
+				li 
+					span.t-bolt 3-местный Стандарт: 
+					span кондиционер/сплит-система, ТВ, холодильник, санузел, душевая, 2-спальная кровать 1,4*1,8 м, односпальная кровать 0,9*1,8 м., 1 доп. место – кресло-кровать 0,9*1,8 м.
+
+			</br>
+			p.text-zag Стоимость проживания на основном месте, руб. /сутки, (без питания)
+			.table-wrap
+				table.tprice
+					tr
+						td.zag-table Период
+						td.zag-table 3-местный Стандарт
+						td.zag-table Доп. место
+					tr
+						td 01.05 – 04.06
+						td 2145
+						td 260
+					tr
+						td 05.06 – 25.06
+						td 2535
+						td 330
+					tr
+						td 26.06 – 25.08
+						td 3510
+						td 330
+					tr
+						td 26.08 – 05.09
+						td 2340
+						td 260
+					tr
+						td 26.09 – 05.10
+						td 1560
+						td 260
+
+			span.text-zag В стоимость включено: 
+			span проживание, пользование бассейном, Wi-Fi на всей территории, камера хранения багажа, предоставление кипятка, швейных принадлежностей, медицинской аптечки.
+			</br>
+			span.text-zag Питание: 
+			span 3-разовое по системе ВСЕ ВКЛЮЧЕНО, промежуточное питание (напитки, вина кубанских производителей, пиво, выпечка) по типу «Шведский стол».
+			</br>
+
+
+			span.text-zag Стоимость питания для взрослых:
+			ul
+				li 750 руб./сутки  в период 01.06 - 15.09;
+				li 600 руб./сутки в период 01.05 - 31.05 и 16.09 - 05.10;
+			span.text-zag для детей:
+			ul
+				li от 6 лет до 13 лет - 450 руб./сутки
+				li от 3 лет до 6 лет - 200 руб./сутки
+				li от 0 лет до 3 лет бесплатно
+
+
+			p.text-zag Услуги:
+			ul 
+				li детская кроватка – 150 руб. в стуки,
+				li детская коляска-трость – 100 руб. в сутки,
+				li парковка неохраняемая – 200 руб./сутки;
+				li продление номера (по возможности) – 200 руб./час;
+				
+			</br>
+			</br>
+
+
+

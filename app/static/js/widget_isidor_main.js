@@ -9,6 +9,7 @@
         popupHeader: 'Исидор',
         maxAdults: 10,
         widget_width: 928,
+        //widget_width: 350,
         align: 'left',
         showGuestsCount: true,
         showChildren: false,

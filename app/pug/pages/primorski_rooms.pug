@@ -1,0 +1,72 @@
+extends ../layout/layout_hotels
+include ../common/mixins
+block title
+	| Страница  "Номера"Отеля Исидор
+
+
+block slider	
+block photo_desk
+	.base-wrap
+		.main-hotel-img
+		.bron-for-hotel-pages
+			#search-widget-isidor
+		.banner
+			.inner
+				+hname('Отель','Исидор','Анапа')
+
+
+
+block second_menu
+	.base-wrap
+		//include ../common/second_menu
+		+smenu('primorski','/primorski_about.html','/primorski_rooms.html','/primorski_price.html','/primorski_promoution.html','/primorski_gallery.html','/primorski_response.html','/primorski_contacts.html') 
+block content
+	.base-wrap
+		h2.text-name-page Номера
+		div.room-desc
+			div.gallery
+				div#slider.flexslider
+					ul.slides
+						li
+							img(src="../static/img/isidor/standart_dbl/1-1.jpg")
+						li
+							img(src="../static/img/isidor/standart_dbl/1-2.jpg")
+						li
+							img(src="../static/img/isidor/standart_dbl/1-4.jpg")
+						li
+							img(src="../static/img/isidor/standart_dbl/1-5.jpg")
+				div#carousel.flexslider
+					ul.slides
+						li
+							img(src="../static/img/isidor/standart_dbl/1-1.jpg")
+						li
+							img(src="../static/img/isidor/standart_dbl/1-2.jpg")
+						li
+							img(src="../static/img/isidor/standart_dbl/1-4.jpg")
+						li
+							img(src="../static/img/isidor/standart_dbl/1-5.jpg")
+			div.desc-text
+				div.header-text
+					p 3-местный Стандарт 
+				div.text-item
+					span.simbol-text-room &#8226
+					span сплит-система, ТВ, холодильник, санузел, душ
+					</br>
+					span.simbol-text-room &#8226
+					span двуспальная кровать 1,4*1,8 и односпальная кровать 0,9*1,8, 1 доп. место – кресло-кровать 0,9*1,8 м;
+					</br>
+					span.simbol-text-room &#8226
+					span основных мест: 3
+					</br>
+					span.simbol-text-room &#8226
+					span дополнительных мест: 1
+					</br>
+					span.simbol-text-room &#8226
+					span площадь номера 21 кв.м.
+					</br>
+					span.simbol-text-room &#8226
+					span номеров в отеле: 30
+					</br>
+			.knopka
+				a#isidor-standart2-dbl(href="javascript:void(0);").bron Забронировать 
+
