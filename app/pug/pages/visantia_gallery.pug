@@ -1,4 +1,4 @@
-extends ../layout/layout
+extends ../layout/layout_hotels
 include ../common/mixins
 block title
 	| Cтраница "Фотогалерея" Отеля Византия
@@ -8,6 +8,8 @@ block slider
 block photo_desk
 	.base-wrap
 		.main-hotel-img
+		.bron-for-hotel-pages
+			#search-widget-visantia
 		.banner
 			.inner
 				+hname('Отель','Византия','Анапа')
@@ -21,32 +23,34 @@ block second_menu
  
 
 block content
-		.base-wrap
-			h2.text-name-page Фотогалерея
-			div.gallery-wrap
-				div.ifour
-					div.isingle
-						a(href="../static/img/general/lipki.png" data-fancybox-group="gallery" alt=""  title="").fancybox
-							img(src="../static/img/general/lipki.png")
-					div.isingle
-						a(href="../static/img/general/lipki.png" data-fancybox-group="gallery" alt=""  title="").fancybox
-							img(src="../static/img/general/lipki.png")
-					div.isingle
-						a(href="../static/img/general/lipki.png" data-fancybox-group="gallery" alt=""  title="").fancybox
-							img(src="../static/img/general/lipki.png")
-					div.isingle
-						a(href="../static/img/general/lipki.png" data-fancybox-group="gallery" alt=""  title="").fancybox
-							img(src="../static/img/general/lipki.png")
-				div.ifour
-					div.isingle
-						a(href="../static/img/general/lipki.png" data-fancybox-group="gallery" alt=""  title="").fancybox
-							img(src="../static/img/general/lipki.png")
-					div.isingle
-						a(href="../static/img/general/lipki.png" data-fancybox-group="gallery" alt=""  title="").fancybox
-							img(src="../static/img/general/lipki.png")
-					div.isingle
-						a(href="../static/img/general/lipki.png" data-fancybox-group="gallery" alt=""  title="").fancybox
-							img(src="../static/img/general/lipki.png")
-					div.isingle
-						a(href="../static/img/general/lipki.png" data-fancybox-group="gallery" alt=""  title="").fancybox
-							img(src="../static/img/general/lipki.png")
+	.base-wrap
+		h2.text-name-page Фотогалерея
+		div.gallery-wrap
+			div.ifour
+				div.isingle
+					a(href="../static/img/general/lipki.png" data-fancybox-group="gallery" alt=""  title="").fancybox
+						img(src="../static/img/general/lipki.png")
+				div.isingle
+					a(href="../static/img/general/lipki.png" data-fancybox-group="gallery" alt=""  title="").fancybox
+						img(src="../static/img/general/lipki.png")
+				div.isingle
+					a(href="../static/img/general/lipki.png" data-fancybox-group="gallery" alt=""  title="").fancybox
+						img(src="../static/img/general/lipki.png")
+				div.isingle
+					a(href="../static/img/general/lipki.png" data-fancybox-group="gallery" alt=""  title="").fancybox
+						img(src="../static/img/general/lipki.png")
+			div.ifour
+				div.isingle
+					a(href="../static/img/general/lipki.png" data-fancybox-group="gallery" alt=""  title="").fancybox
+						img(src="../static/img/general/lipki.png")
+				div.isingle
+					a(href="../static/img/general/lipki.png" data-fancybox-group="gallery" alt=""  title="").fancybox
+						img(src="../static/img/general/lipki.png")
+				div.isingle
+					a(href="../static/img/general/lipki.png" data-fancybox-group="gallery" alt=""  title="").fancybox
+						img(src="../static/img/general/lipki.png")
+				div.isingle
+					a(href="../static/img/general/lipki.png" data-fancybox-group="gallery" alt=""  title="").fancybox
+						img(src="../static/img/general/lipki.png")
+
+	script(src="static/js/widget_visantia_internal.js")

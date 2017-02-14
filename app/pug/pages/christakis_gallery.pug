@@ -1,4 +1,4 @@
-extends ../layout/layout
+extends ../layout/layout_hotels
 include ../common/mixins
 block title
 	| Cтраница "Фотогалерея "  Отеля Христиакис
@@ -8,6 +8,8 @@ block slider
 block photo_desk
 	.base-wrap
 		.main-hotel-img
+		.bron-for-hotel-pages
+			#search-widget-chistakis
 		.banner
 			.inner
 				+hname('Отель','Христиакис','Анапа')
@@ -22,3 +24,4 @@ block second_menu
 block content
 	.base-wrap
 		h2.text-name-page Фотогалерея
+	script(src="static/js/widget_chistakis_internal.js")

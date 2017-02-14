@@ -1,4 +1,4 @@
-extends ../layout/layout
+extends ../layout/layout_hotels
 include ../common/mixins
 block title
 	| Cтраница "Номера "  Отеля Христиакис
@@ -8,6 +8,8 @@ block slider
 block photo_desk
 	.base-wrap
 		.main-hotel-img
+		.bron-for-hotel-pages
+			#search-widget-chistakis
 		.banner
 			.inner
 				+hname('Отель','Христиакис','Анапа')
@@ -199,3 +201,4 @@ block content
 			.knopka
 				a#isidor-standart2-dbl-twin(href="javascript:void(0);").bron Забронировать 
 
+	script(src="static/js/widget_chistakis_internal.js")

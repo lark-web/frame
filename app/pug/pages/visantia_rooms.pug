@@ -1,4 +1,4 @@
-extends ../layout/layout
+extends ../layout/layout_hotels
 include ../common/mixins
 block title
 	| Cтраница "Номера" Отеля Византия
@@ -8,6 +8,8 @@ block slider
 block photo_desk
 	.base-wrap
 		.main-hotel-img
+		.bron-for-hotel-pages
+			#search-widget-visantia
 		.banner
 			.inner
 				+hname('Отель','Византия','Анапа')
@@ -55,4 +57,5 @@ block content
 						li Спальным местом основным является кровать размером 0,9*1,8м, дополнительным кресло-кровать.
 						li Холодильник, сплит - система, ТВ, санузел/душевая, Wi-fi, спальная мебель, балкон.
 				a(href="javascript:void(0);").bron Забронировать 
+	script(src="static/js/widget_visantia_internal.js")
 

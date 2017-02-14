@@ -1,4 +1,4 @@
-extends ../layout/layout
+extends ../layout/layout_hotels
 include ../common/mixins
 block title
 	| Cтраница "Отзывы" Отеля Византия
@@ -8,6 +8,8 @@ block slider
 block photo_desk
 	.base-wrap
 		.main-hotel-img
+		.bron-for-hotel-pages
+			#search-widget-visantia
 		.banner
 			.inner
 				+hname('Отель','Византия','Анапа')
@@ -51,3 +53,5 @@ block content
 						textarea(name="message" value="" required placeholder ="Напишите отзыв").message
 
 					input.sbutton(type="submit" name="send" value="Отправить" ).send
+
+	script(src="static/js/widget_visantia_internal.js")

@@ -1,4 +1,4 @@
-extends ../layout/layout
+extends ../layout/layout_hotels
 include ../common/mixins
 block title
 	| Cтраница "Об отеле" Отеля Византия
@@ -8,6 +8,8 @@ block slider
 block photo_desk
 	.base-wrap
 		.main-hotel-img
+		.bron-for-hotel-pages
+			#search-widget-visantia
 		.banner
 			.inner
 				+hname('Отель','Византия','Анапа')
@@ -23,3 +25,5 @@ block second_menu
 block content
 	.base-wrap
 		h2.text-name-page Об отеле
+
+	script(src="static/js/widget_visantia_internal.js")

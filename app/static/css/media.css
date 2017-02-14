@@ -120,7 +120,7 @@
   div.room-desc .knopka {
     position: static;
     width: 130px;
-    margin: 0px auto;
+    margin: 0px auto 10px auto;
   }
   div.room-desc .tprice td,
   div.room-desc tr td {

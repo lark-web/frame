@@ -1,4 +1,4 @@
-extends ../layout/layout
+extends ../layout/layout_hotels
 include ../common/mixins
 block title
 	| Cтраница "Об отеле "  Отеля Христиакис
@@ -8,6 +8,8 @@ block slider
 block photo_desk
 	.base-wrap
 		.main-hotel-img
+		.bron-for-hotel-pages
+			#search-widget-chistakis
 		.banner
 			.inner
 				+hname('Отель','Христиакис','Анапа')
@@ -94,5 +96,6 @@ block content
 					a(href="mailto:gkhristakis@mail.ru") gkhristakis@mail.ru
 				li Служба размещения: +7 918 483 21 51
 
+	script(src="static/js/widget_chistakis_internal.js")
 
 
