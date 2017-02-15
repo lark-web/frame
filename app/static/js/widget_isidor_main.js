@@ -1,5 +1,5 @@
 
-// для страницы Исидор
+// для страницы Исидор на главной
    var widgetOptions = {
         token: '3EEB66E7-F189-4553-8B7A-0D3D29A50033',
         //css: 'http://pms.frontdesk24.ru/BookingWidgetFront/styles/default.css',
@@ -29,3 +29,5 @@
         script.src = 'http://pms.frontdesk24.ru/BookingWidgetFront/Scripts/widget.js';
         document.getElementsByTagName('head')[0].appendChild(script);
     })();
+
+

@@ -347,6 +347,7 @@ input.sbutton {
 }
 .des-about p {
   font-size: 14px;
+  margin-top: 5px;
 }
 .des-about span {
   font-size: 14px;
@@ -359,6 +360,10 @@ input.sbutton {
   list-style-type: disc;
   font-size: 14px;
   margin-left: 30px;
+}
+.des-about ul li a {
+  color: #00f;
+  margin-left: 10px;
 }
 .map-wrap {
   margin-bottom: 20px;
@@ -431,7 +436,7 @@ input.sbutton {
   font-size: 14px;
   border: 1px solid #eee;
   padding: 5px 5px;
-  width: 300px;
+  width: 200px;
 }
 .tprice tr td.zag-table {
   font-weight: bold;
@@ -452,11 +457,12 @@ table {
   padding-left: 20px;
 }
 .price-wrap ul li {
-  list-style-type: circle;
+  list-style-type: disc;
   line-height: 22px;
   margin-left: 20px;
   font-size: 14px;
   font-family: Verdana;
+  margin-top: 5px;
 }
 .price-wrap ul li span {
   font-size: 14px;
@@ -468,6 +474,7 @@ table {
 .price-wrap span {
   font-size: 14px;
   font-family: Verdana;
+  margin-top: 5px;
 }
 .price-wrap p.text-zag,
 .price-wrap span.text-zag {
@@ -514,10 +521,19 @@ div.room-desc div.desc-text {
 }
 .desc-text .text-item {
   margin-bottom: 20px;
+  padding-left: 5px;
+}
+.desc-text .text-item ul li {
+  margin-left: 15px;
+  line-height: 20px;
+  font-weight: 800;
+  font-size: 12px;
+  font-family: Helvetica;
+  list-style-type: disc;
 }
 .desc-text .text-item span {
   padding-left: 5px;
-  line-height: 25px;
+  line-height: 20px;
   font-weight: 800;
   font-size: 12px;
   font-family: Helvetica;

@@ -52,6 +52,9 @@
     width: 100px;
     height: 66px;
   }
+  .soc_seti {
+    position: static;
+  }
 }
 @media screen and (max-width: 640px) {
   .item-hotel .img_hotel img {
@@ -107,9 +110,6 @@
   }
   .promo-single-wrap .promo-text-block-right p {
     font-size: 12px;
-  }
-  .soc_seti {
-    position: static;
   }
   .desc-text {
     display: block;
