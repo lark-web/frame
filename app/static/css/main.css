@@ -259,6 +259,7 @@ div.more-response {
 }
 div.resp {
   margin-bottom: 30px;
+  margin-right: 30px;
   padding-bottom: 5px;
   border-bottom: 1px solid #ccc;
   text-align: left;
@@ -269,6 +270,7 @@ div.resp p.name {
 div.resp p.text {
   font-size: 14px;
   color: #888;
+  font-family: Verdana;
 }
 div.resp p.date {
   font-size: 12px;
@@ -339,6 +341,7 @@ input.sbutton {
   text-align: left;
   line-height: 22px;
   min-width: 400px;
+  font-family: Verdana;
 }
 .des-about h3 {
   font-size: 20px;
@@ -359,7 +362,7 @@ input.sbutton {
 .des-about ul li {
   list-style-type: disc;
   font-size: 14px;
-  margin-left: 30px;
+  margin-left: 40px;
 }
 .des-about ul li a {
   color: #00f;
@@ -433,6 +436,7 @@ input.sbutton {
   text-align: center;
 }
 .tprice tr td {
+  font-family: Verdana;
   font-size: 14px;
   border: 1px solid #eee;
   padding: 5px 5px;
@@ -459,7 +463,7 @@ table {
 .price-wrap ul li {
   list-style-type: disc;
   line-height: 22px;
-  margin-left: 20px;
+  margin-left: 50px;
   font-size: 14px;
   font-family: Verdana;
   margin-top: 5px;
@@ -505,6 +509,9 @@ div.room-desc .knopka {
   top: 180px;
   left: 400px;
 }
+div.room-desc .knopka a {
+  color: #fff;
+}
 div.room-desc div.desc-text {
   color: #444;
   width: 300px;
@@ -526,7 +533,6 @@ div.room-desc div.desc-text {
 .desc-text .text-item ul li {
   margin-left: 15px;
   line-height: 20px;
-  font-weight: 800;
   font-size: 12px;
   font-family: Helvetica;
   list-style-type: disc;
@@ -1129,6 +1135,9 @@ body {
   position: absolute;
   top: 150px;
   left: 420px;
+}
+.bbron a {
+  color: #fff;
 }
 .hotel-price {
   position: absolute;

@@ -1,0 +1,49 @@
+extends ../layout/layout_hotels
+include ../common/mixins
+block title
+	| Cтраница "Об отеле" Отеля Родничок
+
+
+block slider	
+block photo_desk
+	.base-wrap
+		.main-hotel-img
+		.bron-for-hotel-pages
+			#search-widget-visantia
+		.banner
+			.inner
+				+hname('Отель','Родничок','Анапа')
+
+
+
+block second_menu
+	.base-wrap
+		//include ../common/second_menu
+		+smenu('rodnik','/rodnik_about.html','/rodnik_rooms.html','/rodnik_price.html','/rodnik_promotion.html','/rodnik_gallery.html','/rodnik_response.html','/rodnik_contacts.html') 
+ 
+
+block content
+	.base-wrap
+		h2.text-name-page Контакты
+		.contacts-wrap
+			.contacts-tel
+				span Тел.: 
+				p +7 (...) ... .. ..
+			.contacts-email
+				span E-mail: 
+				p  ...@....ru
+			.contacts-address
+				span Наш адрес: 
+				p Россия, Краснодарский край, г-к Анапа,
+			.contacts-transfer
+				span Трансфер: 
+				P ...
+			.contacts-how-to-get
+				span Проезд: 
+				P ..
+
+
+
+			.map-wrap
+				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=sBKjkI7GqViju1QXTrcpJpEbAY9CMXOB&amp;width=1250&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+	script(src="static/js/widget_visantia_internal.js")
