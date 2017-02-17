@@ -19,7 +19,41 @@ block slider
 				li
 					img(src="../static/img/content/slider/dsc_7029-5_sm.jpg" alt="")
 	.bron-table-wrap
-		#search-widget
+
+
+
+		select(onchange="var divId = this.options[this.selectedIndex].value;document.getElementById('viz').style.display = 'none'; document.getElementById('vizplace-holder').style.display = 'none';document.getElementById('is').style.display = 'none'; document.getElementById('isplace-holder').style.display = 'none';document.getElementById('hr').style.display = 'none'; document.getElementById('hrplace-holder').style.display = 'none'; document.getElementById('ro').style.display = 'none'; document.getElementById('roplace-holder').style.display = 'none';document.getElementById('pr').style.display = 'none'; document.getElementById('prplace-holder').style.display = 'none';document.getElementById('yu').style.display = 'none'; document.getElementById('yuplace-holder').style.display = 'none';document.getElementById('po').style.display = 'none'; document.getElementById('poplace-holder').style.display = 'none';document.getElementById(divId).style.display = ''; document.getElementById(divId + 'place-holder').style.display = '';")
+			option(value="viz") Византия
+			option(value="is") Исидор
+			option(value="hr") Христакис
+			option(value="ro") Родничок
+			option(value="pr") Приморский
+			option(value="yu") Южная ночь
+			option(value="po") Посейдон
+
+
+
+	div#viz
+	div#vizplace-holder
+
+	#is
+	#isplace-holder
+
+	#hr
+	#hrplace-holder
+
+	#ro
+	#roplace-holder
+
+	#pr
+	#prplace-holder
+
+	#yu
+	#yuplace-holder
+
+	#po
+	#poplace-holder
+	//#search-widget
 
 block photo_desk
 block second_menu

@@ -64,8 +64,31 @@
       </div>
     </div>
     <div class="bron-table-wrap">
-      <div id="search-widget"></div>
+      <select onchange="var divId = this.options[this.selectedIndex].value;document.getElementById('viz').style.display = 'none'; document.getElementById('vizplace-holder').style.display = 'none';document.getElementById('is').style.display = 'none'; document.getElementById('isplace-holder').style.display = 'none';document.getElementById('hr').style.display = 'none'; document.getElementById('hrplace-holder').style.display = 'none'; document.getElementById('ro').style.display = 'none'; document.getElementById('roplace-holder').style.display = 'none';document.getElementById('pr').style.display = 'none'; document.getElementById('prplace-holder').style.display = 'none';document.getElementById('yu').style.display = 'none'; document.getElementById('yuplace-holder').style.display = 'none';document.getElementById('po').style.display = 'none'; document.getElementById('poplace-holder').style.display = 'none';document.getElementById(divId).style.display = ''; document.getElementById(divId + 'place-holder').style.display = '';">
+        <option value="viz">Византия</option>
+        <option value="is">Исидор</option>
+        <option value="hr">Христакис</option>
+        <option value="ro">Родничок</option>
+        <option value="pr">Приморский</option>
+        <option value="yu">Южная ночь</option>
+        <option value="po">Посейдон</option>
+      </select>
     </div>
+    <div id="viz"></div>
+    <div id="vizplace-holder"></div>
+    <div id="is"></div>
+    <div id="isplace-holder"></div>
+    <div id="hr"></div>
+    <div id="hrplace-holder"></div>
+    <div id="ro"></div>
+    <div id="roplace-holder"></div>
+    <div id="pr"></div>
+    <div id="prplace-holder"></div>
+    <div id="yu"></div>
+    <div id="yuplace-holder"></div>
+    <div id="po"></div>
+    <div id="poplace-holder"></div>
+    <!--#search-widget-->
     <!-- coment-->
     <!--block slider-->
     <!--include ../common/second_menu-->
@@ -316,6 +339,6 @@
     </div>
     <script src="static/js/libs.min.js"></script>
     <script src="static/js/main.js"></script>
-    <script src="static/js/widget_isidor_main.js"></script>
+    <script src="static/js/widget_main.js"></script>
   </body>
 </html>
