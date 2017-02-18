@@ -1,0 +1,48 @@
+extends ../layout/layout_hotels
+include ../common/mixins
+block title
+	| Страница  "Контакты" Отеля  Южная ночь
+
+
+
+block slider	
+block photo_desk
+	.base-wrap
+		.main-hotel-img
+		.bron-for-hotel-pages
+			#search-widget-isidor
+		.banner
+			.inner
+				+hname('Отель',' Южная ночь','Анапа')
+
+
+
+block second_menu
+	.base-wrap
+		//include ../common/second_menu
+		+smenu('yug_night','/yug_night_about.html','/yug_night_rooms.html','/yug_night_price.html','/yug_night_promoution.html','/yug_night_gallery.html','/yug_night_response.html','/yug_night_contacts.html') 
+
+block content
+	.base-wrap
+		h2.text-name-page Контакты
+		.contacts-wrap
+			.contacts-tel
+				span Тел.: 
+				p +7 (...) ... .. ..
+			.contacts-email
+				span E-mail: 
+				p  ...@....ru
+			.contacts-address
+				span Наш адрес: 
+				p Россия, Краснодарский край,проспект Южный, д.25  
+			.contacts-transfer
+				span Трансфер: 
+				P ...
+			.contacts-how-to-get
+				span Проезд: 
+				P ..
+				.map-wrap
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=KIVXTz3Bm0WM73-WNIKPqK_VUQS7QXKR&amp;width=1250&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+
+	script(src="static/js/widget_isidor_internal.js")
+

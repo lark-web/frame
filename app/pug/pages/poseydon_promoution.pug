@@ -1,0 +1,30 @@
+extends ../layout/layout_hotels
+include ../common/mixins
+block title
+	| Страница  "Акции" Отеля Посейдон
+
+
+block slider	
+block photo_desk
+	.base-wrap
+		.main-hotel-img
+		.bron-for-hotel-pages
+			#search-widget-isidor
+		.banner
+			.inner
+				+hname('Отель','Посейдон','Анапа')
+
+
+
+block second_menu
+	.base-wrap
+		//include ../common/second_menu
+		+smenu('poseydon','/poseydon_about.html','/poseydon_rooms.html','/poseydon_price.html','/poseydon_promoution.html','/poseydon_gallery.html','/poseydon_response.html','/poseydon_contacts.html') 
+ 
+
+block content
+	.base-wrap
+		h2.text-name-page Акции
+
+
+	script(src="static/js/widget_isidor_internal.js")

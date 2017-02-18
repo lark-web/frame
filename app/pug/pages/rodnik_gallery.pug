@@ -1,0 +1,26 @@
+extends ../layout/layout_hotels
+include ../common/mixins
+block title
+	| Страница  "Об отеле" Отеля Родник
+
+
+block slider	
+block photo_desk
+	.base-wrap
+		.main-hotel-img
+		.bron-for-hotel-pages
+			#search-widget-primorski
+		+hname('Отель','Родник','Анапа')
+
+
+
+block second_menu
+	.base-wrap
+		//include ../common/second_menu
+		+smenu('rodnik','/rodnik_about.html','/rodnik_rooms.html','/rodnik_price.html','/rodnik_promoution.html','/rodnik_gallery.html','/rodnik_response.html','/rodnik_contacts.html') 
+
+
+block content
+	.base-wrap
+		h2.text-name-page Фотогалерея
+	script(src="static/js/widget_primorski_internal.js")

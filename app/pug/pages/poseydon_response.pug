@@ -1,0 +1,47 @@
+extends ../layout/layout_hotels
+include ../common/mixins
+block title
+	| Страница  "Отзывы" Отеля Посейдон
+
+
+block slider	
+block photo_desk
+	.base-wrap
+		.main-hotel-img
+		.bron-for-hotel-pages
+			#search-widget-isidor
+		.banner
+			.inner
+				+hname('Отель','Посейдон','Анапа')
+
+
+
+block second_menu
+	.base-wrap
+		//include ../common/second_menu
+		+smenu('poseydon','/poseydon_about.html','/poseydon_rooms.html','/poseydon_price.html','/poseydon_promoution.html','/poseydon_gallery.html','/poseydon_response.html','/poseydon_contacts.html') 
+
+block content
+	.base-wrap
+		.resp-wrap
+			h2.text-name-page Отзывы
+			div.resp-window
+
+
+
+			div.form-back-window
+				// форма обратной связи
+				h2.text Оставить отзыв 
+				div.form-wrap
+					form(method="POST" action="javascript:void(0);" onsubmit="ajax()")#form
+						div.input
+							input(type = "text" name="name" value="" placeholder ="Ваше имя" required ).name
+						div.input
+							input(type = "text" name="email" value=""  required placeholder ="Ваш e-mail").email
+
+						div.input
+							textarea(name="message" value="" required placeholder ="Напишите отзыв").message
+
+						input.sbutton(type="submit" name="send" value="Отправить" ).send
+						
+	script(src="static/js/widget_isidor_internal.js")

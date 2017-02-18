@@ -232,6 +232,48 @@ widgetOptions = {
 //});
 
 
+$(document).ready(function(){
+
+        $('#is').css('display','none');
+        $('#isplace-holder').css('display','none');
+        $('#hr').css('display','none');
+        $('#hrplace-holder').css('display','none');
+        $('#ro').css('display','none');
+        $('#roplace-holder').css('display','none');
+        $('#pr').css('display','none');
+        $('#prplace-holder').css('display','none');
+        $('#yu').css('display','none');
+        $('#yuplace-holder').css('display','none');
+        $('#po').css('display','none');
+        $('#poplace-holder').css('display','none');
+
+
+
+    $('select.target').change(function() {
+        //alert( "Handler for .change() called." );
+        var divId = this.options[this.selectedIndex].value;
+        console.log(this.selectedIndex);
+        console.log(divId);
+        $('#viz').css('display','none');
+        $('#vizplace-holder').css('display','none');
+        $('#is').css('display','none');
+        $('#isplace-holder').css('display','none');
+        $('#hr').css('display','none');
+        $('#hrplace-holder').css('display','none');
+        $('#ro').css('display','none');
+        $('#roplace-holder').css('display','none');
+        $('#pr').css('display','none');
+        $('#prplace-holder').css('display','none');
+        $('#yu').css('display','none');
+        $('#yuplace-holder').css('display','none');
+        $('#po').css('display','none');
+        $('#poplace-holder').css('display','none');
+        $('#' + divId).css('display','block');
+        $('#' + divId + 'place-holder').css('display','block');
+
+    });
+});
+
 
 //document.getElementById('viz').style.display = 'none';
 

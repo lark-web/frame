@@ -1,0 +1,44 @@
+extends ../layout/layout_hotels
+include ../common/mixins
+block title
+	| Страница  "Об отеле" Отеля Посейдон
+
+
+block slider	
+block photo_desk
+	.base-wrap
+		.main-hotel-img
+		.bron-for-hotel-pages
+			#search-widget-primorski
+		+hname('Отель','Посейдон','Анапа')
+
+
+
+block second_menu
+	.base-wrap
+		//include ../common/second_menu
+		+smenu('poseydon','/poseydon_about.html','/poseydon_rooms.html','/poseydon_price.html','/poseydon_promoution.html','/poseydon_gallery.html','/poseydon_response.html','/poseydon_contacts.html') 
+
+block content
+	.base-wrap
+		h2.text-name-page Контакты
+		.contacts-wrap
+			.contacts-tel
+				span Тел.: 
+				p +7 (...) ... .. ..
+			.contacts-email
+				span E-mail: 
+				p  ...@....ru
+			.contacts-address
+				span Наш адрес: 
+				p Россия,проспект Южный, д.25  
+			.contacts-transfer
+				span Трансфер: 
+				P ...
+			.contacts-how-to-get
+				span Проезд: 
+				P ..
+				.map-wrap
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=G0mEmrh84cXuYE3qdHHFHzwV8gFMaAiV&amp;width=1250&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+
+	script(src="static/js/widget_primorski_internal.js")

@@ -19,7 +19,7 @@ block photo_desk
 block second_menu
 	.base-wrap
 		//include ../common/second_menu
-		+smenu('rodnik','/rodnik_about.html','/rodnik_rooms.html','/rodnik_price.html','/rodnik_promotion.html','/rodnik_gallery.html','/rodnik_response.html','/rodnik_contacts.html') 
+		+smenu('rodnik','/rodnik_about.html','/rodnik_rooms.html','/rodnik_price.html','/rodnik_promoution.html','/rodnik_gallery.html','/rodnik_response.html','/rodnik_contacts.html') 
  
 
 block content
@@ -41,9 +41,8 @@ block content
 			.contacts-how-to-get
 				span Проезд: 
 				P ..
+				.map-wrap
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=TeHfyq4uuqcccGF_yEuy4NkY_8j6jlWw&amp;width=1250&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
 
 
-
-			.map-wrap
-				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=sBKjkI7GqViju1QXTrcpJpEbAY9CMXOB&amp;width=1250&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
 	script(src="static/js/widget_visantia_internal.js")

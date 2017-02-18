@@ -475,7 +475,8 @@ $(document).ready(function() {
 
             $('.fancybox').fancybox({
                 'margin' : 5,
-                'padding' : 2
+                'padding' : 2,
+                'scrolling' : 'no'
             });
 
             /*

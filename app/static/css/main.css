@@ -37,6 +37,7 @@
   font-family: webfontregular;
   font-stetch: condensed;
   padding-bottom: 0px;
+  margin-left: 3px;
 }
 #page-wrap {
   display: inline-block;
@@ -350,7 +351,7 @@ input.sbutton {
 }
 .des-about p {
   font-size: 14px;
-  margin-top: 5px;
+  margin-top: 15px;
 }
 .des-about span {
   font-size: 14px;
@@ -478,7 +479,7 @@ table {
 .price-wrap span {
   font-size: 14px;
   font-family: Verdana;
-  margin-top: 5px;
+  margin-top: 15px;
 }
 .price-wrap p.text-zag,
 .price-wrap span.text-zag {
@@ -554,6 +555,12 @@ div.room-desc div.desc-text {
 }
 .flexslider {
   margin-bottom: 10px;
+}
+.flex-direction-nav a {
+  color: #fff;
+}
+.flex-direction-nav a::before {
+  color: #fff;
 }
 .gallery-wrap {
   text-align: center;
@@ -1162,11 +1169,11 @@ body {
   display: block;
   -webkit-border-radius: 5px;
           border-radius: 5px;
-  -webkit-box-shadow: 0 2px 6px #666;
-          box-shadow: 0 2px 6px #666;
+  -webkit-box-shadow: 0 2px 6px #999;
+          box-shadow: 0 2px 6px #999;
   font-size: 15px;
   height: 37px;
-  color: #444;
+  color: #fff;
   font-weight: 800;
   padding: 7px 10px 0px 10px;
   border: 1px solid #ff5f18;
