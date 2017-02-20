@@ -2,6 +2,7 @@
 
     var widgetOptions = {
         token: 'C584BE97-A4BE-4D53-99DF-4625FB00742D',
+        css: 'http://ug-service.info/frontdesk24.css',
         target: 'viz',
         language: 'ru',
         popupHeader: 'Византия',
@@ -34,6 +35,7 @@ createWidget(widgetOptions);
 
     widgetOptions = {
         token: '3EEB66E7-F189-4553-8B7A-0D3D29A50033',
+        css: 'http://ug-service.info/frontdesk24.css',
         target: 'is',
 	language: 'ru',
         popupHeader: 'Что это 1',
@@ -66,6 +68,7 @@ createWidget(widgetOptions);
 
 widgetOptions = {
         token: '432CFA38-34F6-4FF1-8C1D-59199908AE41',
+        css: 'http://ug-service.info/frontdesk24.css',
         target: 'hr',
 	language: 'ru',
         popupHeader: 'Христакис',
@@ -98,6 +101,7 @@ widgetOptions = {
 
 widgetOptions = {
         token: '648AC3CC-982B-46E1-805B-CFEDF3F8BD35',
+        css: 'http://ug-service.info/frontdesk24.css',
         target: 'ro',
 	language: 'ru',
         popupHeader: 'Родничок',
@@ -130,6 +134,7 @@ widgetOptions = {
 
 widgetOptions = {
         token: '4DBE3152-9CC5-41E2-9324-8F8F9A2C9292',
+        css: 'http://ug-service.info/frontdesk24.css',
         target: 'pr',
 	language: 'ru',
         popupHeader: 'Приморский',
@@ -161,6 +166,7 @@ widgetOptions = {
 
 widgetOptions = {
         token: '5AC2A793-9873-4D05-8D65-92197C328F18',
+        css: 'http://ug-service.info/frontdesk24.css',
         target: 'yu',
 	language: 'ru',
         popupHeader: 'Южная ночь',
@@ -192,6 +198,7 @@ widgetOptions = {
 
 widgetOptions = {
         token: '45E87E85-E82B-491F-A39F-C376DF50D4DD',
+        css: 'http://ug-service.info/frontdesk24.css',
         target: 'po',
 	language: 'ru',
         popupHeader: 'Что это 2',

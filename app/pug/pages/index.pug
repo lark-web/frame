@@ -27,41 +27,43 @@ block second_menu
 
 
 block content
-	.base-wrap 
-		.bron-table-wrap
-			div.selh
-				p.sel-hotel Отель:  
-				select.target
-					option(value="viz") Византия
-					option(value="is") Исидор
-					option(value="hr") Христакис
-					option(value="ro") Родничок
-					option(value="pr") Приморский
-					option(value="yu") Южная ночь
-					option(value="po") Посейдон
-			#viz
-			#vizplace-holder
-			#is
-			#isplace-holder
-			#hr
-			#hrplace-holder
-			#ro
-			#roplace-holder
-			#pr
-			#prplace-holder
-			#yu
-			#yuplace-holder
-			#po
-			#poplace-holder
-		section.our-hotels
-			h2.text-name-page Наши отели
-			.block-item-hotels
-				+mhotel_new('византия')
-				+mhotel_new('исидор')
-				+mhotel_new('южная ночь')
-				+mhotel_new('приморский')
-				+mhotel_new('христакис')
-				+mhotel_new('родничок')
+	.bron-wrap
+		.opt-wrap
+		.base-wrap 
+			.bron-table-wrap
+				div.selh
+					p.sel-hotel Отель:  
+					select.target
+						option(value="viz") Византия
+						option(value="is") Исидор
+						option(value="hr") Христакис
+						option(value="ro") Родничок
+						option(value="pr") Приморский
+						option(value="yu") Южная ночь
+						option(value="po") Посейдон
+				#viz
+				#vizplace-holder
+				#is
+				#isplace-holder
+				#hr
+				#hrplace-holder
+				#ro
+				#roplace-holder
+				#pr
+				#prplace-holder
+				#yu
+				#yuplace-holder
+				#po
+				#poplace-holder
+			section.our-hotels
+				h2.text-name-page Наши отели
+				.block-item-hotels
+					+mhotel_new('византия')
+					+mhotel_new('исидор')
+					+mhotel_new('южная ночь')
+					+mhotel_new('приморский')
+					+mhotel_new('христакис')
+					+mhotel_new('родничок')
 
 
 
@@ -144,10 +146,5 @@ block content
 
 
 
-
-
-
-
-		
 
 

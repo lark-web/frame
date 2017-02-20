@@ -154,7 +154,7 @@ ul.submenu li a:hover {
   background: none;
 }
 .footer_wrap {
-  background-color: #f63;
+  background-color: #9d8e67;
   padding: 10px 20px;
   position: relative;
 }
@@ -242,6 +242,12 @@ ul.submenu li a:hover {
 .contacts-wrap p a {
   color: #44d;
 }
+.contacts-wrap ul li {
+  list-style-type: disc;
+  font-size: 14px;
+  margin-left: 40px;
+  color: #888;
+}
 .contacts-img {
   background: rgba(0,0,0,0) url("../img/general/contacts.jpg") center center no-repeat;
   z-index: 2;
@@ -255,12 +261,6 @@ ul.submenu li a:hover {
 .map-wrap {
   margin-top: 20px;
   margin-bottom: 20px;
-}
-.contacts-wrap ul li {
-  list-style-type: disc;
-  font-size: 14px;
-  margin-left: 40px;
-  color: #888;
 }
 .resp-wrap {
   text-align: left;
@@ -736,6 +736,18 @@ textarea {
   position: relative;
   text-align: center;
 }
+.bron-wrap {
+  position: relative;
+}
+.bron-wrap .opt-wrap {
+  position: absolute;
+  height: 106px;
+  background-color: #d3cebb;
+  width: 100%;
+}
+.bron-table-wrap {
+  margin-bottom: 20px;
+}
 body {
   font-family: 'roboto_slabregular', sans-serif;
   background-color: #fff;
@@ -745,10 +757,6 @@ body {
 }
 .main-slider-wrap {
   color: #fff;
-}
-.bron-table-wrap {
-  background-color: #eef5f7;
-  margin-bottom: 20px;
 }
 #search-widget {
   width: 90%;
@@ -1306,6 +1314,41 @@ div.selh select {
   font-size: 14px;
   color: #888;
 }
-#viz {
+#viz,
+#is,
+#hr,
+#ro,
+#pr,
+#yu,
+#po {
   left: 120px;
+}
+.how-to-get-wrap {
+  padding: 20px 10px;
+  padding-left: 30px;
+  text-align: left;
+  min-width: 400px;
+}
+.how-to-get-wrap h3 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+.how-to-get-wrap span {
+  color: #888;
+  font-size: 14px;
+}
+.how-to-get-wrap p {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 5px;
+  line-height: 20px;
+}
+.how-to-get-wrap p a {
+  color: #44d;
+}
+.how-to-get-wrap ul li {
+  list-style-type: disc;
+  font-size: 14px;
+  margin-left: 40px;
+  color: #888;
 }
