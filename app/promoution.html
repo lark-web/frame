@@ -57,6 +57,39 @@
     <!-- coment-->
     <!--block slider-->
     <!--include ../common/second_menu-->
+    <div class="bron-wrap">
+      <div class="opt-wrap"></div>
+      <div class="base-wrap"> 
+        <div class="bron-table-wrap">
+          <div class="selh">
+            <p class="sel-hotel">Отель:  </p>
+            <select class="target">
+              <option value="viz">Византия</option>
+              <option value="is">Исидор</option>
+              <option value="hr">Христакис</option>
+              <option value="ro">Родничок</option>
+              <option value="pr">Приморский</option>
+              <option value="yu">Южная ночь</option>
+              <option value="po">Посейдон</option>
+            </select>
+          </div>
+          <div id="viz"></div>
+          <div id="vizplace-holder"></div>
+          <div id="is"></div>
+          <div id="isplace-holder"></div>
+          <div id="hr"></div>
+          <div id="hrplace-holder"></div>
+          <div id="ro"></div>
+          <div id="roplace-holder"></div>
+          <div id="pr"></div>
+          <div id="prplace-holder"></div>
+          <div id="yu"></div>
+          <div id="yuplace-holder"></div>
+          <div id="po"></div>
+          <div id="poplace-holder"></div>
+        </div>
+      </div>
+    </div>
     <div class="base-wrap">
       <!--p #{x}-->
       <!--+mtest('просто = ',6)-->
@@ -72,12 +105,14 @@
           </div>
           <div class="promo-text-block">
             <div class="promo-text-block-left">
-              <!--span.simbol &#9899--><span class="simbol">&#8226</span><span>Раннее бронирование</span></br><span class="simbol">&#8226</span><span>Отель "Исидор", Анапа</span>
+              <!--span.simbol &#9899--><span class="simbol">&#8226</span><span>Раннее бронирование</span></br><span class="simbol">&#8226</span><span>Все отели</span>
             </div>
             <div class="promo-text-block-right"><span class="simbol">&#8226</span><span>01.02.2017-31.03.2017</span></br><span class="simbol">&#8226</span><span>Скидка</span><span class="colored">5%</span></div>
           </div>
           <div class="select-prom">
-            <div class="b-wrap"><a class="bron" id="isidor-early-bron" href="javascript:void(0);">Получить скидку</a></div>
+            <div class="b-wrap">
+              <!--a#isidor-early-bron(href="javascript:void(0);").bron Получить скидку-->
+            </div>
           </div>
         </div>
         <div class="promo-single-wrap">
@@ -88,11 +123,13 @@
             </div>
           </div>
           <div class="promo-text-block">
-            <div class="promo-text-block-left"><span class="simbol">&#8226</span><span>Продли удовольствие</span></br><span class="simbol">&#8226</span><span>Отель "Исидор", Анапа</span></div>
+            <div class="promo-text-block-left"><span class="simbol">&#8226</span><span>Продли удовольствие</span></br><span class="simbol">&#8226</span><span>Все отели</span></div>
             <div class="promo-text-block-right"><span class="simbol">&#8226</span><span>01.02.2017-31.03.2017</span></br><span class="simbol">&#8226</span><span>Скидка</span><span class="colored">10%</span></div>
           </div>
           <div class="select-prom">
-            <div class="b-wrap"><a class="bron" id="isidor-prolong-pleasure" href="javascript:void(0);">Получить скидку</a></div>
+            <div class="b-wrap">
+              <!--a#isidor-prolong-pleasure(href="javascript:void(0);").bron Получить скидку-->
+            </div>
           </div>
         </div>
       </section>

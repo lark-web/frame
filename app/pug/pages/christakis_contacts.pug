@@ -1,4 +1,4 @@
-extends ../layout/layout_hotels
+ extends ../layout/layout_hotels
 include ../common/mixins
 block title
 	| Cтраница "Контакты "  Отеля Христакис
@@ -19,7 +19,7 @@ block photo_desk
 block second_menu
 	.base-wrap
 		//include ../common/second_menu
-		+smenu('christakis','/christakis_about.html','/christakis_rooms.html','/christakis_price.html','/christakis_promoution.html','/christakis_gallery.html','/christakis_response.html','/christakis_contacts.html') 
+		+smenu('christakis','/christakis_about.html','/christakis_rooms.html','/christakis_price.html','/promoution.html','/christakis_gallery.html','/christakis_response.html','/christakis_contacts.html') 
 
 block content
 	.base-wrap
@@ -36,4 +36,4 @@ block content
 				.map-wrap
 					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=5iFUSwqR4ePGdIKvUF6jOEkJOkqCQPke&amp;width=1250&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
 
-	script(src="static/js/widget_chistakis_internal.js")
+	script(src="static/js/widget_chistakis.js")

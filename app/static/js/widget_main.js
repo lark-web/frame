@@ -5,7 +5,7 @@
         css: 'http://ug-service.info/frontdesk24.css',
         target: 'viz',
         language: 'ru',
-        popupHeader: 'Византия',
+        popupHeader: 'Отель "Византия"',
         maxAdults: 10,
         widget_width: 928,
         align: 'left',
@@ -25,11 +25,10 @@
         periodText: 'Выберите дату',
         allowOverbooking: false,
         emailRequired: false,
-        card: true,
-        popupHeader: 'Византия'
+        //card: true,
+
     };
 
-    
 createWidget(widgetOptions);
 
 
@@ -38,7 +37,7 @@ createWidget(widgetOptions);
         css: 'http://ug-service.info/frontdesk24.css',
         target: 'is',
 	language: 'ru',
-        popupHeader: 'Что это 1',
+        popupHeader: 'Отель "Исидор"',
         maxAdults: 10,
         widget_width: 928,
         align: 'left',
@@ -58,8 +57,8 @@ createWidget(widgetOptions);
         periodText: 'Выберите дату',
         allowOverbooking: false,
         emailRequired: false,
-        card: true,
-        popupHeader: 'Исидор'
+        //card: true,
+    
     };
 
     
@@ -71,7 +70,7 @@ widgetOptions = {
         css: 'http://ug-service.info/frontdesk24.css',
         target: 'hr',
 	language: 'ru',
-        popupHeader: 'Христакис',
+        popupHeader: 'Отель "Христакис"',
         maxAdults: 10,
         widget_width: 928,
         align: 'left',
@@ -91,8 +90,8 @@ widgetOptions = {
         periodText: 'Выберите дату',
         allowOverbooking: false,
         emailRequired: false,
-        card: true,
-        popupHeader: 'Христакис'
+        //card: true,
+    
     };
 
     
@@ -104,7 +103,7 @@ widgetOptions = {
         css: 'http://ug-service.info/frontdesk24.css',
         target: 'ro',
 	language: 'ru',
-        popupHeader: 'Родничок',
+        popupHeader: 'Отель "Родничок"',
         maxAdults: 10,
         widget_width: 928,
         align: 'left',
@@ -124,8 +123,8 @@ widgetOptions = {
         periodText: 'Выберите дату',
         allowOverbooking: false,
         emailRequired: false,
-        card: true,
-        popupHeader: 'Родничок'
+        //card: true,
+    
     };
 
     
@@ -136,8 +135,8 @@ widgetOptions = {
         token: '4DBE3152-9CC5-41E2-9324-8F8F9A2C9292',
         css: 'http://ug-service.info/frontdesk24.css',
         target: 'pr',
-	language: 'ru',
-        popupHeader: 'Приморский',
+        language: 'ru',
+        popupHeader: 'Отель "Приморский"',
         maxAdults: 10,
         widget_width: 928,
         align: 'left',
@@ -157,8 +156,8 @@ widgetOptions = {
         periodText: 'Выберите дату',
         allowOverbooking: false,
         emailRequired: false,
-        card: true,
-        popupHeader: 'Приморский'
+        //card: true,
+    
     };
 
     
@@ -169,7 +168,7 @@ widgetOptions = {
         css: 'http://ug-service.info/frontdesk24.css',
         target: 'yu',
 	language: 'ru',
-        popupHeader: 'Южная ночь',
+        popupHeader: 'Отель "Южная ночь"',
         maxAdults: 10,
         widget_width: 928,
         align: 'left',
@@ -189,8 +188,8 @@ widgetOptions = {
         periodText: 'Выберите дату',
         allowOverbooking: false,
         emailRequired: false,
-        card: true,
-        popupHeader: 'Южная ночь'
+        //card: true,
+        
     };
 
     
@@ -201,7 +200,7 @@ widgetOptions = {
         css: 'http://ug-service.info/frontdesk24.css',
         target: 'po',
 	language: 'ru',
-        popupHeader: 'Что это 2',
+        popupHeader: 'Отель "Посейдон"',
         maxAdults: 10,
         widget_width: 928,
         align: 'left',
@@ -221,8 +220,8 @@ widgetOptions = {
         periodText: 'Выберите дату',
         allowOverbooking: false,
         emailRequired: false,
-        card: true,
-        popupHeader: 'Посейдон'
+        //card: true,
+    
     };
 
     

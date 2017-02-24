@@ -19,7 +19,7 @@ block photo_desk
 block second_menu
 	.base-wrap
 		//include ../common/second_menu
-		+smenu('isidor','/isidor_about.html','/isidor_rooms.html','/isidor_price.html','/isidor_promoution.html','/isidor_gallery.html','/isidor_response.html','/isidor_contacts.html') 
+		+smenu('isidor','/isidor_about.html','/isidor_rooms.html','/isidor_price.html','/promoution.html','/isidor_gallery.html','/isidor_response.html','/isidor_contacts.html') 
 
 block content
 	.base-wrap
@@ -106,13 +106,9 @@ block content
 			p
 				b В стоимость включено: 
 				span проживание, пользование бассейном, Wi-Fi на стойке регистрации, анимация.
-			p
-				b Дети 
-				span принимаются с любого возраста:
-
-			ul
-				li до 3 лет бесплатно, без предоставления места, с питанием. Стоимость детской кроватки - 300 рублей/сутки (доп. услуга);
-				li от 3 до 6 лет бесплатно на дополнительном месте. 
+			p 
+				b Дети: 
+				span принимаются с любого возраста; до 6 лет бесплатно, без предоставления места.
 
 			p
 				b Стоимость питания:
@@ -130,11 +126,12 @@ block content
 			p
 				b  Услуги:
 			ul 
+				li аренда детской кроватки - 300 руб./сутки(доп. услуга);
 				li парковка неохраняемая – 200 руб./сутки;
 				li продление номера (по возможности) – 200 руб./час;
 				li прокат пляжных принадлежностей.
 			</br>
 			</br>
-	script(src="static/js/widget_isidor_internal.js")
+	script(src="static/js/widget_isidor.js")
 
 

@@ -6,7 +6,7 @@
         css: 'http://ug-service.info/frontdesk24.css', 
         target: 'search-widget',
         language: 'ru',
-        popupHeader: 'Исидор',
+        popupHeader: 'Отель "Посейдон"',
         maxAdults: 10,
         widget_width: 928,
         //widget_width: 350,

@@ -256,6 +256,36 @@ $(document).ready(function(){
 //Ранее бронирование, скидка 5%      5354
 $(document).ready(function(){
         $("#isidor-early-bron").click(function () {
+
+      widgetOptions = {
+        token: '3EEB66E7-F189-4553-8B7A-0D3D29A50033',
+        css: 'http://ug-service.info/frontdesk24.css',
+        target: 'is',
+        language: 'ru',
+        popupHeader: 'Отель "Исидор"',
+        maxAdults: 10,
+        widget_width: 928,
+        align: 'left',
+        showGuestsCount: true,
+        showChildren: true,
+        minAge: 1,
+        maxAge: 17,
+        method: 'popup',
+        showAllIfNotExists: true, 
+        usePaygate: false,
+        defLength: 1,
+        defAdults: 2,
+        alwaysShowTariff: false,
+        expanded: false,
+        showHours: false,
+        buttonText: 'Проверить наличие',
+        periodText: 'Выберите дату',
+        allowOverbooking: false,
+        emailRequired: false,
+        //card: true,
+        
+    };
+    createWidget(widgetOptions);
         //alert ('Нажали на кнопку Заказать');
          popupRooms('5354','' ,undefined ,undefined , '2','0', '2','2');
   });
@@ -263,6 +293,36 @@ $(document).ready(function(){
 //Продли удовольствие, скидка 10%    5355
 $(document).ready(function(){
         $("#isidor-prolong-pleasure").click(function () {
+
+      widgetOptions = {
+        token: '3EEB66E7-F189-4553-8B7A-0D3D29A50033',
+        css: 'http://ug-service.info/frontdesk24.css',
+        target: 'is',
+        language: 'ru',
+        popupHeader: 'Отель "Исидор"',
+        maxAdults: 10,
+        widget_width: 928,
+        align: 'left',
+        showGuestsCount: true,
+        showChildren: true,
+        minAge: 1,
+        maxAge: 17,
+        method: 'popup',
+        showAllIfNotExists: true, 
+        usePaygate: false,
+        defLength: 1,
+        defAdults: 2,
+        alwaysShowTariff: false,
+        expanded: false,
+        showHours: false,
+        buttonText: 'Проверить наличие',
+        periodText: 'Выберите дату',
+        allowOverbooking: false,
+        emailRequired: false,
+        //card: true,
+    
+    };
+    createWidget(widgetOptions);
         //alert ('Нажали на кнопку Заказать');
          popupRooms('5355','' ,undefined ,undefined , '2','0', '2','2');
   });
@@ -271,19 +331,275 @@ $(document).ready(function(){
 
 // для наши отели на главной
 
+
+
 $(document).ready(function(){
         // для страницы Исидор
-
-
-
-
         $("#hotel-isidor-bron").click(function () {
-        //alert ('Нажали на кнопку Заказать');
-         popupRooms('5353',undefined,undefined ,undefined , '2','0', '2','2');
+    widgetOptions = {
+        token: '3EEB66E7-F189-4553-8B7A-0D3D29A50033',
+        css: 'http://ug-service.info/frontdesk24.css',
+        target: 'is',
+        language: 'ru',
+        popupHeader: 'Отель "Исидор"',
+        maxAdults: 10,
+        widget_width: 928,
+        align: 'left',
+        showGuestsCount: true,
+        showChildren: true,
+        minAge: 1,
+        maxAge: 17,
+        method: 'popup',
+        showAllIfNotExists: true, 
+        usePaygate: false,
+        defLength: 1,
+        defAdults: 2,
+        alwaysShowTariff: false,
+        expanded: false,
+        showHours: false,
+        buttonText: 'Проверить наличие',
+        periodText: 'Выберите дату',
+        allowOverbooking: false,
+        emailRequired: false,
+        //card: true,
+        
+    };
+    createWidget(widgetOptions);
+        //alert ('Нажали на кнопку Заказать Исидор');
+         popupRooms(undefined,undefined,undefined ,undefined , '2','0', '2','2');
+  });
+});
+
+$(document).ready(function(){
+        // для страницы Христакис
+        $("#hotel-christakis-bron").click(function () {
+widgetOptions = {
+        token: '432CFA38-34F6-4FF1-8C1D-59199908AE41',
+        css: 'http://ug-service.info/frontdesk24.css',
+        target: 'hr',
+        language: 'ru',
+        popupHeader: 'Отель "Христакис"',
+        maxAdults: 10,
+        widget_width: 928,
+        align: 'left',
+        showGuestsCount: true,
+        showChildren: true,
+        minAge: 1,
+        maxAge: 17,
+        method: 'popup',
+        showAllIfNotExists: true, 
+        usePaygate: false,
+        defLength: 1,
+        defAdults: 2,
+        alwaysShowTariff: false,
+        expanded: false,
+        showHours: false,
+        buttonText: 'Проверить наличие',
+        periodText: 'Выберите дату',
+        allowOverbooking: false,
+        emailRequired: false,
+        //card: true,
+    
+    };
+    createWidget(widgetOptions);
+        //alert ('Нажали на кнопку Заказать Христакис');
+         popupRooms(undefined,undefined,undefined ,undefined , '2','0', '2','2');
+  });
+});
+
+$(document).ready(function(){
+        // для страницы Приморский
+        $("#hotel-primor-bron").click(function () {
+widgetOptions = {
+        token: '4DBE3152-9CC5-41E2-9324-8F8F9A2C9292',
+        css: 'http://ug-service.info/frontdesk24.css',
+        target: 'pr',
+        language: 'ru',
+        popupHeader: 'Отель "Приморский"',
+        maxAdults: 10,
+        widget_width: 928,
+        align: 'left',
+        showGuestsCount: true,
+        showChildren: true,
+        minAge: 1,
+        maxAge: 17,
+        method: 'popup',
+        showAllIfNotExists: true, 
+        usePaygate: false,
+        defLength: 1,
+        defAdults: 2,
+        alwaysShowTariff: false,
+        expanded: false,
+        showHours: false,
+        buttonText: 'Проверить наличие',
+        periodText: 'Выберите дату',
+        allowOverbooking: false,
+        emailRequired: false,
+        //card: true,
+        
+    };
+    createWidget(widgetOptions);
+        //alert ('Нажали на кнопку Заказать Приморский');
+         popupRooms(undefined,undefined,undefined ,undefined , '2','0', '2','2');
   });
 });
 
 
+
+$(document).ready(function(){
+        // для страницы Родничок
+        $("#hotel-rodnik-bron").click(function () {
+widgetOptions = {
+        token: '648AC3CC-982B-46E1-805B-CFEDF3F8BD35',
+        css: 'http://ug-service.info/frontdesk24.css',
+        target: 'ro',
+        language: 'ru',
+        popupHeader: 'Отель "Родничок"',
+        maxAdults: 10,
+        widget_width: 928,
+        align: 'left',
+        showGuestsCount: true,
+        showChildren: true,
+        minAge: 1,
+        maxAge: 17,
+        method: 'popup',
+        showAllIfNotExists: true, 
+        usePaygate: false,
+        defLength: 1,
+        defAdults: 2,
+        alwaysShowTariff: false,
+        expanded: false,
+        showHours: false,
+        buttonText: 'Проверить наличие',
+        periodText: 'Выберите дату',
+        allowOverbooking: false,
+        emailRequired: false,
+        //card: true,
+        
+    };
+    createWidget(widgetOptions);
+        //alert ('Нажали на кнопку Заказать Родничок');
+         popupRooms(undefined,undefined,undefined ,undefined , '2','0', '2','2');
+  });
+});
+
+
+
+$(document).ready(function(){
+        // для страницы Южная ночь
+        $("#hotel-ug-bron").click(function () {
+widgetOptions = {
+        token: '5AC2A793-9873-4D05-8D65-92197C328F18',
+        css: 'http://ug-service.info/frontdesk24.css',
+        target: 'yu',
+        language: 'ru',
+        popupHeader: 'Отель "Южная ночь"',
+        maxAdults: 10,
+        widget_width: 928,
+        align: 'left',
+        showGuestsCount: true,
+        showChildren: true,
+        minAge: 1,
+        maxAge: 17,
+        method: 'popup',
+        showAllIfNotExists: true, 
+        usePaygate: false,
+        defLength: 1,
+        defAdults: 2,
+        alwaysShowTariff: false,
+        expanded: false,
+        showHours: false,
+        buttonText: 'Проверить наличие',
+        periodText: 'Выберите дату',
+        allowOverbooking: false,
+        emailRequired: false,
+        //card: true,
+        
+    };
+    createWidget(widgetOptions);
+        //alert ('Нажали на кнопку Заказать Южная ночь');
+         popupRooms(undefined,undefined,undefined ,undefined , '2','0', '2','2');
+  });
+});
+
+
+$(document).ready(function(){
+        // для страницы Византия
+        $("#hotel-visantia-bron").click(function () {
+        //alert('LARK');
+     widgetOptions = {
+        token: 'C584BE97-A4BE-4D53-99DF-4625FB00742D',
+        css: 'http://ug-service.info/frontdesk24.css',
+        target: 'viz',
+        language: 'ru',
+        popupHeader: 'Отель "Византия"',
+        maxAdults: 10,
+        widget_width: 928,
+        align: 'left',
+        showGuestsCount: true,
+        showChildren: true,
+        minAge: 1,
+        maxAge: 17,
+        method: 'popup',
+        showAllIfNotExists: true, 
+        usePaygate: false,
+        defLength: 1,
+        defAdults: 2,
+        alwaysShowTariff: false,
+        expanded: false,
+        showHours: false,
+        buttonText: 'Проверить наличие',
+        periodText: 'Выберите дату',
+        allowOverbooking: false,
+        emailRequired: false,
+        //card: true,
+    
+    };
+    
+    createWidget(widgetOptions);
+        //alert ('Нажали на кнопку Заказать Византия');
+         popupRooms(undefined,undefined,undefined ,undefined , '2','0', '2','2');
+  });
+});
+
+
+
+$(document).ready(function(){
+        // для страницы Посейдон
+        $("#hotel-poseydon-bron").click(function () {
+widgetOptions = {
+        token: '45E87E85-E82B-491F-A39F-C376DF50D4DD',
+        css: 'http://ug-service.info/frontdesk24.css',
+        target: 'po',
+        language: 'ru',
+        popupHeader: 'Отель "Посейдон"',
+        maxAdults: 10,
+        widget_width: 928,
+        align: 'left',
+        showGuestsCount: true,
+        showChildren: true,
+        minAge: 1,
+        maxAge: 17,
+        method: 'popup',
+        showAllIfNotExists: true, 
+        usePaygate: false,
+        defLength: 1,
+        defAdults: 2,
+        alwaysShowTariff: false,
+        expanded: false,
+        showHours: false,
+        buttonText: 'Проверить наличие',
+        periodText: 'Выберите дату',
+        allowOverbooking: false,
+        emailRequired: false,
+        //card: true,
+        
+    };
+    createWidget(widgetOptions);
+        //alert ('Нажали на кнопку Заказать Посейдон');
+         popupRooms(undefined,undefined,undefined ,undefined , '2','0', '2','2');
+  });
+});
 
 
 
@@ -385,7 +701,6 @@ $(window).load(function () {
   });
 
 $(window).load(function () {
-    
  var url = location.pathname;
  //alert(url);
         $('ul.dropdown li').each(function() {
@@ -397,8 +712,8 @@ $(window).load(function () {
                 $(this).find('a').addClass("active");
             }
         });
-    
   });
+
 
 
 

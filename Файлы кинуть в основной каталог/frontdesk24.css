@@ -26,7 +26,7 @@ select
     
     min-width: 52px;
    
-    background-image:url(../img/down.png); 
+    background-image:url(../static/img/down.png); 
 	background-repeat:no-repeat;
     background-position:right;   
    
@@ -102,7 +102,7 @@ select option
 
 .datepicker 
 {    
-	background-image:url(../img/calendar.png); 
+	background-image:url(../static/img/calendar.png); 
 	background-repeat:no-repeat;
     background-position:right;    
     padding-right: 30px;
@@ -368,14 +368,14 @@ select option
 
 .date-picker-wrapper table .caption .next
 {    
-    background-image:url(../img/next.png); 
+    background-image:url(../static/img/next.png); 
 	background-repeat:no-repeat;
     background-position:center;    
 }
 
 .date-picker-wrapper table .caption .prev 
 {   
-    background-image:url(../img/prev.png); 
+    background-image:url(../static/img/prev.png); 
 	background-repeat:no-repeat;
     background-position:center;    
 }
@@ -575,7 +575,7 @@ select option
 
 .wait 
 {
-	background-image:url(../img/wait.gif); 
+	background-image:url(../static/img/wait.gif); 
 	background-repeat:no-repeat;
     background-position:center;    
     min-height: 30px;

@@ -117,7 +117,7 @@ ul.submenu li a:hover {
 }
 .second-nav ul a.active {
   color: #fff;
-  background-color: #bbb;
+  background-color: #999;
 }
 .second-nav ul a:hover {
   text-decoration: underline;
@@ -382,6 +382,7 @@ input.sbutton {
 .des-about ul li a {
   color: #00f;
   margin-left: 10px;
+  text-decoration: underline;
 }
 .map-wrap {
   margin-bottom: 20px;
@@ -443,10 +444,10 @@ input.sbutton {
 .place-text p {
   padding-left: 280px;
   color: #fff;
-  font-size: 27px;
+  font-size: 25px;
   font-family: helv__thin;
   text-shadow: 0 5px 3px rgba(0,0,0,0.8);
-  font-weight: 300;
+  font-weight: 800;
 }
 .map-wrap {
   display: block;
@@ -1351,4 +1352,22 @@ div.selh select {
   font-size: 14px;
   margin-left: 40px;
   color: #888;
+}
+#search-widget-isidor-popup,
+#search-widget-primorski-popup,
+#search-widget-chistakis-popup,
+#search-widget-rodnik-popup,
+#search-widget-yug-popup,
+#search-widget-poseydon-popup,
+#search-widget-visantia-popup,
+#is-popup,
+#hr-popup,
+#pr-popup,
+#ro-popup,
+#yu-popup,
+#viz-popup,
+#po-popup {
+  color: #888;
+  font-size: 16px;
+  padding-left: 20px;
 }

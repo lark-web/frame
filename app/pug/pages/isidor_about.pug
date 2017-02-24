@@ -15,11 +15,10 @@ block photo_desk
 				+hname('Отель','Исидор','Анапа')
 
 
-
 block second_menu
 	.base-wrap
 		//include ../common/second_menu
-		+smenu('isidor','/isidor_about.html','/isidor_rooms.html','/isidor_price.html','/isidor_promoution.html','/isidor_gallery.html','/isidor_response.html','/isidor_contacts.html') 
+		+smenu('isidor','/isidor_about.html','/isidor_rooms.html','/isidor_price.html','/promoution.html','/isidor_gallery.html','/isidor_response.html','/isidor_contacts.html') 
 
 block content
 	.base-wrap
@@ -56,13 +55,9 @@ block content
 				b В стоимость включено: 
 				span проживание, пользование бассейном, Wi-Fi на стойке регистрации, анимация.
 			p При размещении в отеле не гарантируется этаж, вид из окна, расположение номеров рядом, спальное место (двуспальная кровать или раздельные кровати), если данной информации нет в описании номера.
-			p
-				b Дети 
-				span принимаются с любого возраста:
-				ul
-					li до 3 лет бесплатно, без предоставления места, с питанием. Стоимость детской кроватки - 300 рублей/сутки (доп. услуга).
-					li от 3 до 6 лет бесплатно на дополнительном месте.
-			
+			p 
+				b Дети: 
+				span принимаются с любого возраста; до 6 лет бесплатно, без предоставления места.
 			p Детям:  детское отделение в бассейне, детская площадка, высокие стульчики в столовой, детская кроватка в номере, развлекательные программы (анимация).
 			p
 				b Документы при заселении: 
@@ -80,6 +75,7 @@ block content
 				span.t-bold Услуги: 
 				ul
 					li парковка неохраняемая – 200 руб./сутки;
+					li аренда детской кроватки - 300 руб./сутки (доп. услуга);
 					li продление номера (по возможности) – 200 руб./час;
 					li прокат пляжных принадлежностей.
 			p
@@ -95,7 +91,7 @@ block content
 						a(href="mailto:isidor08@mail.ru") isidor08@mail.ru 
 					li Служба размещения: +7 918 483 21 51.
 
-	script(src="static/js/widget_isidor_internal.js")
+	script(src="static/js/widget_isidor.js")
 
 
 
