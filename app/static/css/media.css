@@ -11,6 +11,12 @@
   #page-wrap ul li:last-child {
     margin-right: 0px;
   }
+  .info-wrap .img-info {
+    width: 890px;
+  }
+  .info-wrap .text-info {
+    width: 890px;
+  }
 }
 @media screen and (max-width: 890px) {
   #viz-popup {
@@ -58,6 +64,12 @@
   }
   .soc_seti {
     position: static;
+  }
+  .info-wrap .img-info {
+    width: 640px;
+  }
+  .info-wrap .text-info {
+    width: 640px;
   }
 }
 @media screen and (max-width: 640px) {
@@ -118,6 +130,12 @@
   }
   .promo-single-wrap .promo-text-block-right p {
     font-size: 12px;
+  }
+  .info-wrap .img-info {
+    width: 400px;
+  }
+  .info-wrap .text-info {
+    width: 400px;
   }
   .desc-text {
     display: block;

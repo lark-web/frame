@@ -739,6 +739,7 @@ textarea {
 }
 .bron-wrap {
   position: relative;
+  height: 106px;
 }
 .bron-wrap .opt-wrap {
   position: absolute;
@@ -1370,4 +1371,37 @@ div.selh select {
   color: #888;
   font-size: 16px;
   padding-left: 20px;
+}
+.info-wrap {
+  background-color: #f5f3e7;
+  text-align: center;
+}
+.info-wrap .img-info {
+  width: 1250px;
+  margin: 0 auto;
+}
+.info-wrap .img-info img {
+  width: 100%;
+}
+.text-info {
+  width: 1250px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
+  margin-top: 30px;
+}
+.text-info p {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: calibri, roboto_slabregular, sans-serif;
+}
+.text-info p a {
+  font-size: 14px;
+  color: #00f;
+  text-decoration: underline;
+  font-family: calibri, roboto_slabregular, sans-serif;
+}
+.prom-wrap {
+  width: 350px;
+  margin: 20px auto 30px auto;
 }

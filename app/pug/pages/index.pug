@@ -15,15 +15,18 @@ block slider
 				li
 					img(src="../static/img/content/slider/dsc_0578-5_sm.jpg" alt="")
 				li
-					img(src="../static/img/content/slider/dsc_1533-5-4_sm.jpg" alt="")
+					img(src="../static/img/content/slider/dsc_1533-7_sm.jpg" alt="")
 				li
 					img(src="../static/img/content/slider/dsc_7029-5_sm.jpg" alt="")
+				li
+					img(src="../static/img/content/slider/slider-4.jpg" alt="")
 
 
 
 block photo_desk
 block second_menu
 	//include ../common/second_menu
+
 
 
 block content
@@ -41,6 +44,7 @@ block content
 						option(value="pr") Приморский
 						option(value="yu") Южная ночь
 						option(value="po") Посейдон
+
 				#viz
 				#vizplace-holder
 				#is
@@ -55,17 +59,27 @@ block content
 				#yuplace-holder
 				#po
 				#poplace-holder
-			section.our-hotels
-				h2.text-name-page Наши отели
-				.block-item-hotels
-					+mhotel_new('исидор')
-					+mhotel_new('христакис')
-					+mhotel_new('приморский')
-					+mhotel_new('родничок')
-					+mhotel_new('южная ночь')
-					+mhotel_new('византия')
-					+mhotel_new('посейдон')
 
+	.info-wrap
+		.img-info
+			img(src="../static/img/content/block2.jpg" alt="")
+		.text-info
+			p При бронировании вы получаете письмо, что номер забронирован. Оплату можно произвести сразу, в процессе бронирования, или в течении 2 дней. В случае неоплаты бронь аннулируется автоматически. 
+				a(href='#') Подробнее
+
+
+	section.our-hotels
+		.base-wrap
+			h2.text-name-page Наши отели
+			.block-item-hotels
+				+mhotel_new('исидор')
+				+mhotel_new('христакис')
+				+mhotel_new('приморский')
+				//+mhotel_new('родничок')
+				+mhotel_new('посейдон')
+
+				+mhotel_new('южная ночь')
+				+mhotel_new('византия')
 
 
 
@@ -99,8 +113,8 @@ block content
 							span Скидка
 							span.colored 5%
 					//.select-prom
-					.b-wrap
-							a#isidor-early-bron(href="javascript:void(0);").bron Получить скидку
+					//.b-wrap
+							//a#isidor-early-bron(href="javascript:void(0);").bron Получить скидку
 
 				.promo-single-wrap
 					.view.view-first
@@ -123,11 +137,17 @@ block content
 							span Скидка
 							span.colored 10%
 					//.select-prom
-					.b-wrap
-							a#isidor-prolong-pleasure(href="javascript:void(0);").bron Получить скидку
+					//.b-wrap
+							//a#isidor-prolong-pleasure(href="javascript:void(0);").bron Получить скидку
+
+				.prom-wrap
+					a#bpon-ref(href="/promoution.html").bron Показать все акции и получить скидку
+
+
+
 			.line-divide
-			.more-promotion
-				a(href="/promoution.html") Показать все акции 
+			//.more-promotion
+				//a(href="/promoution.html") Показать все акции 
 
 	.base-wrap
 		section.news
