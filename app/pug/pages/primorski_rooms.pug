@@ -1,7 +1,7 @@
 extends ../layout/layout_hotels
 include ../common/mixins
 block title
-	| Отель "Приморский"
+	| "Приморский" - Номера
 
 
 block slider	
@@ -52,24 +52,13 @@ block content
 				div.header-text
 					p 3-местный Стандарт 
 				div.text-item
-					span.simbol-text-room &#8226
-					span сплит-система, ТВ, холодильник, санузел, душ
-					</br>
-					span.simbol-text-room &#8226
-					span двуспальная кровать 1,4*1,8 и односпальная кровать 0,9*1,8, 1 доп. место – кресло-кровать 0,9*1,8 м;
-					</br>
-					span.simbol-text-room &#8226
-					span основных мест: 3
-					</br>
-					span.simbol-text-room &#8226
-					span дополнительных мест: 1
-					</br>
-					span.simbol-text-room &#8226
-					span площадь номера 21 кв.м.
-					</br>
-					span.simbol-text-room &#8226
-					span номеров в отеле: 30
-					</br>
+					ul
+						li сплит-система, ТВ, холодильник, санузел, душ;
+						li двуспальная кровать 1,4*1,8 и односпальная кровать 0,9*1,8, 1 доп. место – кресло-кровать 0,9*1,8 м;
+						li основных мест: 3;
+						li дополнительных мест: 1;
+						li площадь номера 21 кв.м.;
+						li номеров в отеле: 30.
 			.knopka
 				a#isidor-standart2-dbl(href="javascript:void(0);").bron Забронировать 
 	script(src="static/js/widget_primorski.js")

@@ -1,210 +1,369 @@
 extends ../layout/layout_hotels
 include ../common/mixins
 block title
-	| Отель "Византия"
+  | "Византия" - Номера
 
 
-block slider	
+block slider  
 block photo_desk
-	.base-wrap
-		.main-hotel-img-visantia
-		.bron-for-hotel-pages
-			#search-widget-visantia
-		.banner
-			.inner
-				+hname('Отель','Византия','Анапа')
+  .base-wrap
+    .main-hotel-img-visantia
+    .bron-for-hotel-pages
+      #search-widget-visantia
+    .banner
+      .inner
+        +hname('Отель','Византия','Анапа')
 
 
 
 block second_menu
-	.base-wrap
-		//include ../common/second_menu
-		+smenu('visantia','/visantia_about.html','/visantia_rooms.html','visantia_price.html','/promoution.html','visantia_gallery.html','visantia_response.html','visantia_contacts.html')
+  .base-wrap
+    //include ../common/second_menu
+    +smenu('visantia','/visantia_about.html','/visantia_rooms.html','visantia_price.html','/promoution.html','visantia_gallery.html','visantia_response.html','visantia_contacts.html')
  
 
 block content
-	.base-wrap
-		h2.text-name-page Номера
-		div.room-desc
-			div.gallery
-				div#slider.flexslider
-					ul.slides
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_lemon.jpg")
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_donut.jpg")
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_caramel.jpg")
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_cheesecake_brownie.jpg")
-				div#carousel.flexslider
-					ul.slides
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_lemon.jpg")
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_donut.jpg")
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_caramel.jpg")
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_cheesecake_brownie.jpg")
-			div.desc-text
-				div.header-text
-					p 2-х местный dbl
-				div.text-item
-					ul
-						li сплит-система, ТВ, холодильник, санузел, душ;
-						li двуспальная кровать 1,4*1,8 и 1 доп. место - кресло-кровать;
-						li основных мест: 2;
-						li дополнительных мест: 1;
-						li номеров в отеле: 6.
+  .base-wrap
+    h2.text-name-page Номера
 
-			.knopka
-				a#isidor-standart2-dbl-plus(href="javascript:void(0);").bron Забронировать 
+    div.room-desc
+      div.gallery
+        div#slider.flexslider
+          ul.slides
+            li
+              a(href="../static/img/visantia/rooms/2dbl-1.jpg" data-fancybox-group = "viz1").fancybox
+                img(src="../static/img/visantia/rooms/2dbl-1.jpg" )
+            li
+              a(href="../static/img/visantia/rooms/2dbl-2.jpg" data-fancybox-group = "viz1").fancybox
+                img(src="../static/img/visantia/rooms/2dbl-2.jpg" )
+            li
+              a(href="../static/img/visantia/rooms/2dbl-3.jpg" data-fancybox-group = "viz1").fancybox
+                img(src="../static/img/visantia/rooms/2dbl-3.jpg" )
+            li
+              a(href="../static/img/visantia/rooms/2dbl-4.jpg" data-fancybox-group = "viz1").fancybox
+                img(src="../static/img/visantia/rooms/2dbl-4.jpg" )
+        div#carousel.flexslider
+          ul.slides
+            li
+              img(src="../static/img/visantia/rooms/2dbl-1.jpg")
+            li
+              img(src="../static/img/visantia/rooms/2dbl-2.jpg")
+            li
+              img(src="../static/img/visantia/rooms/2dbl-3.jpg")
+            li
+              img(src="../static/img/visantia/rooms/2dbl-4.jpg")
+      div.desc-text
+        div.header-text
+          p 2-х местный dbl
+        div.text-item
+          ul
+            li сплит-система, ТВ, холодильник, санузел, душ;
+            li двуспальная кровать 1,4*1,8;
+            li основных мест: 2;
+            li дополнительных мест: 0;
+            li номеров в отеле: 2.
+
+      .knopka
+        a(href="javascript:void(0);").bron Забронировать 
 
 
-		div.room-desc
-			div.gallery
-				div#slider.flexslider
-					ul.slides
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_lemon.jpg")
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_donut.jpg")
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_caramel.jpg")
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_cheesecake_brownie.jpg")
-				div#carousel.flexslider
-					ul.slides
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_lemon.jpg")
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_donut.jpg")
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_caramel.jpg")
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_cheesecake_brownie.jpg")
-			div.desc-text
-				div.header-text
-					p 2-х местный twin
-				div.text-item
-					ul
-						li сплит-система, ТВ, холодильник, санузел, душ;
-						li две односпальные кровати 0,9*1,8 и 1 доп. место - кресло-кровать;
-						li основных мест: 2;
-						li дополнительных мест: 1;
-						li номеров в отеле: 4.
+    div.room-desc
+      div.gallery
+        div#slider-2.flexslider
+          ul.slides
+            li
+              a(href="../static/img/visantia/rooms/2dbl-1.jpg" data-fancybox-group = "viz2").fancybox
+                img(src="../static/img/visantia/rooms/2dbl-1.jpg" )
+            li
+              a(href="../static/img/visantia/rooms/2dbl-2.jpg" data-fancybox-group = "viz2").fancybox
+                img(src="../static/img/visantia/rooms/2dbl-2.jpg" )
+            li
+              a(href="../static/img/visantia/rooms/2dbl-3.jpg" data-fancybox-group = "viz2").fancybox
+                img(src="../static/img/visantia/rooms/2dbl-3.jpg" )
+            li
+              a(href="../static/img/visantia/rooms/2dbl-4.jpg" data-fancybox-group = "viz2").fancybox
+                img(src="../static/img/visantia/rooms/2dbl-4.jpg" )
+        div#carousel-2.flexslider
+          ul.slides
+            li
+              img(src="../static/img/visantia/rooms/2dbl-1.jpg")
+            li
+              img(src="../static/img/visantia/rooms/2dbl-2.jpg")
+            li
+              img(src="../static/img/visantia/rooms/2dbl-3.jpg")
+            li
+              img(src="../static/img/visantia/rooms/2dbl-4.jpg")
+      div.desc-text
+        div.header-text
+          p 2-х местный с доп. меcтом dbl+
+        div.text-item
+          ul
+            li сплит-система, ТВ, холодильник, санузел, душ;
+            li двуспальная кровать 1,4*1,8, 1 доп. место - кресло-кровать;
+            li основных мест: 2;
+            li дополнительных мест: 1;
+            li номеров в отеле: 4.
 
-			.knopka
-				a#isidor-standart2-dbl-plus(href="javascript:void(0);").bron Забронировать 
+      .knopka
+        a#isidor-standart2-dbl-plus(href="javascript:void(0);").bron Забронировать 
 
-		div.room-desc
-			div.gallery
-				div#slider.flexslider
-					ul.slides
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_lemon.jpg")
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_donut.jpg")
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_caramel.jpg")
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_cheesecake_brownie.jpg")
-				div#carousel.flexslider
-					ul.slides
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_lemon.jpg")
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_donut.jpg")
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_caramel.jpg")
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_cheesecake_brownie.jpg")
-			div.desc-text
-				div.header-text
-					p 3-х местный 
-				div.text-item
-					ul
-						li сплит-система, ТВ, холодильник, санузел, душ;
-						li двуспальная кровать 1,4*1,8, односпальная кровать 0,9*1,8, 
-						li основных мест: 3;
-						li дополнительных мест: 0;
-						li номеров в отеле: 12.
 
-			.knopka
-				a#isidor-standart2-dbl-plus(href="javascript:void(0);").bron Забронировать 
 
-		div.room-desc
-			div.gallery
-				div#slider.flexslider
-					ul.slides
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_lemon.jpg")
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_donut.jpg")
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_caramel.jpg")
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_cheesecake_brownie.jpg")
-				div#carousel.flexslider
-					ul.slides
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_lemon.jpg")
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_donut.jpg")
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_caramel.jpg")
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_cheesecake_brownie.jpg")
-			div.desc-text
-				div.header-text
-					p 3-х местный с доп. местом 
-				div.text-item
-					ul
-						li сплит-система, ТВ, холодильник, санузел, душ;
-						li 3 односпальные кровати 0,9*1,8  и 1 доп. место - кресло-кровать; 
-						li основных мест: 3;
-						li дополнительных мест: 1;
-						li номеров в отеле: 20.
 
-			.knopka
-				a#isidor-standart2-dbl-plus(href="javascript:void(0);").bron Забронировать 
 
-		div.room-desc
-			div.gallery
-				div#slider.flexslider
-					ul.slides
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_lemon.jpg")
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_donut.jpg")
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_caramel.jpg")
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_cheesecake_brownie.jpg")
-				div#carousel.flexslider
-					ul.slides
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_lemon.jpg")
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_donut.jpg")
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_caramel.jpg")
-						li
-							img(src="../static/img/rooms/kitchen_adventurer_cheesecake_brownie.jpg")
-			div.desc-text
-				div.header-text
-					p 4-х местный  
-				div.text-item
-					ul
-						li сплит-система, ТВ, холодильник, санузел, душ;
-						li двуспальная кровать 1,4*1,8 и 2 доп. места - диван-кровать.
-						li основных мест: 2;
-						li дополнительных мест: 2;
-						li номеров в отеле: 2.
 
-			.knopka
-				a#isidor-standart2-dbl-plus(href="javascript:void(0);").bron Забронировать 
 
-	script(src="static/js/widget_visantia.js")
+
+
+
+
+
+
+
+    div.room-desc
+      div.gallery
+        div#slider-3.flexslider
+          ul.slides
+            li
+              a(href="../static/img/visantia/rooms/2twin-1.jpg" data-fancybox-group = "viz3").fancybox
+                img(src="../static/img/visantia/rooms/2twin-1.jpg" )
+            li
+              a(href="../static/img/visantia/rooms/2twin-2.jpg" data-fancybox-group = "viz3").fancybox
+                img(src="../static/img/visantia/rooms/2twin-2.jpg" )
+            li
+              a(href="../static/img/visantia/rooms/2twin-3.jpg" data-fancybox-group = "viz3").fancybox
+                img(src="../static/img/visantia/rooms/2twin-3.jpg" )
+            li
+              a(href="../static/img/visantia/rooms/2twin-4.jpg" data-fancybox-group = "viz3").fancybox
+                img(src="../static/img/visantia/rooms/2twin-4.jpg" )
+        div#carousel-3.flexslider
+          ul.slides
+            li
+              img(src="../static/img/visantia/rooms/2twin-1.jpg")
+            li
+              img(src="../static/img/visantia/rooms/2twin-2.jpg")
+            li
+              img(src="../static/img/visantia/rooms/2twin-3.jpg")
+            li
+              img(src="../static/img/visantia/rooms/2twin-4.jpg")
+      div.desc-text
+        div.header-text
+          p 2-х местный twin
+        div.text-item
+          ul
+            li сплит-система, ТВ, холодильник, санузел, душ;
+            li две односпальные кровати 0,9*1,8;
+            li основных мест: 2;
+            li дополнительных мест: 0;
+            li номеров в отеле: 3.
+
+      .knopka
+        a#isidor-standart2-dbl-plus(href="javascript:void(0);").bron Забронировать 
+
+    div.room-desc
+      div.gallery
+        div#slider-4.flexslider
+          ul.slides
+            li
+              a(href="../static/img/visantia/rooms/3-1.jpg" data-fancybox-group = "viz4").fancybox
+                img(src="../static/img/visantia/rooms/3-1.jpg" )
+            li
+              a(href="../static/img/visantia/rooms/3-2.jpg" data-fancybox-group = "viz4").fancybox
+                img(src="../static/img/visantia/rooms/3-2.jpg" )
+            li
+              a(href="../static/img/visantia/rooms/3-3.jpg" data-fancybox-group = "viz4").fancybox
+                img(src="../static/img/visantia/rooms/3-3.jpg" )
+            li
+              a(href="../static/img/visantia/rooms/3-4.jpg" data-fancybox-group = "viz4").fancybox
+                img(src="../static/img/visantia/rooms/3-4.jpg" )
+        div#carousel-4.flexslider
+          ul.slides
+            li
+              img(src="../static/img/visantia/rooms/3-1.jpg")
+            li
+              img(src="../static/img/visantia/rooms/3-2.jpg")
+            li
+              img(src="../static/img/visantia/rooms/3-3.jpg")
+            li
+              img(src="../static/img/visantia/rooms/3-4.jpg")
+      div.desc-text
+        div.header-text
+          p 3-х местный 
+        div.text-item
+          ul
+            li сплит-система, ТВ, холодильник, санузел, душ;
+            li двуспальная кровать 1,4*1,8, односпальная кровать 0,9*1,8 (в некоторых номерах - три односпальные кровати) 
+            li основных мест: 3;
+            li дополнительных мест: 0;
+            li номеров в отеле: 14.
+      .knopka
+        a#isidor-standart2-dbl-plus(href="javascript:void(0);").bron Забронировать 
+
+    div.room-desc
+      div.gallery
+        div#slider-5.flexslider
+          ul.slides
+            li
+              a(href="../static/img/visantia/rooms/3dop-1.jpg" data-fancybox-group = "viz5").fancybox
+                img(src="../static/img/visantia/rooms/3dop-1.jpg" )
+            li
+              a(href="../static/img/visantia/rooms/3dop-2.jpg" data-fancybox-group = "viz5").fancybox
+                img(src="../static/img/visantia/rooms/3dop-2.jpg" )
+            li
+              a(href="../static/img/visantia/rooms/3dop-3.jpg" data-fancybox-group = "viz5").fancybox
+                img(src="../static/img/visantia/rooms/3dop-3.jpg" )
+            li
+              a(href="../static/img/visantia/rooms/3dop-4.jpg" data-fancybox-group = "viz5").fancybox
+                img(src="../static/img/visantia/rooms/3dop-4.jpg" )
+        div#carousel-5.flexslider
+          ul.slides
+            li
+              img(src="../static/img/visantia/rooms/3dop-1.jpg")
+            li
+              img(src="../static/img/visantia/rooms/3dop-2.jpg")
+            li
+              img(src="../static/img/visantia/rooms/3dop-3.jpg")
+            li
+              img(src="../static/img/visantia/rooms/3dop-4.jpg")
+      div.desc-text
+        div.header-text
+          p 3-х местный с доп. местом 
+        div.text-item
+          ul
+            li сплит-система, ТВ, холодильник, санузел, душ;
+            li двуспальная кровать 1,4*1,8, односпальная кровать 0,9*1,8 (в некоторых номерах - три односпальные кровати) ; доп.место - кресло-кровать; 
+            li основных мест: 3;
+            li дополнительных мест: 1;
+            li номеров в отеле: 13.
+
+      .knopka
+        a#isidor-standart2-dbl-plus(href="javascript:void(0);").bron Забронировать 
+
+    div.room-desc
+      div.gallery
+        div#slider-6.flexslider
+          ul.slides
+            li
+              a(href="../static/img/visantia/rooms/4-1.jpg" data-fancybox-group = "viz6").fancybox
+                img(src="../static/img/visantia/rooms/4-1.jpg" )
+            li
+              a(href="../static/img/visantia/rooms/4-2.jpg" data-fancybox-group = "viz6").fancybox
+                img(src="../static/img/visantia/rooms/4-2.jpg" )
+            li
+              a(href="../static/img/visantia/rooms/4-3.jpg" data-fancybox-group = "viz6").fancybox
+                img(src="../static/img/visantia/rooms/4-3.jpg" )
+            li
+              a(href="../static/img/visantia/rooms/4-4.jpg" data-fancybox-group = "viz6").fancybox
+                img(src="../static/img/visantia/rooms/4-4.jpg" )
+        div#carousel-6.flexslider
+          ul.slides
+            li
+              img(src="../static/img/visantia/rooms/4-1.jpg")
+            li
+              img(src="../static/img/visantia/rooms/4-2.jpg")
+            li
+              img(src="../static/img/visantia/rooms/4-3.jpg")
+            li
+              img(src="../static/img/visantia/rooms/4-4.jpg")
+      div.desc-text
+        div.header-text
+          p 4-х местный  
+        div.text-item
+          ul
+            li сплит-система, ТВ, холодильник, санузел, душ;
+            li четыре односпальные кровати 0,9*1,8 (в некоторых номерах - двуспальная кровать);
+            li основных мест: 4;
+            li дополнительных мест: 0;
+            li номеров в отеле: 7.
+
+      .knopka
+        a#isidor-standart2-dbl-plus(href="javascript:void(0);").bron Забронировать 
+
+
+
+    div.room-desc
+      div.gallery
+        div#slider-7.flexslider
+          ul.slides
+            li
+              a(href="../static/img/visantia/rooms/4-1.jpg" data-fancybox-group = "viz7").fancybox
+                img(src="../static/img/visantia/rooms/4-1.jpg" )
+            li
+              a(href="../static/img/visantia/rooms/4-2.jpg" data-fancybox-group = "viz7").fancybox
+                img(src="../static/img/visantia/rooms/4-2.jpg" )
+            li
+              a(href="../static/img/visantia/rooms/4-3.jpg" data-fancybox-group = "viz7").fancybox
+                img(src="../static/img/visantia/rooms/4-3.jpg" )
+            li
+              a(href="../static/img/visantia/rooms/4-4.jpg" data-fancybox-group = "viz7").fancybox
+                img(src="../static/img/visantia/rooms/4-4.jpg" )
+        div#carousel-7.flexslider
+          ul.slides
+            li
+              img(src="../static/img/visantia/rooms/4-1.jpg")
+            li
+              img(src="../static/img/visantia/rooms/4-2.jpg")
+            li
+              img(src="../static/img/visantia/rooms/4-3.jpg")
+            li
+              img(src="../static/img/visantia/rooms/4-4.jpg")
+      div.desc-text
+        div.header-text
+          p 4-х местный с доп.местом: 
+        div.text-item
+          ul
+            li сплит-система, ТВ, холодильник, санузел, душ;
+            li четыре односпальные кровати 0,9*1,8 (в некоторых номерах - двуспальная кровать); доп. место - кресло-кровать;
+            li основных мест: 4;
+            li дополнительных мест: 1;
+            li номеров в отеле: 3.
+
+      .knopka
+        a#isidor-standart2-dbl-plus(href="javascript:void(0);").bron Забронировать 
+
+
+    div.room-desc
+      div.gallery
+        div#slider-8.flexslider
+          ul.slides
+            li
+              a(href="../static/img/visantia/rooms/2-2r-1.jpg" data-fancybox-group = "viz8").fancybox
+                img(src="../static/img/visantia/rooms/2-2r-1.jpg" )
+            li
+              a(href="../static/img/visantia/rooms/2-2r-2.jpg" data-fancybox-group = "viz8").fancybox
+                img(src="../static/img/visantia/rooms/2-2r-2.jpg" )
+            li
+              a(href="../static/img/visantia/rooms/2-2r-3.jpg" data-fancybox-group = "viz8").fancybox
+                img(src="../static/img/visantia/rooms/2-2r-3.jpg" )
+            li
+              a(href="../static/img/visantia/rooms/2-2r-4.jpg" data-fancybox-group = "viz8").fancybox
+                img(src="../static/img/visantia/rooms/2-2r-4.jpg" )
+        div#carousel-8.flexslider
+          ul.slides
+            li
+              img(src="../static/img/visantia/rooms/2-2r-1.jpg")
+            li
+              img(src="../static/img/visantia/rooms/2-2r-2.jpg")
+            li
+              img(src="../static/img/visantia/rooms/2-2r-3.jpg")
+            li
+              img(src="../static/img/visantia/rooms/2-2r-4.jpg")
+      div.desc-text
+        div.header-text
+          p 2-х местный 2-комнатный Люкс  
+        div.text-item
+          ul
+            li сплит-система, ТВ, холодильник, санузел, душ;
+            li двуспальная кровать 1,4*1,8; доп.место - диван;
+            li основных мест: 2;
+            li дополнительных мест: 2;
+            li номеров в отеле: 2.
+
+      .knopka
+        a#isidor-standart2-dbl-plus(href="javascript:void(0);").bron Забронировать 
+
+
+
+
+  script(src="static/js/widget_visantia.js")
 

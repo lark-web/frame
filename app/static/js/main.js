@@ -45,6 +45,159 @@ $(window).load(function() {
   });
 });
 
+
+$(window).load(function() {
+  // The slider being synced must be initialized first
+  $('#carousel-2').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 70,
+    itemMargin: 5,
+    asNavFor: '#slider-2'
+  });
+ 
+  $('#slider-2').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    sync: "#carousel-2"
+  });
+});
+
+
+$(window).load(function() {
+  // The slider being synced must be initialized first
+  $('#carousel-3').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 70,
+    itemMargin: 5,
+    asNavFor: '#slider-3'
+  });
+ 
+  $('#slider-3').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    sync: "#carousel-3"
+  });
+});
+
+
+$(window).load(function() {
+  // The slider being synced must be initialized first
+  $('#carousel-4').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 70,
+    itemMargin: 5,
+    asNavFor: '#slider-4'
+  });
+ 
+  $('#slider-4').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    sync: "#carousel-4"
+  });
+});
+
+
+$(window).load(function() {
+  // The slider being synced must be initialized first
+  $('#carousel-5').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 70,
+    itemMargin: 5,
+    asNavFor: '#slider-5'
+  });
+ 
+  $('#slider-5').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    sync: "#carousel-5"
+  });
+});
+
+
+$(window).load(function() {
+  // The slider being synced must be initialized first
+  $('#carousel-6').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 70,
+    itemMargin: 5,
+    asNavFor: '#slider-6'
+  });
+ 
+  $('#slider-6').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    sync: "#carousel-6"
+  });
+});
+
+
+$(window).load(function() {
+  // The slider being synced must be initialized first
+  $('#carousel-7').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 70,
+    itemMargin: 5,
+    asNavFor: '#slider-7'
+  });
+ 
+  $('#slider-7').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    sync: "#carousel-7"
+  });
+});
+
+$(window).load(function() {
+  // The slider being synced must be initialized first
+  $('#carousel-8').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 70,
+    itemMargin: 5,
+    asNavFor: '#slider-8'
+  });
+ 
+  $('#slider-8').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    sync: "#carousel-8"
+  });
+});
+
 $(window).load(function() {
   // The slider being synced must be initialized first
   $('#carousel-isidor-standart2-dbl-plus').flexslider({

@@ -39,7 +39,7 @@ ul.dropdown li {
     /* background: #000 url(../images/overlay2.png) repeat-x top left; */
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;   
-    margin:1px;
+    //margin:1px;
     text-shadow: 0 2px 1px rgba(0,0,0,0.2);
 }
 
