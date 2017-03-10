@@ -1,7 +1,7 @@
 // для страницы Родничок
 
 widgetOptions = {
-        token: '4DBE3152-9CC5-41E2-9324-8F8F9A2C9292',
+        token: '648AC3CC-982B-46E1-805B-CFEDF3F8BD35',
         css: 'http://ug-service.info/frontdesk24.css',
         target: 'search-widget-rodnik',
     language: 'ru',

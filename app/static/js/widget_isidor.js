@@ -25,7 +25,7 @@
         periodText: 'Выберите дату',
         allowOverbooking: false,
         emailRequired: false,
-        card: true,
+        //card: true,
         
     };
 

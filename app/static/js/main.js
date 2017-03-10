@@ -836,7 +836,224 @@ $(document).ready(function(){
          popupRooms('5353','5881' ,undefined ,undefined , '2','0', '2','2');
   });
 });
-// бронирование - end
+// бронирование isidor- end
+
+//------------------------------
+// бронирование Христакис - начало
+$(document).ready(function(){
+        $("#christakis-2").click(function () {
+        //alert ('Нажали на кнопку Заказать-Христакис-2');
+         popupRooms('5455','6021' ,undefined ,undefined , '2','0', '2','2');
+  });
+});
+
+$(document).ready(function(){
+        $("#christakis-cok2").click(function () {
+        //alert ('Нажали на кнопку Заказать-Христакис-цокольный-2');
+         popupRooms('5455','6023' ,undefined ,undefined , '2','0', '2','2');
+  });
+});
+
+$(document).ready(function(){
+        $("#christakis-3").click(function () {
+        //alert ('Нажали на кнопку Заказать-Христакис-3');
+         popupRooms('5455','6022' ,undefined ,undefined , '2','0', '2','2');
+  });
+});
+
+$(document).ready(function(){
+        $("#christakis-cok3").click(function () {
+        //alert ('Нажали на кнопку Заказать');
+         popupRooms('5455','6024' ,undefined ,undefined , '2','0', '2','2');
+  });
+});
+// бронирование Христакис - конец
+
+
+//------------------------------
+// бронирование Приморский - начало
+$(document).ready(function(){
+        $("#primorski-standart3").click(function () {
+        //alert ('Нажали на кнопку Заказать');
+         popupRooms('5350','5868' ,undefined ,undefined , '2','0', '2','2');
+  });
+});
+// бронирование Приморский - конец
+
+
+//------------------------------
+// бронирование Родничок - начало
+$(document).ready(function(){
+        $("#rodnik-3").click(function () {
+        //alert ('Нажали на кнопку Заказать');
+         popupRooms('5349','6025' ,undefined ,undefined , '2','0', '2','2');
+  });
+});
+
+$(document).ready(function(){
+        $("#rodnik-4").click(function () {
+        //alert ('Нажали на кнопку Заказать');
+         popupRooms('5349','6026' ,undefined ,undefined , '2','0', '2','2');
+  });
+});
+
+$(document).ready(function(){
+        $("#rodnik-5").click(function () {
+        //alert ('Нажали на кнопку Заказать');
+         popupRooms('5349','6027' ,undefined ,undefined , '2','0', '2','2');
+  });
+});
+// бронирование Родничок - конец
+
+
+//------------------------------
+// бронирование Юж. ночь - начало
+$(document).ready(function(){
+        $("#yug_night-2-2-stud").click(function () {
+        //alert ('Нажали на кнопку Заказать');
+         popupRooms('5351','6020' ,undefined ,undefined , '2','0', '2','2');
+  });
+});
+
+$(document).ready(function(){
+        $("#yug_night-2-pk").click(function () {
+        //alert ('Нажали на кнопку Заказать');
+         popupRooms('5351','6017' ,undefined ,undefined , '2','0', '2','2');
+  });
+});
+
+$(document).ready(function(){
+        $("#yug_night-2-standart").click(function () {
+        //alert ('Нажали на кнопку Заказать');
+         popupRooms('5351','6015' ,undefined ,undefined , '2','0', '2','2');
+  });
+});
+
+$(document).ready(function(){
+        $("#yug_night-2-standart-bal").click(function () {
+        //alert ('Нажали на кнопку Заказать');
+         popupRooms('5351','6016' ,undefined ,undefined , '2','0', '2','2');
+  });
+});
+
+$(document).ready(function(){
+        $("#yug_night-3-2-pk").click(function () {
+        //alert ('Нажали на кнопку Заказать');
+         popupRooms('5351','6019' ,undefined ,undefined , '2','0', '2','2');
+  });
+});
+
+$(document).ready(function(){
+        $("#yug_night-3-pk").click(function () {
+        //alert ('Нажали на кнопку Заказать');
+         popupRooms('5351','6018' ,undefined ,undefined , '2','0', '2','2');
+  });
+});
+// бронирование Юж. ночь - конец
+
+//------------------------------
+// бронирование Византия - начало
+$(document).ready(function(){
+        $("#visantia-2-2-lux").click(function () {
+        //alert ('Нажали на кнопку Заказать');
+         popupRooms('5346','6014' ,undefined ,undefined , '2','0', '2','2');
+  });
+});
+
+$(document).ready(function(){
+        $("#visantia-2-dbl").click(function () {
+        //alert ('Нажали на кнопку Заказать');
+         popupRooms('5346','6066' ,undefined ,undefined , '2','0', '2','2');
+  });
+});
+
+$(document).ready(function(){
+        $("#visantia-2-dbl-plus").click(function () {
+        //alert ('Нажали на кнопку Заказать');
+         popupRooms('5346','6009' ,undefined ,undefined , '2','0', '2','2');
+  });
+});
+
+$(document).ready(function(){
+        $("#visantia-2-twin").click(function () {
+        //alert ('Нажали на кнопку Заказать');
+         popupRooms('5346','6010' ,undefined ,undefined , '2','0', '2','2');
+  });
+});
+
+$(document).ready(function(){
+        $("#visantia-3").click(function () {
+        //alert ('Нажали на кнопку Заказать');
+         popupRooms('5346','6011' ,undefined ,undefined , '2','0', '2','2');
+  });
+});
+
+$(document).ready(function(){
+        $("#visantia-3-dop").click(function () {
+        //alert ('Нажали на кнопку Заказать');
+         popupRooms('5346','6012' ,undefined ,undefined , '2','0', '2','2');
+  });
+});
+
+$(document).ready(function(){
+        $("#visantia-4").click(function () {
+        //alert ('Нажали на кнопку Заказать');
+         popupRooms('5346','6013' ,undefined ,undefined , '2','0', '2','2');
+  });
+});
+
+$(document).ready(function(){
+        $("#visantia-4-dop").click(function () {
+        //alert ('Нажали на кнопку Заказать');
+         popupRooms('5346','6067' ,undefined ,undefined , '2','0', '2','2');
+  });
+});
+
+$(document).ready(function(){
+        $("#visantia-3-ekon").click(function () {
+        //alert ('Нажали на кнопку Заказать');
+         popupRooms('5346','6108' ,undefined ,undefined , '2','0', '2','2');
+  });
+});
+// бронирование Византия - конец
+//------------------------------
+
+// бронирование Посейдон - начало
+$(document).ready(function(){
+        $("#poseydon-2-dbl").click(function () {
+        //alert ('Нажали на кнопку Заказать');
+         popupRooms('5438','6029' ,undefined ,undefined , '2','0', '2','2');
+  });
+});
+
+$(document).ready(function(){
+        $("#poseydon-2-dbl-plus").click(function () {
+        //alert ('Нажали на кнопку Заказать');
+         popupRooms('5438','6030' ,undefined ,undefined , '2','0', '2','2');
+  });
+});
+
+$(document).ready(function(){
+        $("#poseydon-2-twin").click(function () {
+        //alert ('Нажали на кнопку Заказать');
+         popupRooms('5438','6031' ,undefined ,undefined , '2','0', '2','2');
+  });
+});
+
+$(document).ready(function(){
+        $("#poseydon-2-twin-plus").click(function () {
+        //alert ('Нажали на кнопку Заказать');
+         popupRooms('5438','6032' ,undefined ,undefined , '2','0', '2','2');
+  });
+});
+
+$(document).ready(function(){
+        $("#poseydon-3").click(function () {
+        //alert ('Нажали на кнопку Заказать');
+         popupRooms('5438','6033' ,undefined ,undefined , '2','0', '2','2');
+  });
+});
+//==============================================
 
 $(window).load(function () {
     

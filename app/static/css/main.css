@@ -395,14 +395,34 @@ input.sbutton {
   top: 210px;
   left: 300px;
 }
-.main-hotel-img {
+.main-hotel-img-isidor {
   background: rgba(0,0,0,0) url("../img/isidor/isidor_main.jpg") center center no-repeat;
 }
 .main-hotel-img-visantia {
   background: rgba(0,0,0,0) url("../img/visantia/main_visantia.jpg") center center no-repeat;
 }
-.main-hotel-img,
-.main-hotel-img-visantia {
+.main-hotel-img-primorski {
+  background: rgba(0,0,0,0) url("../img/primorski/main_primorski.jpg") center center no-repeat;
+}
+.main-hotel-img-rodnik {
+  background: rgba(0,0,0,0) url("../img/rodnik/main_rodnik.jpg") center center no-repeat;
+}
+.main-hotel-img-yug-night {
+  background: rgba(0,0,0,0) url("../img/yug_night/main_yug_night.jpg") center center no-repeat;
+}
+.main-hotel-img-christakis {
+  background: rgba(0,0,0,0) url("../img/christakis/main_christakis.jpg") center center no-repeat;
+}
+.main-hotel-img-poseydon {
+  background: rgba(0,0,0,0) url("../img/poseydon/main_poseydon.jpg") center center no-repeat;
+}
+.main-hotel-img-isidor,
+.main-hotel-img-visantia,
+.main-hotel-img-primorski,
+.main-hotel-img-rodnik,
+.main-hotel-img-yug-night,
+.main-hotel-img-christakis,
+.main-hotel-img-poseydon {
   z-index: 2;
   display: block !important;
   height: 330px;
